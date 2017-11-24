@@ -8,4 +8,9 @@
 <body>
   <header>
     <h1>Hello!! </h1>
+    <div id="logocontainer">
+      <a href="<?php echo $homeurl; ?>">
+        <img src="<?php header_image();?>" alt="" class="logo"/>
+      </a>
+  </div>
   </header>

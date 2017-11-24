@@ -6,4 +6,6 @@ add_theme_support('post-thumbnails');
 
 //adding selecting formats
 add_theme_support('post-formats');
+
+add_theme_support( 'custom-header' );
 ?>

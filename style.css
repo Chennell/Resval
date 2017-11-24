@@ -34,11 +34,26 @@ a{
   text-decoration: none;
 }
 
+/*-- HEADER ------------------------------------------------------------------*/
 
-
+h1{
+  display: inline-block;
+  padding: 5px 0px 25px 25px;
+}
 /*-- NAVIGATION --------------------------------------------------------------*/
+
+
+
+/*-- outtest box of nav --*/
+#mainmenu{
+  float: right;
+  padding: 25px;
+}
+
+/*-- inline menu elements --*/
 nav>div.menu-menu-container>ul.menu>li{
   display: inline;
+  padding: 10px 10px 10px 10px;
 }
 
 

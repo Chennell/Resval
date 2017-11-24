@@ -167,7 +167,7 @@ function project_post_type() {
             'singular_name'      => __( 'Project',                    'project-textdomain' ),
             'menu_name'          => __( 'Projects',                   'project-textdomain' ),
             'name_admin_bar'     => __( 'Projects',                   'project-textdomain' ),
-            'add_new'            => __( 'Add New',                    'project-textdomain' ),
+            'add_new'            => __( 'Add New Project',                    'project-textdomain' ),
             'add_new_item'       => __( 'Add New Project',            'project-textdomain' ),
             'edit_item'          => __( 'Edit Project',               'project-textdomain' ),
             'new_item'           => __( 'New Project',                'project-textdomain' ),
@@ -181,7 +181,7 @@ function project_post_type() {
 
     /* Register the post type. */
     register_post_type(
-        'recipe', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'project', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }

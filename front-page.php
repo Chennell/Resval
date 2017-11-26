@@ -1,18 +1,22 @@
-<?php get_header(); ?>
-
-<h1>This is the front-page.php</h1>
-<?php
-         if (have_posts()){
-           while (have_posts()){
-
-             the_title();
-             the_post();
-             //the_post_thumbnail('single_large');
-             the_content();
-
-           }
-         }
-       ?>
+<!--      Header        -->
+<?php get_header();?>
 
 
+<!--    Top section   -->
+
+<!-- The image -->
+<div class="div_topp_img_hem">
+  <img src="<?php the_field('topp_bild'); ?>" alt="" class="topp_img_hem">
+</div>
+
+<!-- The text -->
+<div class="div_topp_text_hem">
+  <h2> <?php the_field('topp_titel'); ?></h2>
+
+  <p><?php the_field('topp_text'); ?></p>
+</div>
+
+
+
+<!--     Footer       -->
 <?php get_footer(); ?>

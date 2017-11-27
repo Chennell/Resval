@@ -1,3 +1,6 @@
+
+<?php get_header(); ?>
+
 <main>
 
        <!-- Get Post Content -->
@@ -5,7 +8,13 @@
          <!-- wrapper for left column -->
        <div class="column-left">
          <!-- Get Featured Image -->
-         <?php the_post_thumbnail( 'single_large' ); ?>
+         <div class="contact-container">
+           <span class="contact-content"><?php the_field( 'kontakt_person' ); ?></span>
+           <span class="contact-content"><?php the_field( 'telefonnummer' ); ?></span>
+           <span class="contact-content"><?php the_field( 'email' ); ?></span>
+           <span class="contact-content"><?php the_field( 'adress' ); ?></span>
+           <span class="contact-content"><?php the_field( 'beskrivning' ); ?></span>
+         </div>
        </div>
        <!-- wrapper for right column -->
        <div class="column-right">
@@ -13,10 +22,11 @@
            <h2 class="page-title"><?php the_title(); ?></h2>
            <!-- Get Page Content (Text) -->
            <?php the_content(); ?>
+           <?php dynamic_sidebar('contact-form'); ?>
            <!-- Sponsor Area -->
            <div class="sponsor-container">
              <a href="<?php the_field('sponsor-url'); ?>">
-               <img src="<?php echo wp_get_attachment_image_url(get_field('sponsrade_loggor'), 'about_logo'); ?>" />
+               <img scr="<?php the_field('sponsrade_loggor'); ?>" />
              </a>
            </div>
 
@@ -25,3 +35,5 @@
       <!-- Stop while loop and if statement -->
        <?php endwhile; endif;?>
 </main>
+
+<?php get_footer(); ?>

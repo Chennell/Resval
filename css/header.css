@@ -1,6 +1,13 @@
 /*-- HEADER ------------------------------------------------------------------*/
 header {
   padding: 25px 25px;
+  overflow: hidden;
+}
+.logo {
+  width: 10%;
+}
+#logocontainer {
+  display: inline;
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 #mainmenu {

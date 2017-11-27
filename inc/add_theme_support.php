@@ -9,5 +9,6 @@ add_theme_support('post-formats');
 
 add_theme_support( 'custom-header' );
 
-add_image_size( 'front_page_img_single', 660, 400, false );
+add_image_size( 'front_page_img_single', 660, 400, true );
+add_image_size( 'about_logo', 100, 100, true );
 ?>

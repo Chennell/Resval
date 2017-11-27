@@ -2,7 +2,7 @@
 /*
 Theme Name: Resval theme
 Text Domain: resval_theme
-Author: [Jessica]
+Author: [Jessica, Birna, Karolin]
 Description: A theme to present creative work
 
 */
@@ -48,10 +48,13 @@ h2.page-title {
 /*-- HEADER ------------------------------------------------------------------*/
 header {
   padding: 25px 25px;
+  overflow: hidden;
 }
-
-.logo{
+.logo {
   width: 10%;
+}
+#logocontainer {
+  display: inline;
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 #mainmenu {

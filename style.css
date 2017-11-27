@@ -49,6 +49,10 @@ h2.page-title {
 header {
   padding: 25px 25px;
 }
+
+.logo{
+  width: 10%;
+}
 /*-- NAVIGATION --------------------------------------------------------------*/
 #mainmenu {
   float: right;

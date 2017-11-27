@@ -22,6 +22,7 @@
            <h2 class="page-title"><?php the_title(); ?></h2>
            <!-- Get Page Content (Text) -->
            <?php the_content(); ?>
+          
            <?php dynamic_sidebar('contact-form'); ?>
            <!-- Sponsor Area -->
            <div class="sponsor-container">

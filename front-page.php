@@ -2,8 +2,7 @@
 <?php get_header();?>
 
 
-<!--    Top section   -->
-
+<!--    Top section   ------------------------------------------------->
 <!-- The image -->
 <div class="div_topp_img_hem">
   <img src="<?php the_field('topp_bild'); ?>" alt="" class="topp_img_hem">
@@ -15,6 +14,13 @@
 
   <p><?php the_field('topp_text'); ?></p>
 </div>
+
+<!-- The button -->
+
+<button type="button" name="button">
+  <a href="">Text here</a>
+</button>
+
 
 
 

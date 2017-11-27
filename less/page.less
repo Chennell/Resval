@@ -11,17 +11,21 @@ div.column-left, div.column-right{
 
 // -- COLUMN LEFT IMAGE --------------------------------------------------------
 
+div.column-left{
+  padding: 120px;
+}
+
 div.column-left >img{
   width: 100%;
   height: auto !important;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 // -- COLUMN RIGHT TEXT --------------------------------------------------------
 
 // -- Coloured Background
 div.column-right{
-  background-color: #7ea989;
+  background-color: #95d3c3;
 }
 
 // -- Scroll Component
@@ -32,6 +36,6 @@ div.column-right>div.scroll-y{
 }
 
 //-- text stylings
-div.column-right>div.scroll-y>p{
-  // color: white;
+div.column-right>div.scroll-y>p:last-child{
+  padding-bottom: 40px;
 }

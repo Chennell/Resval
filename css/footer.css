@@ -1,5 +1,6 @@
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
-  padding: 25px,
+  padding: 50px 25px;
+  clear: both;
   background: white;
 }

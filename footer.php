@@ -1,7 +1,8 @@
 
 <footer>
  © copyright - Hela Resan
+ <?php wp_footer(); ?>
 </footer>
-<?php wp_footer(); ?>
+
 </body>
 </html>

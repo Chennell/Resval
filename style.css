@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,400i,700');
 /*
 Theme Name: Resval theme
 Text Domain: resval_theme
@@ -5,8 +6,6 @@ Author: [Jessica]
 Description: A theme to present creative work
 
 */
-
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700');
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -79,8 +78,7 @@ nav > div.menu-menu-container > ul.menu > li {
 }
 div.column-left,
 div.column-right {
-  width: 50%;
-  float: left;
+  width: 100%;
   padding: 50px;
   box-sizing: border-box;
 }

@@ -5,19 +5,24 @@
     <?php
     $args = array(
       'post_type'       =>  'project',
-      'posts_per_page'  => 6,
+      'posts_per_page'  => -1,
     );
+echo "hej";
+$project_query = new WP_Query($args);
 
 ?>
 <!--THIS loops through and displays the projects-->
+hej
 <div class="gridParent">
     <?php
-    if ($projects_query->have_posts()): while ($projects_query->have_posts()): $projects_query->the_post();
+    
+    if ($project_query->have_posts()): while ($project_query->have_posts()): $project_query->the_post();
 
-        get_template_part('partials/postgrid');
+        get_template_part('partials/project-grid');
 
         endwhile; endif;
     ?>
+</div>
 </div> 
 
 <?php

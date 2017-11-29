@@ -5,19 +5,11 @@ Text Domain: resval_theme
 Author: [Jessica]
 Description: A theme to present creative work
 
-Colors
-Mint green: #95d3c3
-Lighter green: #7ea989
-Dark green: #2e5047
-Yellow: #f1d417
-
 */
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #414042;
-  padding: 0;
-  margin: 0;
 }
 h1,
 h2,
@@ -26,6 +18,21 @@ h4,
 h5,
 h6 {
   font-family: 'Oswald', sans-serif !important;
+  font-weight: 500;
+}
+h1 {
+  display: inline-block;
+}
+h4 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+}
+* {
+  padding: 0;
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -33,20 +40,31 @@ ul {
 a {
   text-decoration: none;
 }
+h2.page-title {
+  display: inline-block;
+  padding: 40px 0px 20px 0px;
+  font-size: 30px;
+}
 /*-- HEADER ------------------------------------------------------------------*/
-
+header {
+  padding: 25px 25px;
+  overflow: hidden;
+}
+.logo {
+  width: 10%;
+}
+#logocontainer {
+  display: inline;
+}
 /*-- NAVIGATION --------------------------------------------------------------*/
-/*-- outtest box of nav --*/
 #mainmenu {
   float: right;
   padding: 25px;
 }
-/*-- inline menu elements --*/
 nav > div.menu-menu-container > ul.menu > li {
   display: inline;
   padding: 10px 10px 10px 10px;
 }
-/* ----   Front page -------------------------------------------*/
 /*   The image   */
 .div_topp_img_hem {
   width: 50%;
@@ -58,14 +76,35 @@ nav > div.menu-menu-container > ul.menu > li {
 .div_topp_text_hem {
   width: 50%;
 }
-/*-- FOOTER ------------------------------------------------------------------*/
 div.column-left,
 div.column-right {
   width: 50%;
   float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+div.column-left {
+  padding: 120px;
 }
 div.column-left > img {
   width: 100%;
-  height: auto;
-  margin: 0 auto;
+  height: auto !important;
+  margin: auto auto;
+}
+div.column-right {
+  background-color: #95d3c3;
+}
+div.column-right > div.scroll-y {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+div.column-right > div.scroll-y > p:last-child {
+  padding-bottom: 40px;
+}
+/*-- FOOTER ------------------------------------------------------------------*/
+footer {
+  padding: 50px 25px;
+  clear: both;
+  background: white;
 }

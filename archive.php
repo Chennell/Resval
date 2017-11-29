@@ -7,12 +7,24 @@
       'post_type'       =>  'project',
       'posts_per_page'  => -1,
     );
-echo "hej";
-$project_query = new WP_Query($args);
+    $project_query = new WP_Query($args);
+
+    $my_query = new WP_Query($args);
+      
+    //--- GETS the post types, filters.
+    $terms = get_terms(array('taxonomy' => 'project_type', 'hide_empty' => true ));
+    foreach ($terms as $value) { 
+    ?>
+    <span class="project_type">
+        <a href="/project_type/<?php echo $value->slug ?>">
+            <?php echo $value->name ?>
+        </a>
+    </span>
+<?php
+    }
 
 ?>
 <!--THIS loops through and displays the projects-->
-hej
 <div class="gridParent">
     <?php
     

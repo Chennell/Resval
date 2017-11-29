@@ -9,10 +9,10 @@
     );
     $project_query = new WP_Query($args);
 
-    $my_query = new WP_Query($args);
+    //$my_query = new WP_Query($args);
       
     //--- GETS the post types, filters.
-    $terms = get_terms(array('taxonomy' => 'project_type', 'hide_empty' => true ));
+    $terms = get_terms(array('taxonomy' => 'project', 'hide_empty' => true ));
     foreach ($terms as $value) { 
     ?>
     <span class="project_type">

@@ -1,11 +1,94 @@
-/*   The image   */
-.div_topp_img_hem {
-  width: 50%;
+.frontPageContainer {
+  padding: 11px;
 }
 .topp_img_hem {
   width: 100%;
 }
 /*    The text    */
 .div_topp_text_hem {
-  width: 50%;
+  margin: 11px 0;
+}
+.title_FP {
+  text-align: center;
+}
+.buttonContainerFP {
+  text-align: center;
+}
+.buttonContainerFP > button {
+  padding: 11px;
+  background-color: #95d3c3;
+  width: 40%;
+  margin-top: 22px;
+  border: none;
+}
+.buttonContainerFP > button > a {
+  color: ##555555;
+}
+.mostPopularProjectsFP {
+  margin: 22px 0;
+}
+.mostPopularProjectsFP > ul > li > div {
+  margin: 11px;
+  border: 2px dashed black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.mostPopularProjectsFP > ul > li > div > p {
+  margin: 30px;
+}
+.contactInfoFP {
+  margin: 22px 0;
+}
+/* ---------------------------------------------------------------------------------------------------------------------
+       ipad version
+  ----------------------*/
+@media only screen and (min-width: 768px) {
+  .frontPageContainer {
+    padding: 44px;
+  }
+  .title_FP {
+    text-align: left;
+  }
+  .topSectionFP {
+    overflow: hidden;
+    margin: 0 -22px;
+  }
+  .topLeftFP {
+    width: 50%;
+    float: left;
+  }
+  .topRightFP {
+    float: right;
+    width: 50%;
+  }
+  .div_topp_img_hem {
+    padding: 0 11px;
+    margin: 0 22px;
+  }
+  .div_topp_text_hem {
+    padding: 0 11px;
+    margin: 0 22px;
+  }
+  .mostPopularProjectsFP {
+    margin: 44px 0;
+  }
+  .mostPopularProjectsFP > ul {
+    overflow: hidden;
+    margin: 0 -11px;
+  }
+  .mostPopularProjectsFP > ul > li {
+    float: left;
+    width: 33.3333%;
+  }
+  .mostPopularProjectsFP > ul > li > div {
+    margin: 11px;
+    border: 2px dashed black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+  .mostPopularProjectsFP > ul > li > div > p {
+    margin: 30px;
+  }
 }

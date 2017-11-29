@@ -1,16 +1,142 @@
-// -- FRONT PAGE ---------------------------------------------------------------
+// -- COLORS -------------------------------------------------------------------
 
-// -- SECTION ABOUT ------------------------------------------------------------
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
+@color-darkgrey: ##555555;
+// -- GRID ---------------------------------------------------------------------
 
-/*   The image   */
-.div_topp_img_hem{
-  width: 50%
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
+
+
+
+  // -- FRONT PAGE ---------------------------------------------------------------
+  .frontPageContainer{
+    padding: @ws_1;
+  }
+
+  // -- SECTION ABOUT --------------------------------------------
+  .topp_img_hem{
+    width: 100%;
+  }
+
+  /*    The text    */
+  .div_topp_text_hem{
+    margin: @ws_1 0;
+  }
+
+// The titles
+  .title_FP{
+    text-align: center;
+  }
+
+.buttonContainerFP{
+  text-align: center;
 }
-.topp_img_hem{
-  width: 100%;
+.buttonContainerFP>button{
+  padding: @ws_1;
+  background-color: @color-mintgreen;
+  width: 40%;
+  margin-top: @ws_2;
+  border:none;
 }
 
-/*    The text    */
-.div_topp_text_hem{
-  width: 50%;
+.buttonContainerFP>button>a{
+  color:@color-darkgrey;
+}
+  // Most popular views section -------------------------------------------------------
+
+  .mostPopularProjectsFP{
+    margin: @ws_2 0;
+  }
+
+  .mostPopularProjectsFP>ul>li>div{
+     margin: @ws_1;
+     border: 2px dashed black;
+     border-radius: 50%;
+     height:100px;
+     width: 100px;
+
+   }
+   .mostPopularProjectsFP>ul>li>div>p{
+     margin: 30px;
+   }
+
+
+// Contact info section -----------------------------------------------------------
+  .contactInfoFP{
+    margin: @ws_2 0;
+
+  }
+
+/* ---------------------------------------------------------------------------------------------------------------------
+       ipad version
+  ----------------------*/
+
+
+ @media only screen and (min-width : 768px) {
+   .frontPageContainer{
+     padding: @ws_4;
+   }
+
+   // The titles
+    .title_FP{
+       text-align: left;
+     }
+ // Top section ----------------------------------------------------
+   .topSectionFP{
+     overflow:hidden;
+     margin: 0 -@ws_2;
+
+   }
+   .topLeftFP{
+     width: 50%;
+     float:left;
+   }
+
+   .topRightFP{
+     float:right;
+     width: 50%;
+   }
+
+   .div_topp_img_hem{
+     padding: 0 @ws_1;
+     margin: 0 @ws_2;
+   }
+   .div_topp_text_hem{
+     padding: 0 @ws_1;
+     margin: 0 @ws_2;
+   }
+
+// Most popular views section ----------------------------------------------------
+   .mostPopularProjectsFP{
+     margin: @ws_4 0;
+     }
+   .mostPopularProjectsFP>ul{
+       overflow:hidden;
+       margin: 0 -@ws_1;
+   }
+   .mostPopularProjectsFP>ul>li{
+     float:left;
+     width: 33.3333%;
+   }
+
+    .mostPopularProjectsFP>ul>li>div{
+       margin: @ws_1;
+       border: 2px dashed black;
+       border-radius: 50%;
+       height: 100px;
+       width: 100px;
+
+     }
+    .mostPopularProjectsFP>ul>li>div>p{
+      margin: 30px;
+    }
+
 }

@@ -142,6 +142,20 @@ div.column-right > div.form-container {
   margin: auto;
   text-align: center;
 }
+div.column-right > div.scroll-y > div.ingredients-container {
+  padding-bottom: 44px;
+}
+div.column-right > div.scroll-y > div.ingredients-container > span.effort,
+span.time,
+span.groupsize,
+span.budget {
+  display: inline;
+  text-align: center;
+  padding-left: 22px;
+}
+div.column-left > div.scroll-y > div.ingredients-container:first-child {
+  padding-left: 0;
+}
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
   padding: 50px 25px;

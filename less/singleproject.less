@@ -1,0 +1,37 @@
+// -- COLORS -------------------------------------------------------------------
+
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
+
+// -- GRID ---------------------------------------------------------------------
+
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
+
+
+//-- RECIPE DECRIPTION
+
+div.column-right>div.scroll-y>div.ingredients-container{
+  padding-bottom: @ws_4;
+}
+
+
+//-- ICONS AS INGREDIENTS FOR EACH RECIPE/PROJECT
+
+//-- Align icons
+div.column-right>div.scroll-y>div.ingredients-container>span.effort, span.time, span.groupsize, span.budget {
+  display: inline;
+  text-align: center;
+  padding-left: @ws_2;
+}
+
+//-- first icon no padding
+div.column-left>div.scroll-y>div.ingredients-container:first-child{
+  padding-left: 0;
+}

@@ -1,14 +1,26 @@
 div.column-right > div.scroll-y > div.ingredients-container {
   padding-bottom: 44px;
+  text-align: center;
 }
 div.column-right > div.scroll-y > div.ingredients-container > span.effort,
-span.time,
-span.groupsize,
-span.budget {
+div.column-right > div.scroll-y > div.ingredients-container > span.time,
+div.column-right > div.scroll-y > div.ingredients-container > span.groupsize,
+div.column-right > div.scroll-y > div.ingredients-container > span.budget {
   display: inline;
-  text-align: center;
+  width: 50px;
+  height: 50px;
   padding-left: 22px;
 }
-div.column-left > div.scroll-y > div.ingredients-container:first-child {
-  padding-left: 0;
+div.column-right > div.scroll-y > div.ingredients-container:first-child {
+  padding-left: 0 !important;
+}
+div.column-right > div.scroll-y > div.ingredients-container > span.effort > img,
+div.column-right > div.scroll-y > div.ingredients-container > span.time > img,
+div.column-right > div.scroll-y > div.ingredients-container > span.groupsize > img,
+div.column-right > div.scroll-y > div.ingredients-container > span.budget > img {
+  width: 50px;
+  height: auto;
+}
+div.column-left > div.scroll-y > div.project-description > span.kontakt {
+  margin-top: 44px;
 }

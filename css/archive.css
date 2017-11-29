@@ -1,0 +1,46 @@
+.post-grid {
+  padding: 22px;
+}
+span.a-project {
+  margin: 11px;
+}
+a h3.title-grid {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  vertical-align: middle;
+  line-height: 300px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.post-grid-pic a img {
+  position: relative;
+  margin-top: 11px;
+}
+.post-grid-pic a img:hover {
+  filter: none;
+  -webkit-transition: filter 0.6s;
+  -moz-transition: filter 0.6s;
+  transition: filter 0.6s;
+}
+h3.title-grid:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) {
+  div.gridParent {
+    display: flex;
+    flex: wrap;
+  }
+  a h3.title-grid {
+    display: inline-block;
+  }
+}

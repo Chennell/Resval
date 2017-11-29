@@ -1,25 +1,43 @@
-.post-grid{
-    margin-top: 10px;
-    margin-left: -10px;
-}
+// -- COLORS -------------------------------------------------------------------
 
-div.gridParent{
-    display: flex;
-    flex: wrap;
-    margin-top: 10px;
-}
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
 
-//span.onePost{
-//   margin: 10px;
+// -- GRID ---------------------------------------------------------------------
+
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
+
+
+
+//-----Here we start with the styling-------------------
+
+//span.project_typea{
+//    color: blue;
+//    margin: 20px;
 //}
+.post-grid{
+    padding: @ws_2;
+//    margin-top: @ws_1;
+//    margin-left: -10px;
+}
+
+
+
+span.a-project{
+   margin: @ws_1;
+}
 
 a h3.title-grid{
     position: absolute;
-    display: inline;
     z-index: 10;
     text-align: center;
-    font-family: 'lato';
-    font-weight: 300;
     background-color: rgba(0,0,0,0.5);
     width: 300px;
     height: 300px;
@@ -29,12 +47,11 @@ a h3.title-grid{
     line-height: 300px;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 10px;
 }
 
 .post-grid-pic a img{
     position: relative;
-    margin-top: 10px;
+    margin-top: @ws_1;
 }
 
 .post-grid-pic a img:hover{
@@ -49,4 +66,21 @@ h3.title-grid:hover{
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
     transition: opacity 0.6s;
+}
+
+
+
+// -- MEDIA QUERY --------------------------------------------------------------
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+    
+    div.gridParent{
+    display: flex;
+    flex: wrap;
+    //margin-top: @ws_1;
+    }
+    
+    a h3.title-grid{
+        display: inline-block;
+    }
 }

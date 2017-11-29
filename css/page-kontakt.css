@@ -1,0 +1,11 @@
+input.contact-label,
+textarea.contact-label {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  border-bottom: solid 1px white !important;
+}
+div.column-right > div.form-container {
+  margin: auto;
+  text-align: center;
+}

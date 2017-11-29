@@ -15,7 +15,7 @@
            <?php the_content(); ?>
            <!-- Sponsor Area -->
            <div class="sponsor-container">
-             <a href="<?php the_field('sponsor-url'); ?>">
+             <a href="<?php the_field('sponsrade_url'); ?>">
                <img src="<?php echo wp_get_attachment_image_url(get_field('sponsrade_loggor'), 'about_logo'); ?>" />
              </a>
            </div>

@@ -1,21 +1,37 @@
+// -- COLORS -------------------------------------------------------------------
+
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
+
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
 
 // -- COLUMN LEFT AND RIGHT ----------------------------------------------------
 
 div.column-left, div.column-right{
   width: 100%;
-  padding: 22px;
+  padding: @ws_2;
+  box-sizing: border-box;
 }
 
 
 // -- COLUMN LEFT IMAGE --------------------------------------------------------
 
 div.column-left{
-  padding: 66px 44px;
+  padding: @ws_6 @ws_4;
+  box-sizing: border-box;
 }
 
 div.column-left >img{
-  width: 100vW;
-  height: auto !important;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
   margin: auto auto;
 }
 
@@ -23,17 +39,17 @@ div.column-left >img{
 
 // -- Coloured Background
 div.column-right{
-  background-color: #95d3c3;
+  background-color: @color-mintgreen;
 }
 
 // -- Scroll Component
 div.column-right>div.scroll-y{
-  padding: 44px;
+  padding: @ws_4;
 }
 
 //-- text stylings
 div.column-right>div.scroll-y>p:last-child{
-  padding-bottom: 40px;
+  padding-bottom: @ws_4;
 }
 
 
@@ -49,21 +65,22 @@ div.column-right>div.scroll-y>p:last-child{
   div.column-left, div.column-right{
     width: 50%;
     float: left;
-    padding: 44px;
+    padding: @ws_4;
     box-sizing: border-box;
   }
 
   // -- COLUMN LEFT IMAGE ------------------------------------------------------
 
   div.column-left{
-    padding: 88px;
+    padding: @ws_8;
     vertical-align: middle;
+    height: 350px;
   }
 
 
   // -- COLUMN RIGHT TEXT ------------------------------------------------------
   div.column-right{
-    padding: 44px 0 44px 44px;
+    padding: @ws_4;
   }
 
   // -- Scroll Component
@@ -75,7 +92,7 @@ div.column-right>div.scroll-y>p:last-child{
 
   //-- text stylings
   div.column-right>div.scroll-y>p:last-child{
-    padding-bottom: 40px;
+    padding-bottom: @ws_4;
   }
 
 }

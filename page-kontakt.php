@@ -18,18 +18,12 @@
        </div>
        <!-- wrapper for right column -->
        <div class="column-right">
-         <div class="scroll-y">
+         <div class="form-container">
            <h2 class="page-title"><?php the_title(); ?></h2>
            <!-- Get Page Content (Text) -->
            <?php the_content(); ?>
-          
+
            <?php dynamic_sidebar('contact-form'); ?>
-           <!-- Sponsor Area -->
-           <div class="sponsor-container">
-             <a href="<?php the_field('sponsor-url'); ?>">
-               <img scr="<?php the_field('sponsrade_loggor'); ?>" />
-             </a>
-           </div>
 
          </div>
         </div>

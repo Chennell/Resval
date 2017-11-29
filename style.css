@@ -84,13 +84,16 @@ div.column-left,
 div.column-right {
   width: 100%;
   padding: 22px;
+  box-sizing: border-box;
 }
 div.column-left {
   padding: 66px 44px;
+  box-sizing: border-box;
 }
 div.column-left > img {
-  width: 100vW;
-  height: auto !important;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
   margin: auto auto;
 }
 div.column-right {
@@ -100,7 +103,7 @@ div.column-right > div.scroll-y {
   padding: 44px;
 }
 div.column-right > div.scroll-y > p:last-child {
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -114,9 +117,10 @@ div.column-right > div.scroll-y > p:last-child {
   div.column-left {
     padding: 88px;
     vertical-align: middle;
+    height: 350px;
   }
   div.column-right {
-    padding: 44px 0 44px 44px;
+    padding: 44px;
   }
   div.column-right > div.scroll-y {
     overflow-y: scroll;
@@ -124,8 +128,19 @@ div.column-right > div.scroll-y > p:last-child {
     height: 350px;
   }
   div.column-right > div.scroll-y > p:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
+}
+input.contact-label,
+textarea.contact-label {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  border-bottom: solid 1px white !important;
+}
+div.column-right > div.form-container {
+  margin: auto;
+  text-align: center;
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {

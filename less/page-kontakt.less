@@ -1,3 +1,37 @@
-#wpcf7-f65-p52-o1 > wpcf7-form{
+.appearance (@value: none) {
+    -webkit-appearance:     @value;
+    -moz-appearance:        @value;
+    -ms-appearance:         @value;
+    -o-appearance:          @value;
+    appearance:             @value;
+}
 
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
+
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
+
+
+//-- CONTACT FORM --------------------------------------------------------------
+input.contact-label, textarea.contact-label{
+  -webkit-appearance:none;
+  border: none;
+  background: none;
+  border-bottom: solid 1px white !important;
+}
+
+div.column-right{
+  // background-color: @color-yellow;
+}
+
+div.column-right > div.form-container{
+  margin: auto;
+  text-align: center;
 }

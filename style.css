@@ -166,8 +166,9 @@ nav > div.menu-menu-container > ul.menu > li {
 .post-grid {
   padding: 22px;
 }
-span.a-project {
-  margin: 11px;
+ul.gridParent {
+  overflow: hidden;
+  margin-top: 11px;
 }
 a h3.title-grid {
   position: absolute;
@@ -201,12 +202,31 @@ h3.title-grid:hover {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
-  div.gridParent {
-    display: flex;
-    flex: wrap;
+  .gridParent li {
+    float: left;
   }
   a h3.title-grid {
     display: inline-block;
+  }
+  span.a-project {
+    margin: 11px;
+  }
+  div.filterbox {
+    overflow: hidden;
+  }
+  ul.project_type {
+    float: right;
+  }
+  li.filter {
+    display: inline;
+  }
+  li.filter a {
+    text-transform: uppercase;
+    border: solid 1px #f1d417;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 11px;
+    float: left;
   }
 }
 div.column-left,

@@ -7,6 +7,7 @@ header {
   z-index: 100;
   top: 32px;
   left: 0;
+  box-sizing: border-box;
   background: -webkit-linear-gradient(#ffffff 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: -o-linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -24,4 +25,18 @@ header {
 nav > div.menu-menu-container > ul.menu > li {
   display: inline;
   padding: 11px;
+}
+nav > div.menu-menu-container > ul.menu > li:hover {
+  border-bottom: 1px solid #7ea989;
+  padding-bottom: 0;
+}
+nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
+  background-color: #7ea989;
+  border-radius: 10px;
+}
+nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
+  border: 1px solid #7ea989 !important;
+  background: none;
+  padding-bottom: 11px;
+  box-sizing: border-box;
 }

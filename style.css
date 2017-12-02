@@ -63,6 +63,7 @@ header {
   z-index: 100;
   top: 32px;
   left: 0;
+  box-sizing: border-box;
   background: -webkit-linear-gradient(#ffffff 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: -o-linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -80,6 +81,20 @@ header {
 nav > div.menu-menu-container > ul.menu > li {
   display: inline;
   padding: 11px;
+}
+nav > div.menu-menu-container > ul.menu > li:hover {
+  border-bottom: 1px solid #7ea989;
+  padding-bottom: 0;
+}
+nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
+  background-color: #7ea989;
+  border-radius: 10px;
+}
+nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
+  border: 1px solid #7ea989 !important;
+  background: none;
+  padding-bottom: 11px;
+  box-sizing: border-box;
 }
 .frontPageContainer {
   padding: 11px;
@@ -175,9 +190,6 @@ nav > div.menu-menu-container > ul.menu > li {
     margin: 30px;
   }
 }
-.post-grid {
-  padding: 22px;
-}
 ul.gridParent {
   overflow: hidden;
   margin-top: 11px;
@@ -198,34 +210,44 @@ a h3.title-grid {
   color: #ffffff;
 }
 div.info-box {
-  display: none;
   position: absolute;
   text-align: center;
-  z-index: 11;
+  margin-left: 290px;
+  margin-top: 67px;
+  height: 150px;
+  padding: 11px;
+  opacity: 1;
+  transition: 0.6s linear;
+}
+div.info-box p {
+  display: none;
+  overflow: hidden;
 }
 .post-grid-pic a img {
   position: relative;
   margin-top: 11px;
 }
-.post-grid-pic a img:hover {
-  filter: none;
-  -webkit-transition: filter 0.6s;
-  -moz-transition: filter 0.6s;
-  transition: filter 0.6s;
-}
-h3.title-grid:hover {
+.a-project:hover h3.title-grid {
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
-div.info-box:hover {
-  display: block;
-  z-index: 11;
+.a-project:hover div.info-box {
   background-color: #95d3c3;
+  width: 178px;
+  margin-right: 0;
+  margin-left: 111px;
+  opacity: 1;
+}
+.a-project:hover div.info-box p {
+  display: block;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
+  .post-grid {
+    padding-top: 88px;
+  }
   .gridParent li {
     float: left;
   }
@@ -250,7 +272,7 @@ div.info-box:hover {
     border-radius: 5px;
     padding: 5px;
     margin: 11px;
-    float: right;
+    float: left;
   }
   input.form-control {
     -webkit-appearance: none;

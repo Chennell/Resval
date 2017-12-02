@@ -1,3 +1,9 @@
+//The colours
+@color-mintgreen: #95d3c3;
+@color-lightgreen: #7ea989;
+@color-darkgreen: #2e5047;
+@color-yellow: #f1d417;
+
 //whitespace (ws)
 @ws_1: 11px;
 @ws_2: 22px;
@@ -18,6 +24,7 @@ header{
   //-- need to be changed before handing in
   top: 32px;
   left: 0;
+    box-sizing: border-box;
   background: -webkit-linear-gradient(#ffffff 60%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: -o-linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -43,4 +50,28 @@ header{
 nav>div.menu-menu-container>ul.menu>li{
   display: inline;
   padding: @ws_1;
+}
+
+
+// ----- Hover---------------
+nav>div.menu-menu-container>ul.menu>li:hover{
+    border-bottom: 1px solid @color-lightgreen;
+    padding-bottom: 0;
+}
+
+//nav>div.menu-menu-container>ul.menu>li:active{
+//    border-bottom: 1px solid @color-lightgreen;
+//    padding-bottom: 0;
+//}
+
+nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
+    background-color: @color-lightgreen;
+    border-radius: 10px;
+}
+
+nav>div.menu-menu-container>ul.menu>li:nth-last-child(1):hover{
+    border: 1px solid @color-lightgreen !important; 
+    background: none;
+    padding-bottom: @ws_1;
+    box-sizing: border-box;
 }

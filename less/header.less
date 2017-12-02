@@ -30,9 +30,18 @@ header{
   background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
 }
 
+
+//hamburger menu
+span.responsive-menu-box{
+    margin-top: @ws_6;
+}
+
 //-- LOGO ----------------------------------------------------------------------
 .logo{
-  width: 10%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #logocontainer{
@@ -40,38 +49,59 @@ header{
 }
 
 /*-- NAVIGATION --------------------------------------------------------------*/
+//Hamburger styling
 
-// -- nav wrapper
-#mainmenu{
-  float: right;
+div#responsive-menu-wrapper{
+    padding-top: @ws_8;
+}
+//hides the search
+#responsive-menu-search-box {
+    display: none;
 }
 
-// -- inline all nav elements
-nav>div.menu-menu-container>ul.menu>li{
-  display: inline;
-  padding: @ws_1;
-}
 
 
-// ----- Hover---------------
-nav>div.menu-menu-container>ul.menu>li:hover{
-    border-bottom: 1px solid @color-lightgreen;
-    padding-bottom: 0;
-}
+//--------------------THIS IS THE BIG MENU
+@media only screen and (min-width : 768px){
 
-//nav>div.menu-menu-container>ul.menu>li:active{
-//    border-bottom: 1px solid @color-lightgreen;
-//    padding-bottom: 0;
-//}
+    .logo{
+        width: 10%;
+        display: inline;
+    }
+    
+    
+    // -- nav wrapper
+    #mainmenu{
+      float: right;
+    }
 
-nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
-    background-color: @color-lightgreen;
-    border-radius: 10px;
-}
+    // -- inline all nav elements
+    nav>div.menu-menu-container>ul.menu>li{
+      display: inline;
+      padding: @ws_1;
+    }
 
-nav>div.menu-menu-container>ul.menu>li:nth-last-child(1):hover{
-    border: 1px solid @color-lightgreen !important; 
-    background: none;
-    padding-bottom: @ws_1;
-    box-sizing: border-box;
+
+    // ----- Hover---------------
+    nav>div.menu-menu-container>ul.menu>li:hover{
+        border-bottom: 1px solid @color-lightgreen;
+        padding-bottom: 0;
+    }
+
+    //nav>div.menu-menu-container>ul.menu>li:active{
+    //    border-bottom: 1px solid @color-lightgreen;
+    //    padding-bottom: 0;
+    //}
+
+    nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
+        background-color: @color-lightgreen;
+        border-radius: 10px;
+    }
+
+    nav>div.menu-menu-container>ul.menu>li:nth-last-child(1):hover{
+        border: 1px solid @color-lightgreen !important; 
+        background: none;
+        padding-bottom: @ws_1;
+        box-sizing: border-box;
+    }
 }

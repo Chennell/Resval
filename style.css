@@ -177,12 +177,19 @@ a h3.title-grid {
   background-color: rgba(0, 0, 0, 0.5);
   width: 300px;
   height: 300px;
+  -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
   vertical-align: middle;
   line-height: 300px;
   text-transform: uppercase;
   color: #ffffff;
+}
+div.info-box {
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 11;
 }
 .post-grid-pic a img {
   position: relative;
@@ -199,6 +206,11 @@ h3.title-grid:hover {
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
+}
+div.info-box:hover {
+  display: block;
+  z-index: 11;
+  background-color: #95d3c3;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -226,7 +238,28 @@ h3.title-grid:hover {
     border-radius: 5px;
     padding: 5px;
     margin: 11px;
+    float: right;
+  }
+  input.form-control {
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #95d3c3;
+    width: 198px;
+    margin-right: 22px;
     float: left;
+    padding-top: 22px;
+  }
+  input.search-submit {
+    -webkit-appearance: none;
+    background: none;
+    border: solid 1px #95d3c3;
+    border-radius: 10px;
+    padding: 11px;
+  }
+  input.search-submit:hover {
+    background-color: #95d3c3;
+    color: #fff;
   }
 }
 div.column-container {

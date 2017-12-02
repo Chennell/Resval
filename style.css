@@ -318,6 +318,16 @@ div.column-left > img {
 }
 div.column-right {
   background-color: #95d3c3;
+  margin-left: 290px;
+  animation: 1s ease-out 2s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 div.column-right > div.scroll-y {
   padding: 66px;
@@ -419,6 +429,23 @@ div.column-right > div.scroll-y > div.ingredients-container > span.budget > img 
 }
 div.column-left > div.scroll-y > div.project-description > span.kontakt {
   margin-top: 44px;
+}
+main {
+  margin-top: 44px;
+}
+div.expander-container {
+  width: 100%;
+  padding: 0 88px;
+  box-sizing: border-box;
+}
+div.expander-container > a.expander-trigger {
+  display: block;
+}
+div.expander-container > div.expanding-area {
+  display: none;
+}
+.show {
+  display: block;
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {

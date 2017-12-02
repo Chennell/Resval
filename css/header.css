@@ -1,7 +1,7 @@
 /*-- HEADER ------------------------------------------------------------------*/
 header {
-  padding: 25px 25px;
   overflow: hidden;
+  padding: 0 44px 44px 0;
 }
 .logo {
   width: 10%;
@@ -12,9 +12,8 @@ header {
 /*-- NAVIGATION --------------------------------------------------------------*/
 #mainmenu {
   float: right;
-  padding: 25px;
 }
 nav > div.menu-menu-container > ul.menu > li {
   display: inline;
-  padding: 10px 10px 10px 10px;
+  padding: 11px;
 }

@@ -10,9 +10,13 @@
          <!-- Get Featured Image -->
          <div class="contact-container">
            <span class="contact-content"><?php the_field( 'kontakt_person' ); ?></span>
+           <br>
            <span class="contact-content"><?php the_field( 'telefonnummer' ); ?></span>
+           <br>
            <span class="contact-content"><?php the_field( 'email' ); ?></span>
+           <br>
            <span class="contact-content"><?php the_field( 'adress' ); ?></span>
+           <br>
            <span class="contact-content"><?php the_field( 'beskrivning' ); ?></span>
          </div>
        </div>

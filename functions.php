@@ -1,4 +1,7 @@
 <?php
+//acf plugin
+define('ACF_EARLY_ACCESS', '5');
+
 
 
 include("inc/reg_post_type.php");

@@ -1,8 +1,17 @@
+//whitespace (ws)
+@ws_1: 11px;
+@ws_2: 22px;
+@ws_4: 44px;
+@ws_6: 66px;
+@ws_8: 88px;
+
+
+
 /*-- HEADER ------------------------------------------------------------------*/
 
 header{
-  padding: 25px 25px;
   overflow: hidden;
+  padding: 0 @ws_4 @ws_4 0;
 }
 
 //-- LOGO ----------------------------------------------------------------------
@@ -19,11 +28,10 @@ header{
 // -- nav wrapper
 #mainmenu{
   float: right;
-  padding: 25px;
 }
 
 // -- inline all nav elements
 nav>div.menu-menu-container>ul.menu>li{
   display: inline;
-  padding: 10px 10px 10px 10px;
+  padding: @ws_1;
 }

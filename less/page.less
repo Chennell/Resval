@@ -13,7 +13,10 @@
 @ws_8: 88px;
 
 // -- COLUMN LEFT AND RIGHT ----------------------------------------------------
-
+div.column-container{
+  width: 100%;
+  overflow: hidden;
+}
 div.column-left, div.column-right{
   width: 100%;
   padding: @ws_2;
@@ -35,7 +38,7 @@ div.column-left >img{
   margin: auto auto;
 }
 
-// -- COLUMN RIGHT TEXT --------------------------------------------------------
+// -- COLUMN RIGHT  ------------------------------------------------------------
 
 // -- Coloured Background
 div.column-right{
@@ -52,7 +55,17 @@ div.column-right>div.scroll-y>p:last-child{
   padding-bottom: @ws_4;
 }
 
+// -- Sponsor Area
+div.sponsor-container{
+  margin-top: @ws_4;
+  width: 132px;
+  height: 88px;
+}
 
+div.sponsor-container> a > img.sponsor-logo{
+  width: 100%;
+  height: auto;
+}
 
 // -- MEDIA QUERY --------------------------------------------------------------
 
@@ -67,6 +80,8 @@ div.column-right>div.scroll-y>p:last-child{
     float: left;
     padding: @ws_4;
     box-sizing: border-box;
+    margin: auto 0;
+    vertical-align: middle;
   }
 
   // -- COLUMN LEFT IMAGE ------------------------------------------------------

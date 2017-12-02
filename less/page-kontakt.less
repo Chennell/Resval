@@ -21,17 +21,47 @@
 
 //-- CONTACT FORM --------------------------------------------------------------
 input.contact-label, textarea.contact-label{
-  -webkit-appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance:none;
+  appearance:none;
   border: none;
   background: none;
-  border-bottom: solid 1px white !important;
+  border-bottom: solid 1px white;
+  margin-bottom: @ws_2;
+  width: 100%;
+  max-width: 400px;
 }
 
+textarea.contact-label{
+  border: solid 1px white;
+}
 div.column-right{
   // background-color: @color-yellow;
 }
 
 div.column-right > div.form-container{
-  margin: auto;
   text-align: center;
+}
+
+
+//-- submit button
+input.submit-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance:none;
+  appearance:none;
+  border: solid 1px white;
+  padding: @ws_1;
+  background: none;
+  border-radius: 44px;
+  width: 88px;
+  color: white;
+}
+
+input.submit-button:hover{
+    background: white;
+    color: @color-mintgreen;
 }

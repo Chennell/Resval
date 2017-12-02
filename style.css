@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,400,400i,700');
 /*
 Theme Name: Resval theme
 Text Domain: resval_theme
@@ -9,6 +9,7 @@ Description: A theme to present creative work
 body {
   min-width: 320px;
   margin: 0 auto;
+  padding: 44px 0 0 44px;
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -22,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: 'Oswald', sans-serif !important;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 h1 {
   display: inline-block;
@@ -51,8 +52,8 @@ h2.page-title {
 }
 /*-- HEADER ------------------------------------------------------------------*/
 header {
-  padding: 25px 25px;
   overflow: hidden;
+  padding: 0 44px 44px 0;
 }
 .logo {
   width: 10%;
@@ -63,11 +64,10 @@ header {
 /*-- NAVIGATION --------------------------------------------------------------*/
 #mainmenu {
   float: right;
-  padding: 25px;
 }
 nav > div.menu-menu-container > ul.menu > li {
   display: inline;
-  padding: 10px 10px 10px 10px;
+  padding: 11px;
 }
 .frontPageContainer {
   padding: 11px;
@@ -229,6 +229,10 @@ h3.title-grid:hover {
     float: left;
   }
 }
+div.column-container {
+  width: 100%;
+  overflow: hidden;
+}
 div.column-left,
 div.column-right {
   width: 100%;
@@ -254,6 +258,15 @@ div.column-right > div.scroll-y {
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
 }
+div.sponsor-container {
+  margin-top: 44px;
+  width: 132px;
+  height: 88px;
+}
+div.sponsor-container > a > img.sponsor-logo {
+  width: 100%;
+  height: auto;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   div.column-left,
@@ -262,6 +275,8 @@ div.column-right > div.scroll-y > p:last-child {
     float: left;
     padding: 44px;
     box-sizing: border-box;
+    margin: auto 0;
+    vertical-align: middle;
   }
   div.column-left {
     padding: 88px;
@@ -283,13 +298,39 @@ div.column-right > div.scroll-y > p:last-child {
 input.contact-label,
 textarea.contact-label {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   border: none;
   background: none;
-  border-bottom: solid 1px white !important;
+  border-bottom: solid 1px white;
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 400px;
+}
+textarea.contact-label {
+  border: solid 1px white;
 }
 div.column-right > div.form-container {
-  margin: auto;
   text-align: center;
+}
+input.submit-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: solid 1px white;
+  padding: 11px;
+  background: none;
+  border-radius: 44px;
+  width: 88px;
+  color: white;
+}
+input.submit-button:hover {
+  background: white;
+  color: #95d3c3;
 }
 div.column-right > div.scroll-y > div.ingredients-container {
   padding-bottom: 44px;
@@ -319,7 +360,7 @@ div.column-left > div.scroll-y > div.project-description > span.kontakt {
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
-  padding: 50px 25px;
+  padding: 44px 0;
   clear: both;
   background: white;
 }

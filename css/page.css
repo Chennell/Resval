@@ -1,3 +1,7 @@
+div.column-container {
+  width: 100%;
+  overflow: hidden;
+}
 div.column-left,
 div.column-right {
   width: 100%;
@@ -23,6 +27,15 @@ div.column-right > div.scroll-y {
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
 }
+div.sponsor-container {
+  margin-top: 44px;
+  width: 132px;
+  height: 88px;
+}
+div.sponsor-container > a > img.sponsor-logo {
+  width: 100%;
+  height: auto;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   div.column-left,
@@ -31,6 +44,8 @@ div.column-right > div.scroll-y > p:last-child {
     float: left;
     padding: 44px;
     box-sizing: border-box;
+    margin: auto 0;
+    vertical-align: middle;
   }
   div.column-left {
     padding: 88px;

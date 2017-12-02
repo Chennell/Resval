@@ -9,7 +9,6 @@ Description: A theme to present creative work
 body {
   min-width: 320px;
   margin: 0 auto;
-  padding: 44px 0 0 44px;
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -47,13 +46,26 @@ a {
 }
 h2.page-title {
   display: inline-block;
-  padding: 40px 0px 20px 0px;
   font-size: 30px;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 44px 0 0 44px;
+  }
 }
 /*-- HEADER ------------------------------------------------------------------*/
 header {
   overflow: hidden;
-  padding: 0 44px 44px 0;
+  width: 100vW;
+  padding: 44px;
+  position: fixed;
+  z-index: 100;
+  top: 32px;
+  left: 0;
+  background: -webkit-linear-gradient(#ffffff 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  background: -o-linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(#ffffff 70%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
 }
 .logo {
   width: 10%;
@@ -286,15 +298,13 @@ div.column-right {
   background-color: #95d3c3;
 }
 div.column-right > div.scroll-y {
-  padding: 44px;
+  padding: 66px;
 }
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
 }
 div.sponsor-container {
   margin-top: 44px;
-  width: 132px;
-  height: 88px;
 }
 div.sponsor-container > a > img.sponsor-logo {
   width: 100%;
@@ -308,21 +318,18 @@ div.sponsor-container > a > img.sponsor-logo {
     float: left;
     padding: 44px;
     box-sizing: border-box;
-    margin: auto 0;
-    vertical-align: middle;
+    margin: 82px 0 0 0;
   }
-  div.column-left {
-    padding: 88px;
-    vertical-align: middle;
-    height: 350px;
+  div.column-left > img {
+    position: fixed;
+    z-index: 100;
+    top: 40%;
+    left: 88px;
+    width: 300px;
+    height: auto;
   }
   div.column-right {
     padding: 44px;
-  }
-  div.column-right > div.scroll-y {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 350px;
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;

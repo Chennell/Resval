@@ -59,7 +59,11 @@
     </div>
     <div class="project-description">
       <span class="description"><?php the_field( 'projekt_description' ); ?></span>
-      <span class="kontakt"><?php the_field( 'kontakt_person' ); ?></span>
+      <div class="expand-content">
+        <!-- <?php //do_shortcode('[expand title="Resval.se - Gör det lätt att göra rätt resval"]') ?> -->
+        <?php the_field( 'kontakt_person' ); ?>
+        <!-- <?php //do_shortcode('[/expand]') ?> -->
+      </div>
     </div>
   </div>
  </div>

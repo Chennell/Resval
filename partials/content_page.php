@@ -2,7 +2,7 @@
 
        <!-- Get Post Content -->
        <?php if (have_posts()): while (have_posts()): the_post();?>
-         <div class="column-container">
+
            <!-- wrapper for left column -->
          <div class="column-left">
            <!-- Get Featured Image -->
@@ -27,8 +27,7 @@
                <?php endwhile; endif; ?>
              </div>
            </div>
-          </div>
-        </div>
+  
 
       <!-- Stop while loop and if statement -->
        <?php endwhile; endif;?>

@@ -19,7 +19,6 @@ body{
   min-width: 320px;
   // max-width: 1024px;
   margin: 0 auto;
-  padding: @ws_4 0 0 @ws_4;
 }
 // -- FONTS --------------------------------------------------------------------
 
@@ -72,6 +71,18 @@ a {
 
 h2.page-title{
   display: inline-block;
-  padding: 40px 0px 20px 0px;
   font-size: 30px;
+}
+
+
+
+// -- MEDIA QUERY --------------------------------------------------------------
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+
+  body{
+    padding: @ws_4 0 0 @ws_4;
+  }
 }

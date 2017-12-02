@@ -47,7 +47,7 @@ div.column-right{
 
 // -- Scroll Component
 div.column-right>div.scroll-y{
-  padding: @ws_4;
+  padding: @ws_6;
 }
 
 //-- text stylings
@@ -58,8 +58,6 @@ div.column-right>div.scroll-y>p:last-child{
 // -- Sponsor Area
 div.sponsor-container{
   margin-top: @ws_4;
-  width: 132px;
-  height: 88px;
 }
 
 div.sponsor-container> a > img.sponsor-logo{
@@ -80,29 +78,31 @@ div.sponsor-container> a > img.sponsor-logo{
     float: left;
     padding: @ws_4;
     box-sizing: border-box;
-    margin: auto 0;
-    vertical-align: middle;
+    margin: 82px 0 0 0;
   }
 
   // -- COLUMN LEFT IMAGE ------------------------------------------------------
 
-  div.column-left{
-    padding: @ws_8;
-    vertical-align: middle;
-    height: 350px;
+  div.column-left> img{
+    position: fixed;
+    z-index: 100;
+    top:40%;
+    left: @ws_8;
+    width: 300px;
+    height: auto;
   }
 
 
   // -- COLUMN RIGHT TEXT ------------------------------------------------------
   div.column-right{
     padding: @ws_4;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
   }
 
   // -- Scroll Component
   div.column-right>div.scroll-y{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 350px;
+
   }
 
   //-- text stylings

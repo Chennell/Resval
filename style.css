@@ -103,11 +103,21 @@ div#responsive-menu-wrapper {
     border-bottom: 1px solid #7ea989;
     padding-bottom: 0;
   }
+  nav > div.menu-menu-container > ul.menu > li.current-menu-item {
+    border-bottom: 1px solid #7ea989;
+    padding-bottom: 0;
+  }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
     background-color: #7ea989;
     border-radius: 10px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
+    border: 1px solid #7ea989 !important;
+    background: none;
+    padding-bottom: 11px;
+    box-sizing: border-box;
+  }
+  nav > div.menu-menu-container > ul.menu > li:nth-last-child(1).current-menu-item {
     border: 1px solid #7ea989 !important;
     background: none;
     padding-bottom: 11px;
@@ -207,6 +217,10 @@ div#responsive-menu-wrapper {
   .mostPopularProjectsFP > ul > li > div > p {
     margin: 30px;
   }
+}
+.default-pic {
+  width: 300px;
+  height: 300px;
 }
 ul.gridParent {
   overflow: hidden;

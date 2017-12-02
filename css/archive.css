@@ -1,3 +1,7 @@
+.default-pic {
+  width: 300px;
+  height: 300px;
+}
 ul.gridParent {
   overflow: hidden;
   margin-top: 11px;

@@ -30,6 +30,10 @@ ul.gridParent{
     margin-top: @ws_1;
 }
 
+.gridParent li{
+    margin-bottom: @ws_2;
+}
+
 a h3.title-grid{
     position: absolute;
     z-index: 10;
@@ -50,7 +54,7 @@ div.info-box{
     position: absolute;
     text-align: center;
     //z-index: 11;
-    margin-left: 290px;
+    margin-left: 268px;
     margin-top: 67px;
     //width: 0px;
     height: 150px;
@@ -99,7 +103,7 @@ div.info-box p{
     background-color: @color-mintgreen;
     width: 178px;
     margin-right: 0;
-    margin-left: 111px;
+    margin-left: 100px;
     opacity: 1;
 }
 
@@ -119,14 +123,11 @@ div.info-box p{
     
     .gridParent li{
         float: left;
+        margin-right: @ws_2;
     }
     
     a h3.title-grid{
         display: inline-block;
-    }
-    
-    span.a-project{
-       margin: @ws_1;
     }
     
     // -- The filters/project type ---------------------------

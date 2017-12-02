@@ -226,6 +226,9 @@ ul.gridParent {
   overflow: hidden;
   margin-top: 11px;
 }
+.gridParent li {
+  margin-bottom: 22px;
+}
 a h3.title-grid {
   position: absolute;
   z-index: 10;
@@ -244,7 +247,7 @@ a h3.title-grid {
 div.info-box {
   position: absolute;
   text-align: center;
-  margin-left: 290px;
+  margin-left: 268px;
   margin-top: 67px;
   height: 150px;
   padding: 11px;
@@ -269,7 +272,7 @@ div.info-box p {
   background-color: #95d3c3;
   width: 178px;
   margin-right: 0;
-  margin-left: 111px;
+  margin-left: 100px;
   opacity: 1;
 }
 .a-project:hover div.info-box p {
@@ -282,12 +285,10 @@ div.info-box p {
   }
   .gridParent li {
     float: left;
+    margin-right: 22px;
   }
   a h3.title-grid {
     display: inline-block;
-  }
-  span.a-project {
-    margin: 11px;
   }
   div.filterbox {
     overflow: hidden;

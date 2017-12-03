@@ -8,7 +8,6 @@
                 This is some random content about the project.
             </p>
         </div>
-
-        <a href="<?php the_permalink()?>"><?php the_post_thumbnail('grid_thumbnail'); ?></a>
+            <a href="<?php the_permalink()?>"><?php the_post_thumbnail('grid_thumbnail'); ?></a>
     </span>
 </span> 

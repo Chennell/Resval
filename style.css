@@ -106,11 +106,21 @@ div#responsive-menu-wrapper {
     border-bottom: 1px solid #7ea989;
     padding-bottom: 0;
   }
+  nav > div.menu-menu-container > ul.menu > li.current-menu-item {
+    border-bottom: 1px solid #7ea989;
+    padding-bottom: 0;
+  }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
     background-color: #7ea989;
     border-radius: 10px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
+    border: 1px solid #7ea989 !important;
+    background: none;
+    padding-bottom: 11px;
+    box-sizing: border-box;
+  }
+  nav > div.menu-menu-container > ul.menu > li:nth-last-child(1).current-menu-item {
     border: 1px solid #7ea989 !important;
     background: none;
     padding-bottom: 11px;
@@ -211,9 +221,16 @@ div#responsive-menu-wrapper {
     margin: 30px;
   }
 }
+.default-pic {
+  width: 300px;
+  height: 300px;
+}
 ul.gridParent {
   overflow: hidden;
   margin-top: 11px;
+}
+.gridParent li {
+  margin-bottom: 22px;
 }
 a h3.title-grid {
   position: absolute;
@@ -233,7 +250,7 @@ a h3.title-grid {
 div.info-box {
   position: absolute;
   text-align: center;
-  margin-left: 290px;
+  margin-left: 268px;
   margin-top: 67px;
   height: 150px;
   padding: 11px;
@@ -258,7 +275,7 @@ div.info-box p {
   background-color: #95d3c3;
   width: 178px;
   margin-right: 0;
-  margin-left: 111px;
+  margin-left: 100px;
   opacity: 1;
 }
 .a-project:hover div.info-box p {
@@ -271,12 +288,10 @@ div.info-box p {
   }
   .gridParent li {
     float: left;
+    margin-right: 22px;
   }
   a h3.title-grid {
     display: inline-block;
-  }
-  span.a-project {
-    margin: 11px;
   }
   div.filterbox {
     overflow: hidden;

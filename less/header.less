@@ -87,12 +87,15 @@ div#responsive-menu-wrapper{
         border-bottom: 1px solid @color-lightgreen;
         padding-bottom: 0;
     }
+    
+    //Active
+    nav>div.menu-menu-container>ul.menu>li.current-menu-item{
+        border-bottom: 1px solid @color-lightgreen;
+        padding-bottom: 0;
+    }
+    
 
-    //nav>div.menu-menu-container>ul.menu>li:active{
-    //    border-bottom: 1px solid @color-lightgreen;
-    //    padding-bottom: 0;
-    //}
-
+//------upload project styled differently
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
         background-color: @color-lightgreen;
         border-radius: 10px;
@@ -100,6 +103,14 @@ div#responsive-menu-wrapper{
 
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1):hover{
         border: 1px solid @color-lightgreen !important;
+        background: none;
+        padding-bottom: @ws_1;
+        box-sizing: border-box;
+    }
+    
+    //Active
+    nav>div.menu-menu-container>ul.menu>li:nth-last-child(1).current-menu-item{
+        border: 1px solid @color-lightgreen !important; 
         background: none;
         padding-bottom: @ws_1;
         box-sizing: border-box;

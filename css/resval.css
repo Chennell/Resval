@@ -41,9 +41,12 @@ h2.page-title {
   display: inline-block;
   font-size: 30px;
 }
+.open {
+  display: none;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   body {
-    padding: 44px 0 0 44px;
+    padding: 44px 0 0 0;
   }
 }

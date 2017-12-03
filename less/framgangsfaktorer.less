@@ -14,24 +14,54 @@
 @ws_6: 66px;
 @ws_8: 88px;
 
-main{
-  margin-top: @ws_4;
+.show{
+  display: block;
+}
+
+div.content-wrapper{
+  padding: @ws_8;
 }
 
 div.expander-container{
   width: 100%;
-  padding: 0 @ws_8;
+  max-width: 800px;
+  padding-top: @ws_4;
+}
+.expander-trigger{
+  width: 100%;
+  padding: @ws_2;
+  border: solid 1px @color-mintgreen;
+  border-radius: 4px;
+  display: block;
+  position: relative;
   box-sizing: border-box;
+  //-- when open
+  background-color: @color-mintgreen;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.expander-trigger:after{
+  content: "+";
+  position: absolute;
+  right: @ws_2;
+  top: @ws_2;
+  width: @ws_2;
+  height: @ws_2;
+  border-radius: 50%;
+  text-align: center;
+  //-- when closed
+  // color: @color-mintgreen;
+  //border: solid 1px @color-mintgreen;
+  // -- when open
+  color: white;
+  border: solid 1px white;
 }
 
-div.expander-container>a.expander-trigger{
-  display: block;
-}
-
-div.expander-container>div.expanding-area{
-  display: none;
-}
-
-.show{
-  display: block;
+.expanding-area{
+  width: 100%;
+  padding: @ws_2;
+  box-sizing: border-box;
+  //when open
+  border: solid 1px @color-mintgreen;
 }

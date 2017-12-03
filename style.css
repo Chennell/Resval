@@ -48,10 +48,13 @@ h2.page-title {
   display: inline-block;
   font-size: 30px;
 }
+.open {
+  display: none;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   body {
-    padding: 44px 0 0 44px;
+    padding: 44px 0 0 0;
   }
 }
 /*-- HEADER ------------------------------------------------------------------*/
@@ -61,7 +64,7 @@ header {
   padding: 44px;
   position: fixed;
   z-index: 100;
-  top: 32px;
+  top: 0;
   left: 0;
   box-sizing: border-box;
   background: -webkit-linear-gradient(#ffffff 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -336,16 +339,7 @@ div.column-left > img {
 }
 div.column-right {
   background-color: #95d3c3;
-  margin-left: 290px;
-  animation: 1s ease-out 2s 1 slideInFromLeft;
-}
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  height: 100%;
 }
 div.column-right > div.scroll-y {
   padding: 66px;
@@ -353,12 +347,19 @@ div.column-right > div.scroll-y {
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
 }
-div.sponsor-container {
+div.sponsor-area {
   margin-top: 44px;
 }
-div.sponsor-container > a > img.sponsor-logo {
+li.sponsor-container {
+  margin-top: 11px;
+  width: 50%;
+  height: 200px;
+  float: left;
+  padding-left: 11px;
+  box-sizing: border-box;
+}
+li.sponsor-container > a > img.sponsor-logo {
   width: 100%;
-  height: auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -373,13 +374,49 @@ div.sponsor-container > a > img.sponsor-logo {
   div.column-left > img {
     position: fixed;
     z-index: 100;
-    top: 40%;
+    top: 38%;
     left: 88px;
-    width: 300px;
+    width: 400px;
     height: auto;
   }
   div.column-right {
     padding: 44px;
+    -webkit-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -moz-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -o-animation: 1s ease-out 2s 1 slideInFromLeft;
+    animation: 1s ease-out 2s 1 slideInFromLeft;
+  }
+  @-webkit-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @-moz-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @-o-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;
@@ -448,26 +485,52 @@ div.column-right > div.scroll-y > div.ingredients-container > span.budget > img 
 div.column-left > div.scroll-y > div.project-description > span.kontakt {
   margin-top: 44px;
 }
-main {
-  margin-top: 44px;
-}
-div.expander-container {
-  width: 100%;
-  padding: 0 88px;
-  box-sizing: border-box;
-}
-div.expander-container > a.expander-trigger {
-  display: block;
-}
-div.expander-container > div.expanding-area {
-  display: none;
-}
 .show {
   display: block;
 }
+div.content-wrapper {
+  padding: 88px;
+}
+div.expander-container {
+  width: 100%;
+  max-width: 800px;
+  padding-top: 44px;
+}
+.expander-trigger {
+  width: 100%;
+  padding: 22px;
+  border: solid 1px #95d3c3;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #95d3c3;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.expander-trigger:after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+}
+.expanding-area {
+  width: 100%;
+  padding: 22px;
+  box-sizing: border-box;
+  border: solid 1px #95d3c3;
+}
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
-  padding: 44px 0;
+  padding: 88px 0;
   clear: both;
+  text-align: center;
   background: white;
 }

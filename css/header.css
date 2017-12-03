@@ -5,7 +5,7 @@ header {
   padding: 44px;
   position: fixed;
   z-index: 100;
-  top: 32px;
+  top: 0;
   left: 0;
   box-sizing: border-box;
   background: -webkit-linear-gradient(#ffffff 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));

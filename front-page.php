@@ -24,7 +24,7 @@
         <!-- The button -->
         <div class="buttonContainerFP">
           <button type="button" name="button">
-            <a href="<?php the_field('fremsid_knapp'); ?>"><?php the_field('kontakt_knapp_label'); ?></a>
+            <a href="<?php the_field('fremsid_knapp'); ?>"><?php the_field('fremsida_knapp_label'); ?></a>
           </button>
         </div>
       </div>
@@ -58,6 +58,13 @@
       <h2><?php the_field('kontakt_titel'); ?></h2>
     </div>
     <p><?php the_field('kontakt_text'); ?></p>
+
+    <!-- The button -->
+    <div class="contactButtonContainerFP">
+      <button type="button" name="button">
+        <a href="<?php the_field('kontakt_knapp'); ?>"><?php the_field('kontakt_knapp_label'); ?></a>
+      </button>
+    </div>
   </div>
 
 

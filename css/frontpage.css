@@ -11,18 +11,22 @@
 .title_FP {
   text-align: center;
 }
+.div_topp_text_hem > p {
+  margin-top: 11px;
+  line-height: 150%;
+}
 .buttonContainerFP {
   text-align: center;
 }
 .buttonContainerFP > button {
   padding: 11px;
-  background-color: #95d3c3;
+  background-color: #7ea989;
   width: 40%;
   margin-top: 22px;
   border: none;
 }
 .buttonContainerFP > button > a {
-  color: ##555555;
+  color: white;
 }
 .mostPopularProjectsFP {
   margin: 22px 0;
@@ -39,6 +43,23 @@
 }
 .contactInfoFP {
   margin: 22px 0;
+  text-align: center;
+}
+.contactInfoFP > p {
+  margin-top: 11px;
+}
+.contactButtonContainerFP {
+  text-align: center;
+}
+.contactButtonContainerFP > button {
+  padding: 11px;
+  background-color: #7ea989;
+  width: 40%;
+  margin-top: 22px;
+  border: none;
+}
+.contactButtonContainerFP > button > a {
+  color: white;
 }
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
@@ -90,5 +111,14 @@
   }
   .mostPopularProjectsFP > ul > li > div > p {
     margin: 30px;
+  }
+  .contactInfoFP {
+    text-align: left;
+  }
+  .contactButtonContainerFP > button {
+    width: 25%;
+  }
+  .contactButtonContainerFP {
+    text-align: left;
   }
 }

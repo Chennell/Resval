@@ -14,6 +14,9 @@
 @ws_6: 66px;
 @ws_8: 88px;
 
+// line height
+@lh_1: 150%;
+
 
 
   // -- FRONT PAGE ---------------------------------------------------------------
@@ -35,21 +38,29 @@
   .title_FP{
     text-align: center;
   }
+.div_topp_text_hem>p{
+  margin-top: @ws_1;
+  line-height: @lh_1;
+}
 
+//  The button
 .buttonContainerFP{
   text-align: center;
 }
 .buttonContainerFP>button{
   padding: @ws_1;
-  background-color: @color-mintgreen;
+  background-color: @color-lightgreen;
   width: 40%;
   margin-top: @ws_2;
   border:none;
 }
 
 .buttonContainerFP>button>a{
-  color:@color-darkgrey;
+  color:white;
 }
+
+
+
   // Most popular views section -------------------------------------------------------
 
   .mostPopularProjectsFP{
@@ -72,9 +83,28 @@
 // Contact info section -----------------------------------------------------------
   .contactInfoFP{
     margin: @ws_2 0;
+    text-align: center;
 
   }
+  .contactInfoFP>p{
+    margin-top: @ws_1;
+  }
 
+  .contactButtonContainerFP{
+    text-align: center;
+}
+
+  .contactButtonContainerFP>button{
+    padding: @ws_1;
+    background-color: @color-lightgreen;
+    width: 40%;
+    margin-top: @ws_2;
+    border:none;
+  }
+
+  .contactButtonContainerFP>button>a{
+    color:white;
+  }
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
   ----------------------*/
@@ -138,5 +168,19 @@
     .mostPopularProjectsFP>ul>li>div>p{
       margin: 30px;
     }
+
+
+// Contact section ----------------------------------------------------
+  .contactInfoFP{
+    text-align: left;
+  }
+
+  .contactButtonContainerFP>button{
+    width: 25%;
+  }
+  .contactButtonContainerFP{
+    text-align: left;
+  }
+
 
 }

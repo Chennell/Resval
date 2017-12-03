@@ -43,29 +43,9 @@ div.column-left >img{
 // -- Coloured Background
 div.column-right{
   background-color: @color-mintgreen;
-
-  margin-left: 290px;
-
-
-  //overflow: hidden;
-  //color: white;
-//    -webkit-transition: width 0.6s;
-//    -moz-transition: width 0.6s;
-//    transition: width 0.6s;
-  //transition: .5s ease;
-  //transition-property: margin;
-animation: 1s ease-out 2s 1 slideInFromLeft;
-
-// transition: 0.6s linear;
+  height: 100%;
 }
-@keyframes slideInFromLeft {
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-}
+
 // -- Scroll Component
 div.column-right>div.scroll-y{
   padding: @ws_6;
@@ -77,13 +57,24 @@ div.column-right>div.scroll-y>p:last-child{
 }
 
 // -- Sponsor Area
-div.sponsor-container{
+div.sponsor-area{
   margin-top: @ws_4;
 }
+li.sponsor-container{
+  margin-top: @ws_1;
+  width: 50%;
+  height: 200px;
+  float: left;
+  padding-left: @ws_1;
+  box-sizing: border-box;
+}
 
-div.sponsor-container> a > img.sponsor-logo{
+// div.sponsor-area>div.sponsor-container:first-child{
+//   padding-left: 0;
+// }
+
+li.sponsor-container> a > img.sponsor-logo{
   width: 100%;
-  height: auto;
 }
 
 // -- MEDIA QUERY --------------------------------------------------------------
@@ -107,9 +98,9 @@ div.sponsor-container> a > img.sponsor-logo{
   div.column-left> img{
     position: fixed;
     z-index: 100;
-    top:40%;
+    top:38%;
     left: @ws_8;
-    width: 300px;
+    width: 400px;
     height: auto;
   }
 
@@ -117,9 +108,45 @@ div.sponsor-container> a > img.sponsor-logo{
   // -- COLUMN RIGHT TEXT ------------------------------------------------------
   div.column-right{
     padding: @ws_4;
-    // overflow-y: scroll;
-    // overflow-x: hidden;
+
+    -webkit-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -moz-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -o-animation: 1s ease-out 2s 1 slideInFromLeft;
+    animation: 1s ease-out 2s 1 slideInFromLeft;
   }
+  @-webkit-keyframes slideInFromLeft {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @-moz-keyframes slideInFromLeft {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @-o-keyframes slideInFromLeft {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideInFromLeft {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
 
   // -- Scroll Component
   div.column-right>div.scroll-y{
@@ -130,5 +157,4 @@ div.sponsor-container> a > img.sponsor-logo{
   div.column-right>div.scroll-y>p:last-child{
     padding-bottom: @ws_4;
   }
-
 }

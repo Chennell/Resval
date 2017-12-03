@@ -20,16 +20,7 @@ div.column-left > img {
 }
 div.column-right {
   background-color: #95d3c3;
-  margin-left: 290px;
-  animation: 1s ease-out 2s 1 slideInFromLeft;
-}
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  height: 100%;
 }
 div.column-right > div.scroll-y {
   padding: 66px;
@@ -37,12 +28,19 @@ div.column-right > div.scroll-y {
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
 }
-div.sponsor-container {
+div.sponsor-area {
   margin-top: 44px;
 }
-div.sponsor-container > a > img.sponsor-logo {
+li.sponsor-container {
+  margin-top: 11px;
+  width: 50%;
+  height: 200px;
+  float: left;
+  padding-left: 11px;
+  box-sizing: border-box;
+}
+li.sponsor-container > a > img.sponsor-logo {
   width: 100%;
-  height: auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -57,13 +55,49 @@ div.sponsor-container > a > img.sponsor-logo {
   div.column-left > img {
     position: fixed;
     z-index: 100;
-    top: 40%;
+    top: 38%;
     left: 88px;
-    width: 300px;
+    width: 400px;
     height: auto;
   }
   div.column-right {
     padding: 44px;
+    -webkit-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -moz-animation: 1s ease-out 2s 1 slideInFromLeft;
+    -o-animation: 1s ease-out 2s 1 slideInFromLeft;
+    animation: 1s ease-out 2s 1 slideInFromLeft;
+  }
+  @-webkit-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @-moz-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @-o-keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;

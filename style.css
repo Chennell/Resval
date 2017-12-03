@@ -574,8 +574,36 @@ div.expander-container {
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
-  padding: 88px 0;
+  margin-top: 88px;
   clear: both;
-  text-align: center;
   background: white;
+  text-align: center;
+}
+footer .footerLine {
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  border: 0;
+}
+footer .logofooter {
+  margin-top: 44px;
+  padding: 0 44px;
+}
+footer .logofooter .logoContainerFooter ul li {
+  margin: 11px;
+}
+footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
+  width: 40%;
+  margin: 0 auto;
+}
+footer .copyright {
+  margin-top: 44px;
+  background-color: #2e5047;
+  padding: 44px;
+  text-align: center;
+}
+footer .copyright p {
+  color: white;
 }

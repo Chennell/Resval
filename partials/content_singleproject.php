@@ -5,10 +5,11 @@
   <div class="image-slider">
     <div class="flexslider">
       <ul class="slides">
-        <li class="project-image">
-            <?php the_post_thumbnail( 'single_large' ); ?>
+        <!-- include featured image -->
+        <!-- <li class="project-image">
+            <?php //the_post_thumbnail( 'single_large' ); ?>
             <span class="project-image-caption"><?php the_sub_field('image_description') ?></span>
-        </li>
+        </li> -->
     <?php
        if( have_rows('image_repeater') ):
       // loop through the rows of data

@@ -387,15 +387,18 @@ ol.flex-control-nav.flex-control-paging {
 }
 li.project-image,
 li.project-image.flex-active-slide {
-  height: 300px;
   list-style: none;
-  margin-left: 5px;
-}
-li.project-image > img,
-li.project-image.flex-active-slide > img {
-  height: 100%;
-  width: auto;
   text-align: center;
+}
+li.project-image img,
+li.project-image.flex-active-slide img {
+  width: auto;
+  max-height: 210px;
+  max-width: 410px;
+}
+li.project-image span.project-image-caption,
+li.project-image.flex-active-slide span.project-image-caption {
+  display: block;
 }
 div.column-right {
   background-color: #95d3c3;

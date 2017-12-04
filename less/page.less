@@ -47,17 +47,21 @@ ol.flex-control-nav.flex-control-paging{
 }
 li.project-image, li.project-image.flex-active-slide{
 
-  height: 300px;
   list-style: none;
-  margin-left: 5px;
+  text-align: center;
+
+  img{
+    width: auto;
+    max-height: 210px;
+    max-width: 410px
+  }
+  span.project-image-caption{
+    display: block;
+  }
 }
 
-li.project-image>img, li.project-image.flex-active-slide>img{
-  height: 100%;
-  width: auto;
-  text-align: center;
-}
-div.image-slider>div.flexslider>ul.slides>li.project-image>span.project-image-caption{}
+// -- FLEXSLIDER ARROWS --------------------------------------------------------
+
 // -- COLUMN RIGHT  ------------------------------------------------------------
 
 // -- Coloured Background

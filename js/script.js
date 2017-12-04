@@ -24,6 +24,8 @@ jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
     animationLoop: false,
-    itemMargin: 15
+    itemMargin: 5,
+    prevText: "&#8592;",
+    nextText: "&#8594;"
   });
 });

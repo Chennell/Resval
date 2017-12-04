@@ -19,15 +19,12 @@ header{
   overflow: hidden;
   width: 100vW;
   padding: @ws_4;
-  position: fixed;
-  z-index: 100;
-  //-- need to be changed before handing in
-  top: 0;
-  left: 0;
-    box-sizing: border-box;
-  background: -webkit-linear-gradient(#ffffff 60%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-  background: -o-linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
-  background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+
+  box-sizing: border-box;
+  background: white;
+  // background: -webkit-linear-gradient(#ffffff 60%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  // background: -o-linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  // background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
 }
 
 
@@ -87,13 +84,13 @@ div#responsive-menu-wrapper{
         border-bottom: 1px solid @color-lightgreen;
         padding-bottom: 0;
     }
-    
+
     //Active
     nav>div.menu-menu-container>ul.menu>li.current-menu-item{
         border-bottom: 1px solid @color-lightgreen;
         padding-bottom: 0;
     }
-    
+
 
 //------upload project styled differently
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
@@ -107,10 +104,10 @@ div#responsive-menu-wrapper{
         padding-bottom: @ws_1;
         box-sizing: border-box;
     }
-    
+
     //Active
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1).current-menu-item{
-        border: 1px solid @color-lightgreen !important; 
+        border: 1px solid @color-lightgreen !important;
         background: none;
         padding-bottom: @ws_1;
         box-sizing: border-box;

@@ -426,12 +426,12 @@ li.sponsor-container > a > img.sponsor-logo {
   }
   div.column-right {
     padding: 44px;
-    -webkit-animation: 1s ease-out 2s 1 slideInFromLeft;
-    -moz-animation: 1s ease-out 2s 1 slideInFromLeft;
-    -o-animation: 1s ease-out 2s 1 slideInFromLeft;
-    animation: 1s ease-out 2s 1 slideInFromLeft;
+    -webkit-animation: 1s ease-out 2s 1 slideInFromRight;
+    -moz-animation: 1s ease-out 2s 1 slideInFromRight;
+    -o-animation: 1s ease-out 2s 1 slideInFromRight;
+    animation: 1s ease-out 2s 1 slideInFromRight;
   }
-  @-webkit-keyframes slideInFromLeft {
+  @-webkit-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -439,7 +439,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @-moz-keyframes slideInFromLeft {
+  @-moz-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -447,7 +447,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @-o-keyframes slideInFromLeft {
+  @-o-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -455,7 +455,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @keyframes slideInFromLeft {
+  @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -570,6 +570,7 @@ div.expander-container {
   width: 100%;
   padding: 22px;
   box-sizing: border-box;
+  display: none;
   border: solid 1px #95d3c3;
 }
 /*-- FOOTER ------------------------------------------------------------------*/
@@ -579,7 +580,7 @@ footer {
   background: white;
   text-align: center;
 }
-.footerLine {
+footer .footerLine {
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
@@ -588,6 +589,7 @@ footer {
   border: 0;
   margin-top: 44px;
 }
+<<<<<<< HEAD
 .logofooter {
   margin-top: 22px;
   padding: 0 44px;
@@ -606,12 +608,34 @@ footer {
 }
 .copyright {
   margin-top: 11px;
+=======
+footer .logofooter {
+  margin-top: 44px;
+  padding: 0 44px;
+}
+footer .logofooter .logoContainerFooter ul {
+  overflow: hidden;
+}
+footer .logofooter .logoContainerFooter ul li {
+  float: left;
+  width: 33.3333%;
+}
+footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
+  margin: 11px;
+}
+footer .copyright {
+  margin-top: 44px;
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
   background-color: #2e5047;
   padding: 22px;
   text-align: center;
   clear: both;
 }
+<<<<<<< HEAD
 .copyright > p {
+=======
+footer .copyright p {
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
   color: white;
 }
 @media only screen and (min-width: 768px) {

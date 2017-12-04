@@ -4,7 +4,7 @@ var expandTrigger= document.getElementById('expander-trigger');
 var expandArea= document.getElementById('expanding-area');
 
 expandTrigger.addEventListener("click" ,function (event){
-    event.expandArea.classList.toggle('show');
+    expandArea.classList.toggle('show');
 });
 
 
@@ -16,13 +16,15 @@ expandTrigger.addEventListener("click" ,function (event){
 // 	});
 // });
 
+// document.addEventListener('DOMContentLoaded', el.classList.add)='slide'
+
 // -- FLEX SLIDER --------------------------------------------------------------
 //-- code taken from: http://flexslider.woothemes.com/basic-carousel.html
-// $(window).load(function() {
-//   $('.flexslider').flexslider({
-//     animation: "slide",
-//     animationLoop: false,
-//     itemWidth: 210,
-//     itemMargin: 5
-//   });
-// });
+jQuery(window).load(function() {
+  jQuery('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+  });
+});

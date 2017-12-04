@@ -42,15 +42,12 @@
       <span class="time"><?php
         if(get_field( 'projekt_time' )== "Little"){?>
           <img src="<?= get_template_directory_uri(); ?>/img/time-low.png" alt="Low" title="low time">
-          <span class="icon-label"><?php the_field( 'projekt_time' ) ?></span>
         <?php }
         else if(get_field( 'projekt_time' )== "Moderate"){?>
           <img src="<?= get_template_directory_uri(); ?>/img/time-middle.png" alt="Moderate Time" title="moderate time">
-          <span class="icon-label"><?php the_field( 'projekt_time' ) ?></span>
         <?php }
         else if(get_field( 'projekt_time' )== "A Lot"){?>
           <img src="<?= get_template_directory_uri(); ?>/img/time-high.png" alt="High Time" title="high time">
-          <span class="icon-label"><?php the_field( 'projekt_time' ) ?></span>
         <?php }?>
       </span>
       <!-- target group -->

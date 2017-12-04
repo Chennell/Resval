@@ -579,7 +579,7 @@ footer {
   background: white;
   text-align: center;
 }
-footer .footerLine {
+.footerLine {
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
@@ -587,23 +587,33 @@ footer .footerLine {
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   border: 0;
 }
-footer .logofooter {
+.logofooter {
   margin-top: 44px;
   padding: 0 44px;
 }
-footer .logofooter .logoContainerFooter ul li {
-  margin: 11px;
+.logoContainerFooter > ul {
+  overflow: hidden;
+  margin: 11px -11px 0;
 }
-footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
-  width: 40%;
-  margin: 0 auto;
+.logoContainerFooter > ul > li {
+  float: left;
+  width: 33.3333%;
 }
-footer .copyright {
+#innerdivFooterLogos {
+  margin: 0 11px;
+}
+#innerdivFooterLogos > a > img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  vertical-align: bottom;
+}
+.copyright {
   margin-top: 44px;
   background-color: #2e5047;
   padding: 44px;
   text-align: center;
 }
-footer .copyright p {
+p {
   color: white;
 }

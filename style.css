@@ -603,7 +603,28 @@ footer .footerLine {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   border: 0;
+  margin-top: 44px;
 }
+<<<<<<< HEAD
+.logofooter {
+  margin-top: 22px;
+  padding: 0 44px;
+}
+.logofooter > p > a {
+  text-align: center;
+}
+.logoContainerFooter > ul {
+  margin: 11px 0 0;
+}
+#innerdivFooterLogos {
+  margin: 11px 0;
+}
+#innerdivFooterLogos > a > img {
+  max-width: 125px !important;
+}
+.copyright {
+  margin-top: 11px;
+=======
 footer .logofooter {
   margin-top: 44px;
   padding: 0 44px;
@@ -620,10 +641,32 @@ footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
 }
 footer .copyright {
   margin-top: 44px;
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
   background-color: #2e5047;
-  padding: 44px;
+  padding: 22px;
   text-align: center;
+  clear: both;
 }
+<<<<<<< HEAD
+.copyright > p {
+=======
 footer .copyright p {
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
   color: white;
+}
+@media only screen and (min-width: 768px) {
+  .logofooter {
+    height: 200px;
+  }
+  .logofooter > p {
+    text-align: left;
+  }
+  .logoContainerFooter {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+  .copyright {
+    margin-top: 22px;
+  }
 }

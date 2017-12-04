@@ -28,11 +28,33 @@ footer{
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
     border: 0;
+    margin-top: @ws_4;
   }
 
   .logofooter{
-    margin-top: @ws_4;
+    margin-top: @ws_2;
     padding: 0 @ws_4;
+<<<<<<< HEAD
+  }
+.logofooter>p>a{
+  text-align: center;
+}
+    .logoContainerFooter>ul{
+        // overflow: hidden;
+        margin: @ws_1 0 0;
+}
+
+          #innerdivFooterLogos{
+            margin: @ws_1 0;
+}
+
+              #innerdivFooterLogos>a>img{
+                // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                // filter: grayscale(100%);
+                // vertical-align: bottom;
+                max-width: 125px !important;
+              }
+=======
 
     .logoContainerFooter{
       ul{
@@ -41,6 +63,7 @@ footer{
         li{
           float:left;
           width: 33.3333%;
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
 
           #innerdivFooterLogos{
             margin: @ws_1;
@@ -57,13 +80,65 @@ footer{
   }
 
   .copyright{
-    margin-top: @ws_4;
+    margin-top: @ws_1;
     background-color: @color-darkgreen;
-    padding: @ws_4;
+    padding: @ws_2;
     text-align: center;
+<<<<<<< HEAD
+    clear: both;
+  }
+  .copyright>p{
+=======
 
     p{
+>>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
       color: white;
+  }
+
+
+
+
+  @media only screen and (min-width : 768px) {
+
+.logofooter{
+  height: 200px;
+}
+    .logofooter>p{
+      text-align: left;
+    }
+    .logoContainerFooter{
+      width: 50%;
+      float: right;
+      text-align: right;
+      // height: 176px;
+    }
+
+
+      .logoContainerFooter>ul{
+          // overflow: hidden;
+          // margin: @ws_1 -@ws_1 0;
+  }
+          .logoContainerFooter>ul>li{
+            // float:left;
+            // width: 33.3333%;
+  }
+            #innerdivFooterLogos{
+              // margin: 0 @ws_1;
+  }
+
+                #innerdivFooterLogos>a>img{
+                  // max-width: 200px !important;
+                }
+
+
+                .copyright{
+                  margin-top: @ws_2;
+
+                }
+
+
+
+
     }
   }
 }

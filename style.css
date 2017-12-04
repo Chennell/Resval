@@ -589,68 +589,45 @@ footer .footerLine {
   border: 0;
   margin-top: 44px;
 }
-<<<<<<< HEAD
-.logofooter {
+footer .logofooter {
   margin-top: 22px;
   padding: 0 44px;
 }
-.logofooter > p > a {
+footer .logofooter p a {
   text-align: center;
 }
-.logoContainerFooter > ul {
+footer .logofooter .logoContainerFooter ul {
   margin: 11px 0 0;
 }
-#innerdivFooterLogos {
+footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
   margin: 11px 0;
 }
-#innerdivFooterLogos > a > img {
+footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos a img {
   max-width: 125px !important;
 }
-.copyright {
-  margin-top: 11px;
-=======
-footer .logofooter {
-  margin-top: 44px;
-  padding: 0 44px;
-}
-footer .logofooter .logoContainerFooter ul {
-  overflow: hidden;
-}
-footer .logofooter .logoContainerFooter ul li {
-  float: left;
-  width: 33.3333%;
-}
-footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
-  margin: 11px;
-}
 footer .copyright {
-  margin-top: 44px;
->>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
+  margin-top: 11px;
   background-color: #2e5047;
   padding: 22px;
   text-align: center;
   clear: both;
 }
-<<<<<<< HEAD
-.copyright > p {
-=======
 footer .copyright p {
->>>>>>> 7f8b3e5463532b040f941bf9b0d1e15eef8834bd
   color: white;
 }
 @media only screen and (min-width: 768px) {
-  .logofooter {
+  footer .logofooter {
     height: 200px;
   }
-  .logofooter > p {
+  footer .logofooter p {
     text-align: left;
   }
-  .logoContainerFooter {
+  footer .logofooter .logoContainerFooter {
     width: 50%;
     float: right;
     text-align: right;
   }
-  .copyright {
+  footer .copyright {
     margin-top: 22px;
   }
 }

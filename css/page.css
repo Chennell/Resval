@@ -62,12 +62,12 @@ li.sponsor-container > a > img.sponsor-logo {
   }
   div.column-right {
     padding: 44px;
-    -webkit-animation: 1s ease-out 2s 1 slideInFromLeft;
-    -moz-animation: 1s ease-out 2s 1 slideInFromLeft;
-    -o-animation: 1s ease-out 2s 1 slideInFromLeft;
-    animation: 1s ease-out 2s 1 slideInFromLeft;
+    -webkit-animation: 1s ease-out 2s 1 slideInFromRight;
+    -moz-animation: 1s ease-out 2s 1 slideInFromRight;
+    -o-animation: 1s ease-out 2s 1 slideInFromRight;
+    animation: 1s ease-out 2s 1 slideInFromRight;
   }
-  @-webkit-keyframes slideInFromLeft {
+  @-webkit-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -75,7 +75,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @-moz-keyframes slideInFromLeft {
+  @-moz-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -83,7 +83,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @-o-keyframes slideInFromLeft {
+  @-o-keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }
@@ -91,7 +91,7 @@ li.sponsor-container > a > img.sponsor-logo {
       transform: translateX(0%);
     }
   }
-  @keyframes slideInFromLeft {
+  @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
     }

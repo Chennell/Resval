@@ -12,27 +12,47 @@ footer .footerLine {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   border: 0;
+  margin-top: 44px;
 }
 footer .logofooter {
-  margin-top: 44px;
+  margin-top: 22px;
   padding: 0 44px;
 }
-footer .logofooter .logoContainerFooter ul {
-  overflow: hidden;
+footer .logofooter p a {
+  text-align: center;
 }
-footer .logofooter .logoContainerFooter ul li {
-  float: left;
-  width: 33.3333%;
+footer .logofooter .logoContainerFooter ul {
+  margin: 11px 0 0;
 }
 footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos {
-  margin: 11px;
+  margin: 11px 0;
+}
+footer .logofooter .logoContainerFooter ul li #innerdivFooterLogos a img {
+  max-width: 125px !important;
 }
 footer .copyright {
-  margin-top: 44px;
+  margin-top: 11px;
   background-color: #2e5047;
-  padding: 44px;
+  padding: 22px;
   text-align: center;
+  clear: both;
 }
 footer .copyright p {
   color: white;
+}
+@media only screen and (min-width: 768px) {
+  footer .logofooter {
+    height: 200px;
+  }
+  footer .logofooter p {
+    text-align: left;
+  }
+  footer .logofooter .logoContainerFooter {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+  footer .copyright {
+    margin-top: 22px;
+  }
 }

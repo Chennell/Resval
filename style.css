@@ -586,34 +586,47 @@ footer {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   border: 0;
+  margin-top: 44px;
 }
 .logofooter {
-  margin-top: 44px;
+  margin-top: 22px;
   padding: 0 44px;
 }
-.logoContainerFooter > ul {
-  overflow: hidden;
-  margin: 11px -11px 0;
-}
-.logoContainerFooter > ul > li {
-  float: left;
-  width: 33.3333%;
-}
-#innerdivFooterLogos {
-  margin: 0 11px;
-}
-#innerdivFooterLogos > a > img {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  vertical-align: bottom;
-}
-.copyright {
-  margin-top: 44px;
-  background-color: #2e5047;
-  padding: 44px;
+.logofooter > p > a {
   text-align: center;
 }
-p {
+.logoContainerFooter > ul {
+  margin: 11px 0 0;
+}
+#innerdivFooterLogos {
+  margin: 11px 0;
+}
+#innerdivFooterLogos > a > img {
+  max-width: 125px !important;
+}
+.copyright {
+  margin-top: 11px;
+  background-color: #2e5047;
+  padding: 22px;
+  text-align: center;
+  clear: both;
+}
+.copyright > p {
   color: white;
+}
+@media only screen and (min-width: 768px) {
+  .logofooter {
+    height: 200px;
+  }
+  .logofooter > p {
+    text-align: left;
+  }
+  .logoContainerFooter {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+  .copyright {
+    margin-top: 22px;
+  }
 }

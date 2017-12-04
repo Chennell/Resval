@@ -382,6 +382,21 @@ div.column-left > img {
   vertical-align: middle;
   margin: auto auto;
 }
+ol.flex-control-nav.flex-control-paging {
+  display: none;
+}
+li.project-image,
+li.project-image.flex-active-slide {
+  height: 300px;
+  list-style: none;
+  margin-left: 5px;
+}
+li.project-image > img,
+li.project-image.flex-active-slide > img {
+  height: 100%;
+  width: auto;
+  text-align: center;
+}
 div.column-right {
   background-color: #95d3c3;
   height: 100%;
@@ -421,15 +436,11 @@ li.sponsor-container > a > img.sponsor-logo {
     z-index: 100;
     top: 38%;
     left: 88px;
-    width: 400px;
+    width: 280px;
     height: auto;
   }
   div.column-right {
     padding: 44px;
-    -webkit-animation: 1s ease-out 2s 1 slideInFromRight;
-    -moz-animation: 1s ease-out 2s 1 slideInFromRight;
-    -o-animation: 1s ease-out 2s 1 slideInFromRight;
-    animation: 1s ease-out 2s 1 slideInFromRight;
   }
   @-webkit-keyframes slideInFromRight {
     0% {
@@ -465,6 +476,11 @@ li.sponsor-container > a > img.sponsor-logo {
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div.column-left > img {
+    width: 400px;
   }
 }
 input.contact-label,
@@ -531,7 +547,7 @@ div.column-left > div.scroll-y > div.project-description > span.kontakt {
   margin-top: 44px;
 }
 .show {
-  display: block;
+  display: block !important;
 }
 div.content-wrapper {
   padding: 88px;

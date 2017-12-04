@@ -1,23 +1,26 @@
 
 <div class="column-left">
   <!-- Get Featured Image -->
-  <?php the_post_thumbnail( 'single_large' ); ?>
   <!-- IMAGE SLIDER ----------------------------------------------------------->
   <div class="image-slider">
+    <div class="flexslider">
+      <ul class="slides">
+        <li class="project-image">
+            <?php the_post_thumbnail( 'single_large' ); ?>
+            <span class="project-image-caption"><?php the_sub_field('image_description') ?></span>
+        </li>
     <?php
        if( have_rows('image_repeater') ):
       // loop through the rows of data
       while ( have_rows('image_repeater') ) : the_row(); ?>
       <!-- Place somewhere in the <body> of your page -->
-     <div class="flexslider">
-       <ul class="slides">
          <li class="project-image">
              <img src="<?php echo wp_get_attachment_image_url(the_sub_field('project_image'), 'about_logo'); ?>" />
              <span class="project-image-caption"><?php the_sub_field('image_description') ?></span>
          </li>
+         <?php endwhile; endif;?>
        </ul>
      </div>
-     <?php endwhile; endif;?>
   </div>
 </div>
 <!-- wrapper for right column -->

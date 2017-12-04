@@ -151,15 +151,16 @@ div.column-left{}
     // -o-animation: 1s ease-out 2s 1 slideInFromRight;
     // animation: 1s ease-out 2s 1 slideInFromRight;
   position: relative;
-    div.fadeGradient{
-      background-image: linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 85%);
-      position:fixed;
-      z-index:2;
-      right:0;
-      top:0;
-      width: 100%;
-      height:@ws_6;
-    }
+    // div.fadeGradient{
+    //   background: linear-gradient(to bottom, rgba(149,211,195,0.2) 10%, rgba(149,211,195,0.2) 5%);
+    //   width: 100%;
+    //   height: 100%;
+    //   overflow-y: scroll;
+
+      div.scroll-y{
+      overflow-y: scroll;
+      }
+    //}
 
 
     // @-webkit-keyframes slideInFromRight {
@@ -201,9 +202,7 @@ div.column-left{}
 
 
   // -- Scroll Component
-  div.column-right>div.scroll-y{
-  overflow-y: scroll;
-  }
+
 
   //-- text stylings
   div.column-right>div.scroll-y>p:last-child{

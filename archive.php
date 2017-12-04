@@ -40,7 +40,7 @@
         <?php
             if ($project_query->have_posts()): while ($project_query->have_posts()): $project_query->the_post();
         ?>
-            <li>
+            <li class="a-project">
                <?php
                     get_template_part('partials/project-grid');
                 ?>

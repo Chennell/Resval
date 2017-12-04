@@ -30,6 +30,25 @@ register_sidebar ($args);
   'after_widget' => '</div></li>',
 
   ) );
+     
+
+     
+/* Bidra form
+-------------------------------- */   
+  $args = array(
+    'id'            => 'bidra-form',
+    /** Visible name in the Admin Dashboard Widget page */
+    'name'          => __( 'Bidra form', 'resval_theme' ),
+    /** Visible description in the Admin Dashboard Widget page */
+    'description'   => __( 'Birda Form Protection', 'resval_theme' ),
+
+    'before_title' => '<p class="widget title">',
+    'after_title' => '</p>',
+
+    'before_widget' => '<section>',
+    'after_widget' => '</section>',
+  );
+register_sidebar ($args);
 
 
 

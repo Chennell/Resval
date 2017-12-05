@@ -509,17 +509,27 @@ div.column-right > div.scroll-y div.ingredients-container span.budget img {
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
 }
-div.column-right > div.scroll-y div.project-description div.description-section .expander-trigger:after {
-  content: "";
+div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger h4.icon-handle {
+  display: inline-block;
+}
+div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger h4.icon-handle:after {
+  content: "\f078";
+  line-height: 22px;
   position: absolute;
-  right: 22px;
-  top: 22px;
-  width: 0;
-  height: 0;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-top: 2px solid #fff;
+  left: 136px;
+  top: 36px;
+  font-family: FontAwesome;
   text-align: center;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+}
+div.description-section > div.expander-container > a.expander-trigger:after {
+  content: '';
+  border: none;
 }
 .show {
   display: block !important;
@@ -553,6 +563,7 @@ div.expander-container {
   top: 22px;
   width: 22px;
   height: 22px;
+  line-height: 22px;
   border-radius: 50%;
   text-align: center;
   color: white;

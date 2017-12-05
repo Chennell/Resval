@@ -30,6 +30,7 @@ div.expander-container {
   top: 22px;
   width: 22px;
   height: 22px;
+  line-height: 22px;
   border-radius: 50%;
   text-align: center;
   color: white;

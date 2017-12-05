@@ -45,23 +45,38 @@ div.column-right>div.scroll-y{
 
     div.description-section{
       padding-top: @ws_2;
+      div.expander-container{
+        a.expander-trigger{
 
-    .expander-trigger:after{
-      content: "";
-      position: absolute;
-      right: @ws_2;
-      top: @ws_2;
-      width: 0;
-      height: 0;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
-      border-top: 2px solid #fff;
-      
-      text-align: center;
+        h4.icon-handle{
+          display: inline-block;
+        }
+        h4.icon-handle:after{
+          content: "\f078";
+          line-height: @ws_2;
+          position: absolute;
+          left: 136px;
+          top: 36px;
+          font-family: FontAwesome;
+          text-align: center;
+          color: white;
+          border: solid 1px white;
+          border-radius: 50%;
+          width: @ws_2;
+          height: @ws_2;
+          font-size: 12px;
+        }
+
+      }
     }
       // span.kontakt{
       //   // margin-top: @ws_4;
       // }
     }
   }
+}
+
+div.description-section>div.expander-container>a.expander-trigger:after{
+content: '';
+border: none;
 }

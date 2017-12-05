@@ -2,9 +2,12 @@
 
 var expandTrigger= document.getElementById('expander-trigger');
 var expandArea= document.getElementById('expanding-area');
+var icon = document.getElementsByClassName("icon-handle");
 
 expandTrigger.addEventListener("click" ,function (event){
     expandArea.classList.toggle('show');
+    // icon.style.
+
 });
 
 

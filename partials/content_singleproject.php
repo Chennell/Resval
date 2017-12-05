@@ -8,7 +8,7 @@
         <!-- include featured image -->
         <!-- <li class="project-image">
             <?php //the_post_thumbnail( 'single_large' ); ?>
-            <span class="project-image-caption"><?php the_sub_field('image_description') ?></span>
+            <span class="project-image-caption"><?php //the_sub_field('image_description') ?></span>
         </li> -->
     <?php
        if( have_rows('image_repeater') ):
@@ -81,13 +81,40 @@
     </div>
     <!-- DESCRIPTION ---------------------------------------------------------->
     <div class="project-description">
-      <span class="description"><?php the_field( 'projekt_description' ); ?></span>
-      <div class="expander-container">
-        <a href="#" id="expander-trigger" class="expander-trigger">
-         Kontakt
-        </a>
-        <div id="expanding-area" class="expanding-area">
-          <p><?php the_field('kontakt_person') ?></p>
+      <div class="description-section">
+        <h4>I korthet </h4>
+        <span class="description"><?php the_field( 'decscription_short' ); ?></span>
+      </div>
+      <div class="description-section">
+        <h4>Ni behöver </h4>
+        <span class="description"><?php the_field( 'description_ingeredients' ); ?></span>
+      </div>
+      <div class="description-section">
+        <h4>Gör så här</h4>
+        <span class="description"><?php the_field( 'description_procedure' ); ?></span>
+      </div>
+      <div class="description-section">
+        <h4>Resultat</h4>
+        <span class="description"><?php the_field( 'description_result' ); ?></span>
+      </div>
+      <div class="description-section">
+        <div class="expander-container">
+          <a href="#" id="expander-trigger" class="expander-trigger">
+           <h4>Mer detaljer</h4>
+          </a>
+          <div id="expanding-area" class="expanding-area">
+            <span class="description"><?php the_field( 'description_details' ); ?></span>
+          </div>
+        </div>
+      </div>
+      <div class="description-section">
+        <div class="expander-container">
+          <a href="#" id="expander-trigger" class="expander-trigger">
+           <h4>Kontakt</h4>
+          </a>
+          <div id="expanding-area" class="expanding-area">
+            <span><?php the_field('kontakt_person') ?></span>
+          </div>
         </div>
       </div>
     </div>

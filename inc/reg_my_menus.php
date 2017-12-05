@@ -2,8 +2,8 @@
 function register_my_menus() {
   register_nav_menus(
     array(
-      'header-nav' => __( 'Header Menu' )
-      //'extra-menu' => __( 'Extra Menu' )
+      'header-nav' => __( 'Header Menu' ),
+      'footer' => __( 'Footer' )
     )
   );
 }

@@ -1,5 +1,5 @@
 div.column-right > div.scroll-y div.ingredients-container {
-  padding: 44px 0 0 0;
+  padding: 22px 0;
 }
 div.column-right > div.scroll-y div.ingredients-container :first-child {
   padding-left: 0 !important;
@@ -9,8 +9,8 @@ div.column-right > div.scroll-y div.ingredients-container span.time,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize,
 div.column-right > div.scroll-y div.ingredients-container span.budget {
   display: inline;
-  width: 70px;
-  height: auto;
+  width: 50px;
+  height: 50px;
   padding-left: 22px;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort img,
@@ -44,7 +44,4 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 div.description-section > div.expander-container > a.expander-trigger:after {
   content: '';
   border: none;
-}
-.expander-modifier:after {
-  content: '\f077' !important;
 }

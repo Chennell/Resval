@@ -425,7 +425,7 @@ li.sponsor-container {
   div.column-right {
     width: 50%;
     float: left;
-    padding: 44px 66px;
+    padding: 66px;
     box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -485,7 +485,7 @@ input.submit-button:hover {
   color: #95d3c3;
 }
 div.column-right > div.scroll-y div.ingredients-container {
-  padding: 44px 0 0 0;
+  padding: 22px 0;
 }
 div.column-right > div.scroll-y div.ingredients-container :first-child {
   padding-left: 0 !important;
@@ -495,8 +495,8 @@ div.column-right > div.scroll-y div.ingredients-container span.time,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize,
 div.column-right > div.scroll-y div.ingredients-container span.budget {
   display: inline;
-  width: 70px;
-  height: auto;
+  width: 50px;
+  height: 50px;
   padding-left: 22px;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort img,
@@ -530,9 +530,6 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 div.description-section > div.expander-container > a.expander-trigger:after {
   content: '';
   border: none;
-}
-.expander-modifier:after {
-  content: '\f077' !important;
 }
 .show {
   display: block !important;

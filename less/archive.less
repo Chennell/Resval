@@ -33,20 +33,29 @@ ul.gridParent{
     overflow: hidden;
 }
 
-a h3.title-grid{
+
+.opacityBox{
     position: absolute;
-    z-index: 10;
-    text-align: center;
     background-color: rgba(0,0,0,0.5);
     width: 300px;
     height: 300px;
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
     transition: opacity 0.6s;
-    vertical-align: middle;
-    line-height: 300px;
+    opacity: 1;
+    display: table;
+    text-align: center;
+}
+
+a h3.title-grid{
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
     text-transform: uppercase;
     color: #ffffff;
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
 }
 
 div.info-box{
@@ -75,6 +84,13 @@ div.info-box{
 
 .a-project:hover {
     
+    .opacityBox{
+        opacity: 0;
+        -webkit-transition: opacity 0.6s;
+        -moz-transition: opacity 0.6s;
+        transition: opacity 0.6s;
+    }
+    
     h3.title-grid{
     opacity: 0;
     -webkit-transition: opacity 0.6s;
@@ -102,7 +118,8 @@ div.info-box{
 @media only screen and (min-width : 768px) {
     
     .post-grid{
-        padding-top: @ws_8;
+        padding: @ws_8 @ws_4 0 @ws_4;
+        
     }
     
     .gridParent li{
@@ -124,15 +141,17 @@ div.info-box{
     
     li.filter{
         display: inline;
-    }
     
-    li.filter a{
+        a{
         text-transform: uppercase;
-        border: solid 1px @color-yellow;
-        border-radius: 5px;
         padding: 5px;
         margin: @ws_1;
         float: left;
+        
+            img{
+                height: 60px;
+            }
+        }
     }
     
     //--- THE SEARCH BOX-----------------------------------

@@ -1,6 +1,6 @@
 
 <a href="<?php the_permalink()?>">
-    <h3 class="title-grid"> <?php the_title(); ?></h3>
+    <div class="opacityBox"><h3 class="title-grid"> <?php the_title(); ?></h3></div>
 </a>
 <div class="info-box">
     <p>

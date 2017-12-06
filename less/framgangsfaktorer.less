@@ -28,7 +28,7 @@ div.expander-container{
   max-width: 800px;
   padding-top: @ws_4;
 }
-.expander-trigger{
+.framgangsfaktor-trigger{
   width: 100%;
   padding: @ws_2;
   border: solid 1px @color-mintgreen;
@@ -42,16 +42,20 @@ div.expander-container{
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.expander-trigger:after{
-  content: "+";
+.framgangsfaktor:after{
+  content: "\f078";
+  line-height: @ws_2;
   position: absolute;
   right: @ws_2;
   top: @ws_2;
+  font-family: FontAwesome;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
   width: @ws_2;
   height: @ws_2;
-  line-height: @ws_2;
-  border-radius: 50%;
-  text-align: center;
+  font-size: 12px;
   //-- when closed
   // color: @color-mintgreen;
   //border: solid 1px @color-mintgreen;

@@ -50,13 +50,14 @@ div.column-right>div.scroll-y{
 
         h4.icon-handle{
           display: inline-block;
+          position: relative;
         }
         h4.icon-handle:after{
           content: "\f078";
           line-height: @ws_2;
           position: absolute;
-          left: 136px;
-          top: 36px;
+          left: 120px;
+          top: 3px;
           font-family: FontAwesome;
           text-align: center;
           color: white;
@@ -76,7 +77,19 @@ div.column-right>div.scroll-y{
   }
 }
 
-div.description-section>div.expander-container>a.expander-trigger:after{
-content: '';
-border: none;
+//-- ARROW UP ------------------------------------------------------------------
+.expander-modifier:after{
+content: '\f077' !important;
+
+}
+
+//-- FLEXSLIDER ARROWS ---------------------------------------------------------
+
+ul.flex-direction-nav{
+  position: relative;
+
+  a.flex-nav-prev, a.flex-nav-next{
+    position: absolute;
+    top: 50%;
+  }
 }

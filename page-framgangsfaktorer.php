@@ -9,10 +9,10 @@
      // loop through the rows of data
      while ( have_rows('framgangsfaktor') ) : the_row(); ?>
      <div class="expander-container">
-       <a href="#" id="expander-trigger" class="expander-trigger">
+       <a href="#" class="framgangsfaktor-trigger framgangsfaktor">
         <?php the_sub_field('framgangsfaktor_title') ?>
        </a>
-       <div id="expanding-area" class="expanding-area">
+       <div class="expanding-area">
          <p><?php the_sub_field('framgangsfaktor_description') ?></p>
        </div>
      </div>

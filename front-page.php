@@ -37,7 +37,7 @@
   <!--  Middle section     -------------------------------->
   <!--  Most popular views   -->
   <div class="mostPopularProjectsFP">
-    <div class="title_FP">
+    <!-- <div class="title_FP">
       <h2>Most popular projects</h2>
     </div>
     <ul>
@@ -46,22 +46,12 @@
           <p>Image<br> here!</p>
       </div>
       </li>
-    </ul>
+    </ul> -->
+    <?php dynamic_sidebar('project-slider'); ?>
+    </div>
   </div>
-  <!-- IMAGE SLIDER ----------------------------------------------------------->
-  <div class="project-slider">
-    <div class="flexslider">
-      <ul class="slides">
-        <!-- include featured image -->
-         <li class="project-image">
-            <?php the_post_thumbnail( 'single_large' ); ?>
-            <span class="project-image-caption"><?php the_field('description_short') ?></span>
-        </li>
+  </div>
 
-       </ul>
-     </div>
-  </div>
-</div>
 
 
 

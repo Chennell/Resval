@@ -99,20 +99,20 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" id="expander-trigger" class="expander-trigger">
+          <a href="#" class="expander-trigger" class="expander-trigger">
            <h4 class="icon-handle">Mer detaljer</h4>
           </a>
-          <div id="expanding-area" class="expanding-area">
+          <div class="expanding-area" class="expanding-area">
             <span class="description"><?php the_field( 'description_details' ); ?></span>
           </div>
         </div>
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" id="expander-trigger" class="expander-trigger">
+          <a href="#" class="expander-trigger" class="expander-trigger">
            <h4 class="icon-handle">Kontakt</h4>
           </a>
-          <div id="expanding-area" class="expanding-area">
+          <div class="expanding-area" class="expanding-area">
             <span><?php the_field('kontakt_person') ?></span>
           </div>
         </div>

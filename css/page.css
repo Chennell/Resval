@@ -2,9 +2,9 @@ div.column-left,
 div.column-right {
   width: 100%;
   box-sizing: border-box;
+  padding: 66px 44px;
 }
 div.column-left {
-  padding: 66px 44px;
   box-sizing: border-box;
 }
 div.column-left img {
@@ -20,9 +20,6 @@ div.image-slider {
   left: 88px;
   width: 100%;
   height: auto;
-}
-ol.flex-control-nav.flex-control-paging {
-  display: none;
 }
 li.project-image,
 li.project-image.flex-active-slide {

@@ -57,6 +57,36 @@ footer .copyright {
 footer .copyright p {
   color: white;
 }
+footer .smallfooter {
+  background-color: #2e5047;
+  color: white;
+  padding: 22px 22px;
+}
+footer .smallfooter ul {
+  overflow: hidden;
+}
+footer .smallfooter ul li {
+  float: left;
+  width: 50%;
+}
+footer .smallfooter ul li .contactInfoFP2 {
+  text-align: left;
+}
+footer .smallfooter ul li .contactInfoFP2 .title_FP2 > h2 {
+  color: white;
+}
+footer .smallfooter ul li .contactInfoFP2 p {
+  color: white;
+}
+footer .smallfooter ul li .copyright {
+  text-align: right;
+}
+footer .smallfooter ul li .copyright p {
+  color: white;
+}
+footer .smallfooter ul li .copyright p a {
+  color: white;
+}
 @media only screen and (min-width: 768px) {
   footer .logofooter {
     height: 200px;

@@ -24,7 +24,7 @@
             ?>
            
                     <li class="filter">
-                        <a href="/project_type/<?php echo $value->slug ?>">
+                        <a href="/project-cat/<?php echo $value->slug ?>">
                             <?php echo $value->name ?>
                         </a>
                     </li>

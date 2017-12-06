@@ -20,19 +20,19 @@
             <ul class="project_type"><?php
         //--- GETS the post types, filters.
         $terms = get_terms(array('taxonomy' => 'project', 'hide_empty' => true ));
-        foreach ($terms as $value) { 
+        foreach ($terms as $value) {
             ?>
-           
+
                     <li class="filter">
                         <a href="/project_type/<?php echo $value->slug ?>">
                             <?php echo $value->name ?>
                         </a>
                     </li>
-            
+
     <?php
         }
 
-?>    
+?>
        </ul>
     </div>
 <!--THIS loops through and displays the projects-->
@@ -49,9 +49,9 @@
             endwhile; endif;
         ?>
     </ul>
-</div> 
+</div>
 
 <?php
-    get_footer() 
+    get_footer()
 
-?> 
+?>

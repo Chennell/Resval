@@ -7,7 +7,7 @@
                 get_search_form();
             ?>
         </div>
-        <!-- Filter MENU, CHOOSE CATEGORY -->
+
         <?php
         $args = array(
           'post_type'       =>  'project',
@@ -19,26 +19,26 @@
         <div class="filterbox">
             <ul class="project_type"><?php
         //--- GETS the post types, filters.
-        $terms = get_terms(array('taxonomy' => 'project', 'hide_empty' => true ));
-        foreach ($terms as $value) {
+        $terms = get_terms(array('taxonomy' => 'project-cat', 'hide_empty' => true ));
+        foreach ($terms as $value) { 
             ?>
-
+           
                     <li class="filter">
                         <a href="/project_type/<?php echo $value->slug ?>">
                             <?php echo $value->name ?>
                         </a>
                     </li>
-
+            
     <?php
         }
 
-?>
+?>    
        </ul>
     </div>
 <!--THIS loops through and displays the projects-->
     <ul class="gridParent">
         <?php
-            if ($project_query->have_posts()): while ($project_query->have_posts()): $project_query->the_post();
+            if (have_posts()): while (have_posts()): the_post();
         ?>
             <li class="a-project">
                <?php
@@ -49,9 +49,9 @@
             endwhile; endif;
         ?>
     </ul>
-</div>
+</div> 
 
 <?php
-    get_footer()
+    get_footer() 
 
-?>
+?> 

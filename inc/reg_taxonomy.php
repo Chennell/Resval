@@ -20,9 +20,9 @@ function create_project_taxonomies() {
     'show_admin_column'          => true,
     'show_in_nav_menus'          => true,
     'show_tagcloud'              => true,
-    'query_var'                  => 'project',
+    'query_var'                  => 'project-cat',
   );
-  register_taxonomy( 'project', array('project'), $args );
+  register_taxonomy( 'project-cat', array('project'), $args );
 
 }
 

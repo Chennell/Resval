@@ -137,14 +137,14 @@ div#responsive-menu-wrapper {
 .buttonContainerFP {
   text-align: center;
 }
-.buttonContainerFP > button {
+.buttonContainerFP button {
   padding: 11px;
   background-color: #7ea989;
   width: 40%;
   margin-top: 22px;
   border: none;
 }
-.buttonContainerFP > button > a {
+.buttonContainerFP button a {
   color: white;
 }
 .mostPopularProjectsFP {
@@ -160,25 +160,26 @@ div#responsive-menu-wrapper {
 .mostPopularProjectsFP > ul > li > div > p {
   margin: 30px;
 }
-.contactInfoFP {
+.contactbackground {
+  background-color: #ecd45d;
+}
+.contactbackground .contactInfoFP {
   margin: 22px 0;
   text-align: center;
+  padding: 44px 0;
 }
-.contactInfoFP > p {
+.contactbackground .contactInfoFP p {
   margin-top: 11px;
 }
-.contactButtonContainerFP {
+.contactbackground .contactInfoFP .contactButtonContainerFP {
   text-align: center;
 }
-.contactButtonContainerFP > button {
+.contactbackground .contactInfoFP .contactButtonContainerFP button {
   padding: 11px;
-  background-color: #7ea989;
+  background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
   margin-top: 22px;
   border: none;
-}
-.contactButtonContainerFP > button > a {
-  color: white;
 }
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
@@ -633,6 +634,36 @@ footer .copyright {
   clear: both;
 }
 footer .copyright p {
+  color: white;
+}
+footer .smallfooter {
+  background-color: #2e5047;
+  color: white;
+  padding: 22px 22px;
+}
+footer .smallfooter ul {
+  overflow: hidden;
+}
+footer .smallfooter ul li {
+  float: left;
+  width: 50%;
+}
+footer .smallfooter ul li .contactInfoFP2 {
+  text-align: left;
+}
+footer .smallfooter ul li .contactInfoFP2 .title_FP2 > h2 {
+  color: white;
+}
+footer .smallfooter ul li .contactInfoFP2 p {
+  color: white;
+}
+footer .smallfooter ul li .copyright {
+  text-align: right;
+}
+footer .smallfooter ul li .copyright p {
+  color: white;
+}
+footer .smallfooter ul li .copyright p a {
   color: white;
 }
 @media only screen and (min-width: 768px) {

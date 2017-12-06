@@ -4,7 +4,7 @@
 @color-lightgreen: #7ea989;
 @color-darkgreen: #2e5047;
 @color-yellow: #f1d417;
-@color-darkgrey: ##555555;
+@color-darkgrey: #555555;
 // -- GRID ---------------------------------------------------------------------
 
 //whitespace (ws)
@@ -46,18 +46,22 @@
 //  The button
 .buttonContainerFP{
   text-align: center;
-}
-.buttonContainerFP>button{
-  padding: @ws_1;
-  background-color: @color-lightgreen;
-  width: 40%;
-  margin-top: @ws_2;
-  border:none;
+
+  button{
+   padding: @ws_1;
+   background-color: @color-lightgreen;
+   width: 40%;
+   margin-top: @ws_2;
+   border:none;
+     a{
+       color:white;
+
+     }
+   }
 }
 
-.buttonContainerFP>button>a{
-  color:white;
-}
+
+
 
 
 
@@ -81,30 +85,40 @@
 
 
 // Contact info section -----------------------------------------------------------
+.contactbackground{
+  background-color: rgb(236, 212, 93);
+
   .contactInfoFP{
     margin: @ws_2 0;
     text-align: center;
+    padding: @ws_4 0;
 
-  }
-  .contactInfoFP>p{
-    margin-top: @ws_1;
-  }
 
-  .contactButtonContainerFP{
-    text-align: center;
+    p{
+      margin-top: @ws_1;
+    }
+
+    .contactButtonContainerFP{
+      text-align: center;
+
+       button{
+        padding: @ws_1;
+        // background-color: @color-lightgreen;
+        background-color: rgba(255,255,255,.4);
+        // background-color: rgb(236, 212, 93);
+        width: 40%;
+        margin-top: @ws_2;
+        border: none;
+        // border:1px solid @color-darkgrey;
+
+        a{
+          // color:white;
+
+        }
+      }
+    }
+  }
 }
-
-  .contactButtonContainerFP>button{
-    padding: @ws_1;
-    background-color: @color-lightgreen;
-    width: 40%;
-    margin-top: @ws_2;
-    border:none;
-  }
-
-  .contactButtonContainerFP>button>a{
-    color:white;
-  }
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
   ----------------------*/

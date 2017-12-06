@@ -48,11 +48,28 @@
       </li>
     </ul>
   </div>
+  <!-- IMAGE SLIDER ----------------------------------------------------------->
+  <div class="project-slider">
+    <div class="flexslider">
+      <ul class="slides">
+        <!-- include featured image -->
+         <li class="project-image">
+            <?php the_post_thumbnail( 'single_large' ); ?>
+            <span class="project-image-caption"><?php the_field('description_short') ?></span>
+        </li>
+
+       </ul>
+     </div>
+  </div>
+</div>
 
 
 
   <!--  Last section     -------------------------------->
   <!--  Contact info   -->
+ <div class="contactbackground">
+
+
   <div class="contactInfoFP">
     <div class="title_FP">
       <h2><?php the_field('kontakt_titel'); ?></h2>
@@ -66,6 +83,7 @@
       </button>
     </div>
   </div>
+ </div>
 
 
 </div>

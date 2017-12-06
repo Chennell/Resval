@@ -73,7 +73,7 @@ li.sponsor-container {
   div.column-right {
     width: 50%;
     float: left;
-    padding: 66px;
+    padding: 44px 66px;
     box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;

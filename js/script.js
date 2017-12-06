@@ -6,7 +6,7 @@ var icon = document.getElementsByClassName("icon-handle");
 
 expandTrigger.addEventListener("click" ,function (event){
     expandArea.classList.toggle('show');
-    // icon.style.
+    this.firstElementChild.classList.toggle('expander-modifier');
 
 });
 

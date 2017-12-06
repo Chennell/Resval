@@ -1,6 +1,7 @@
-
+<main>
 <div class="column-left">
   <!-- Get Featured Image -->
+  <?php if (have_posts()): while (have_posts()): the_post();?>
   <!-- IMAGE SLIDER ----------------------------------------------------------->
   <div class="image-slider">
     <div class="flexslider">
@@ -120,8 +121,8 @@
     </div>
   </div>
  </div>
-
-
+<?php endwhile; endif;?>
+</main>
 
 <?php
 

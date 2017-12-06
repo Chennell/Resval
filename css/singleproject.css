@@ -1,7 +1,7 @@
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
 }
-div.column-right > div.scroll-y div.ingredients-container :first-child {
+div.column-right > div.scroll-y div.ingredients-container div.ingredients-container:first-child {
   padding-left: 0 !important;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort,
@@ -18,7 +18,6 @@ div.column-right > div.scroll-y div.ingredients-container span.time img,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize img,
 div.column-right > div.scroll-y div.ingredients-container span.budget img {
   width: 50px;
-  height: auto;
 }
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
@@ -45,11 +44,23 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 .expander-modifier:after {
   content: '\f077' !important;
 }
-ul.flex-direction-nav {
-  position: relative;
+span.project-image-caption {
+  margin-top: 10px;
 }
-ul.flex-direction-nav a.flex-nav-prev,
-ul.flex-direction-nav a.flex-nav-next {
-  position: absolute;
-  top: 50%;
+@media only screen and (min-width: 768px) {
+  span.effort,
+  span.time,
+  span.groupsize,
+  span.budget {
+    width: 70px;
+  }
+  span.effort img,
+  span.time img,
+  span.groupsize img,
+  span.budget img {
+    width: 70px;
+  }
+}
+ol.flex-control-nav.flex-control-paging {
+  display: none;
 }

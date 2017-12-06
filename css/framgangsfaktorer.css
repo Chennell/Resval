@@ -40,7 +40,7 @@ div.expander-container {
 }
 .expanding-area {
   width: 100%;
-  padding: 22px;
+  padding-top: 22px;
   box-sizing: border-box;
   display: none;
   border: solid 1px #95d3c3;

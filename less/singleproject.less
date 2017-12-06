@@ -21,9 +21,8 @@ div.column-right>div.scroll-y{
 
   div.ingredients-container{
     padding: @ws_2 0;
-    // text-align: center;
 
-    :first-child{
+    div.ingredients-container:first-child{
       padding-left: 0 !important;
     }
 
@@ -36,7 +35,6 @@ div.column-right>div.scroll-y{
       // -- icon size
       img{
         width: 50px;
-        height:auto;
       }
     }
   }
@@ -79,17 +77,27 @@ div.column-right>div.scroll-y{
 
 //-- ARROW UP ------------------------------------------------------------------
 .expander-modifier:after{
-content: '\f077' !important;
-
+  content: '\f077' !important;
 }
 
 //-- FLEXSLIDER ARROWS ---------------------------------------------------------
 
-ul.flex-direction-nav{
-  position: relative;
-
-  a.flex-nav-prev, a.flex-nav-next{
-    position: absolute;
-    top: 50%;
-  }
+span.project-image-caption{
+  margin-top: 10px;
 }
+
+@media only screen and (min-width : 768px) {
+
+      span.effort, span.time, span.groupsize, span.budget{
+        width: 70px;
+        
+        img{
+          width: 70px;
+        }
+      }
+  }
+
+  // -- hide flexslider liststyle
+  ol.flex-control-nav.flex-control-paging{
+    display: none;
+  }

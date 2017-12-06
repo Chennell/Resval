@@ -119,7 +119,7 @@ html[xmlns] .flexslider .slides {
   display: block;
   width: 40px;
   height: 40px;
-  margin: -20px 0 0;
+  margin: -31px -8px 0;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -138,7 +138,7 @@ html[xmlns] .flexslider .slides {
   font-family: "FontAwesome";
   font-size: 40px;
   display: inline-block;
-  content: '\f001';
+  content: '\f104';
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
@@ -161,7 +161,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 10px;
+  right: 5px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
@@ -631,9 +631,9 @@ div.column-left,
 div.column-right {
   width: 100%;
   box-sizing: border-box;
+  padding: 66px 44px;
 }
 div.column-left {
-  padding: 66px 44px;
   box-sizing: border-box;
 }
 div.column-left img {
@@ -649,9 +649,6 @@ div.image-slider {
   left: 88px;
   width: 100%;
   height: auto;
-}
-ol.flex-control-nav.flex-control-paging {
-  display: none;
 }
 li.project-image,
 li.project-image.flex-active-slide {
@@ -764,7 +761,7 @@ input.submit-button:hover {
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
 }
-div.column-right > div.scroll-y div.ingredients-container :first-child {
+div.column-right > div.scroll-y div.ingredients-container div.ingredients-container:first-child {
   padding-left: 0 !important;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort,
@@ -781,7 +778,6 @@ div.column-right > div.scroll-y div.ingredients-container span.time img,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize img,
 div.column-right > div.scroll-y div.ingredients-container span.budget img {
   width: 50px;
-  height: auto;
 }
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
@@ -808,13 +804,25 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 .expander-modifier:after {
   content: '\f077' !important;
 }
-ul.flex-direction-nav {
-  position: relative;
+span.project-image-caption {
+  margin-top: 10px;
 }
-ul.flex-direction-nav a.flex-nav-prev,
-ul.flex-direction-nav a.flex-nav-next {
-  position: absolute;
-  top: 50%;
+@media only screen and (min-width: 768px) {
+  span.effort,
+  span.time,
+  span.groupsize,
+  span.budget {
+    width: 70px;
+  }
+  span.effort img,
+  span.time img,
+  span.groupsize img,
+  span.budget img {
+    width: 70px;
+  }
+}
+ol.flex-control-nav.flex-control-paging {
+  display: none;
 }
 .show {
   display: block !important;
@@ -858,7 +866,7 @@ div.expander-container {
 }
 .expanding-area {
   width: 100%;
-  padding: 22px;
+  padding-top: 22px;
   box-sizing: border-box;
   display: none;
   border: solid 1px #95d3c3;

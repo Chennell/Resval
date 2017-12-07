@@ -330,6 +330,8 @@ header {
   padding: 44px;
   box-sizing: border-box;
   background: white;
+  position: fixed;
+  z-index: 100;
 }
 span.responsive-menu-box {
   margin-top: 66px;
@@ -345,12 +347,15 @@ span.responsive-menu-box {
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 div#responsive-menu-wrapper {
-  padding-top: 88px;
+  padding-top: 110px;
 }
 #responsive-menu-search-box {
   display: none;
 }
 @media only screen and (min-width: 768px) {
+  header {
+    position: inherit;
+  }
   .logo {
     width: 10%;
     display: inline;
@@ -516,15 +521,18 @@ div#responsive-menu-wrapper {
 ul.slides {
   overflow: hidden;
 }
+.post-grid {
+  padding: 44px;
+  padding-top: 0;
+}
 ul.gridParent {
-  margin-top: 11px;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px;
   width: 100%;
   margin: 0 auto;
   grid-column-gap: 22px;
 }
-.gridParent li {
+ul.gridParent li {
   margin-bottom: 22px;
   position: relative;
   overflow: hidden;
@@ -554,91 +562,102 @@ a h3.title-grid {
 div.info-box {
   position: absolute;
   text-align: center;
-  height: 150px;
   padding: 11px;
-  opacity: 1;
-  right: -100px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 11;
   background-color: #95d3c3;
-  transition: 0.4s linear;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-}
-div.info-box p {
-  display: none;
+  bottom: 0;
 }
 .post-grid-pic a img {
   width: 100%;
 }
-.a-project:hover .opacityBox {
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+div.filterbox {
+  overflow: hidden;
 }
-.a-project:hover h3.title-grid {
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+ul.project_type {
+  float: right;
 }
-.a-project:hover div.info-box {
-  width: 178px;
-  right: 0px;
-  transition: 0.6s linear;
+li.filter {
+  display: inline;
 }
-.a-project:hover div.info-box p {
-  display: block;
+li.filter a {
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 11px;
+  float: left;
+}
+li.filter a img {
+  height: 60px;
+}
+input.form-control {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  border-bottom: solid 1px #95d3c3;
+  width: 198px;
+  margin-right: 22px;
+  float: left;
+  padding-top: 22px;
+}
+input.search-submit {
+  -webkit-appearance: none;
+  background: none;
+  border: solid 1px #95d3c3;
+  border-radius: 10px;
+  padding: 11px;
+}
+input.search-submit:hover,
+input.search-submit:focus {
+  background-color: #95d3c3;
+  color: #fff;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   .post-grid {
     padding: 88px 44px 0 44px;
   }
+  .post-grid ul.gridParent {
+    grid-template-columns: 300px 300px 300px;
+  }
   .gridParent li {
     float: left;
     position: relative;
   }
-  div.filterbox {
-    overflow: hidden;
-  }
-  ul.project_type {
-    float: right;
-  }
-  li.filter {
-    display: inline;
-  }
-  li.filter a {
-    text-transform: uppercase;
-    padding: 5px;
-    margin: 11px;
-    float: left;
-  }
-  li.filter a img {
-    height: 60px;
-  }
-  input.form-control {
-    -webkit-appearance: none;
-    background: none;
-    border: none;
-    border-bottom: solid 1px #95d3c3;
-    width: 198px;
-    margin-right: 22px;
-    float: left;
-    padding-top: 22px;
-  }
-  input.search-submit {
-    -webkit-appearance: none;
-    background: none;
-    border: solid 1px #95d3c3;
-    border-radius: 10px;
+  div.info-box {
+    position: absolute;
+    text-align: center;
+    height: 150px;
     padding: 11px;
-  }
-  input.search-submit:hover {
+    opacity: 1;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
     background-color: #95d3c3;
-    color: #fff;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+  }
+  div.info-box p {
+    display: none;
+  }
+  .a-project:hover .opacityBox {
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  .a-project:hover h3.title-grid {
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  .a-project:hover div.info-box {
+    width: 178px;
+    right: 0px;
+    transition: 0.6s linear;
+  }
+  .a-project:hover div.info-box p {
+    display: block;
   }
 }
 div.column-left,

@@ -5,6 +5,8 @@ header {
   padding: 44px;
   box-sizing: border-box;
   background: white;
+  position: fixed;
+  z-index: 100;
 }
 span.responsive-menu-box {
   margin-top: 66px;
@@ -20,12 +22,15 @@ span.responsive-menu-box {
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 div#responsive-menu-wrapper {
-  padding-top: 88px;
+  padding-top: 110px;
 }
 #responsive-menu-search-box {
   display: none;
 }
 @media only screen and (min-width: 768px) {
+  header {
+    position: inherit;
+  }
   .logo {
     width: 10%;
     display: inline;

@@ -62,7 +62,8 @@ a h3.title-grid{
 div.info-box{
     position: absolute;
     text-align: center;
-    padding: @ws_1;
+    //padding: @ws_1;
+    width: 100%;
     //right: -100px;
     //top: 50%;
     //transform: translateY(-50%);
@@ -70,6 +71,10 @@ div.info-box{
     background-color: @color-mintgreen;
     //transition: 0.4s linear;
     bottom: 0;
+    
+    p{
+        padding: @ws_1;
+    }
 }
 
 .post-grid-pic a img{
@@ -164,9 +169,12 @@ input.search-submit:focus{
         transition: 0.4s linear;
         -webkit-transition: 0.4s linear;
         -moz-transition: 0.4s linear;
+        padding: @ws_1;
+        width: 0;
 
         p{
-          display: none;   
+          display: none; 
+            padding: 0;
         }
     }
     

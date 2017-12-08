@@ -332,9 +332,10 @@ header {
   background: white;
   position: fixed;
   z-index: 100;
+  top: 0;
 }
 span.responsive-menu-box {
-  margin-top: 66px;
+  margin-top: 22px;
 }
 .logo {
   width: 30%;
@@ -347,7 +348,7 @@ span.responsive-menu-box {
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 div#responsive-menu-wrapper {
-  padding-top: 110px;
+  padding-top: 88px;
 }
 #responsive-menu-search-box {
   display: none;
@@ -562,9 +563,12 @@ a h3.title-grid {
 div.info-box {
   position: absolute;
   text-align: center;
-  padding: 11px;
+  width: 100%;
   background-color: #95d3c3;
   bottom: 0;
+}
+div.info-box p {
+  padding: 11px;
 }
 .post-grid-pic a img {
   width: 100%;
@@ -625,7 +629,6 @@ input.search-submit:focus {
     position: absolute;
     text-align: center;
     height: 150px;
-    padding: 11px;
     opacity: 1;
     right: -100px;
     top: 50%;
@@ -635,9 +638,12 @@ input.search-submit:focus {
     transition: 0.4s linear;
     -webkit-transition: 0.4s linear;
     -moz-transition: 0.4s linear;
+    padding: 11px;
+    width: 0;
   }
   div.info-box p {
     display: none;
+    padding: 0;
   }
   .a-project:hover .opacityBox {
     opacity: 0;

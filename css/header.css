@@ -7,9 +7,10 @@ header {
   background: white;
   position: fixed;
   z-index: 100;
+  top: 0;
 }
 span.responsive-menu-box {
-  margin-top: 66px;
+  margin-top: 22px;
 }
 .logo {
   width: 30%;
@@ -22,7 +23,7 @@ span.responsive-menu-box {
 }
 /*-- NAVIGATION --------------------------------------------------------------*/
 div#responsive-menu-wrapper {
-  padding-top: 110px;
+  padding-top: 88px;
 }
 #responsive-menu-search-box {
   display: none;

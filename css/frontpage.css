@@ -123,3 +123,6 @@
     text-align: left;
   }
 }
+ul.slides {
+  overflow: hidden;
+}

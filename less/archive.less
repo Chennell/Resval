@@ -16,56 +16,64 @@
 
 
 //-----Here we start with the styling-------------------
-
+.post-grid{
+   padding: @ws_4;
+    padding-top: 0;
+}
 ul.gridParent{
-    margin-top: @ws_1;
-    //overflow: hidden;
+//    margin-top: @ws_1;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 300px;
     width: 100%;
     margin: 0 auto;
     grid-column-gap: @ws_2;
+    
+    li{
+        margin-bottom: @ws_2;
+        position: relative;
+        overflow: hidden;
+    }
 }
 
-.gridParent li{
-    margin-bottom: @ws_2;
-    position: relative;
-    overflow: hidden;
-}
-
-a h3.title-grid{
+.opacityBox{
     position: absolute;
-    z-index: 10;
-    text-align: center;
     background-color: rgba(0,0,0,0.5);
     width: 300px;
     height: 300px;
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
     transition: opacity 0.6s;
-    vertical-align: middle;
-    line-height: 300px;
+    opacity: 1;
+    display: table;
+    text-align: center;
+}
+
+a h3.title-grid{
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
     text-transform: uppercase;
     color: #ffffff;
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
 }
 
 div.info-box{
     position: absolute;
     text-align: center;
-    height: 150px;
-    padding: @ws_1;
-    opacity: 1;
-    right: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 11;
+    //padding: @ws_1;
+    width: 100%;
+    //right: -100px;
+    //top: 50%;
+    //transform: translateY(-50%);
+    //z-index: 11;
     background-color: @color-mintgreen;
-    transition: 0.4s linear;
-    -webkit-transition: 0.4s linear;
-    -moz-transition: 0.4s linear;
+    //transition: 0.4s linear;
+    bottom: 0;
     
     p{
-      display: none;   
+        padding: @ws_1;
     }
 }
 
@@ -73,24 +81,55 @@ div.info-box{
     width: 100%;
 }
 
-.a-project:hover {
-    
-    h3.title-grid{
-    opacity: 0;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-    transition: opacity 0.6s;
-    }
-    
-    div.info-box{
-    width: 178px;
-    right: 0px;
-    transition: 0.6s linear;
-    
-        p{
-          display: block;  
+
+
+
+// -- The filters/project type ---------------------------
+div.filterbox{
+    overflow: hidden
+}
+ul.project_type{
+    float: right;
+}
+
+li.filter{
+    display: inline;
+
+    a{
+    text-transform: uppercase;
+    padding: 5px;
+    margin: @ws_1;
+    float: left;
+
+        img{
+            height: 60px;
         }
     }
+}
+
+//--- THE SEARCH BOX-----------------------------------
+input.form-control{
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    border-bottom: solid 1px @color-mintgreen;
+    width: 198px;
+    float: left;
+    margin-right: @ws_2;
+    float: left;
+    padding-top: @ws_2;
+}
+input.search-submit{
+    -webkit-appearance: none;
+    background: none;
+    border: solid 1px @color-mintgreen;
+    border-radius: 10px;
+    padding: @ws_1;
+}
+input.search-submit:hover,
+input.search-submit:focus{
+    background-color: @color-mintgreen;
+    color: #fff;
 }
 
 
@@ -102,7 +141,12 @@ div.info-box{
 @media only screen and (min-width : 768px) {
     
     .post-grid{
-        padding-top: @ws_8;
+        padding: @ws_8 @ws_4 0 @ws_4;
+        
+        ul.gridParent{
+            grid-template-columns: 300px 300px 300px;
+        }
+        
     }
     
     .gridParent li{
@@ -111,52 +155,53 @@ div.info-box{
         position: relative;
     }
     
-    
-    
-    
-    // -- The filters/project type ---------------------------
-    div.filterbox{
-        overflow: hidden
-    }
-    ul.project_type{
-        float: right;
-    }
-    
-    li.filter{
-        display: inline;
-    }
-    
-    li.filter a{
-        text-transform: uppercase;
-        border: solid 1px @color-yellow;
-        border-radius: 5px;
-        padding: 5px;
-        margin: @ws_1;
-        float: left;
-    }
-    
-    //--- THE SEARCH BOX-----------------------------------
-    input.form-control{
-        -webkit-appearance: none;
-        background: none;
-        border: none;
-        border-bottom: solid 1px @color-mintgreen;
-        width: 198px;
-        float: left;
-        margin-right: @ws_2;
-        float: left;
-        padding-top: @ws_2;
-    }
-    input.search-submit{
-        -webkit-appearance: none;
-        background: none;
-        border: solid 1px @color-mintgreen;
-        border-radius: 10px;
+    div.info-box{
+        position: absolute;
+        text-align: center;
+        height: 150px;
         padding: @ws_1;
+        opacity: 1;
+        right: -100px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        background-color: @color-mintgreen;
+        transition: 0.4s linear;
+        -webkit-transition: 0.4s linear;
+        -moz-transition: 0.4s linear;
+        padding: @ws_1;
+        width: 0;
+
+        p{
+          display: none; 
+            padding: 0;
+        }
     }
     
-    input.search-submit:hover{
-        background-color: @color-mintgreen;
-        color: #fff;
-    }
+    .a-project:hover {
+
+        .opacityBox{
+            opacity: 0;
+            -webkit-transition: opacity 0.6s;
+            -moz-transition: opacity 0.6s;
+            transition: opacity 0.6s;
+        }
+
+        h3.title-grid{
+            opacity: 0;
+            -webkit-transition: opacity 0.6s;
+            -moz-transition: opacity 0.6s;
+            transition: opacity 0.6s;
+        }
+
+        div.info-box{
+            width: 178px;
+            right: 0px;
+            transition: 0.6s linear;
+
+            p{
+              display: block;  
+            }
+        }
+    } 
 }

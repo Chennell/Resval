@@ -16,12 +16,15 @@
 /*-- HEADER ------------------------------------------------------------------*/
 
 header{
-  overflow: hidden;
-  width: 100vW;
-  padding: @ws_4;
+    overflow: hidden;
+    width: 100vW;
+    padding: @ws_4;
 
-  box-sizing: border-box;
-  background: white;
+    box-sizing: border-box;
+    background: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
   // background: -webkit-linear-gradient(#ffffff 60%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   // background: -o-linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   // background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -30,7 +33,7 @@ header{
 
 //hamburger menu
 span.responsive-menu-box{
-    margin-top: @ws_6;
+    margin-top: @ws_2;
 }
 
 //-- LOGO ----------------------------------------------------------------------
@@ -60,6 +63,10 @@ div#responsive-menu-wrapper{
 
 //--------------------THIS IS THE BIG MENU
 @media only screen and (min-width : 768px){
+    
+    header{
+        position: inherit;
+    }
 
     .logo{
         width: 10%;

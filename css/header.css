@@ -5,9 +5,12 @@ header {
   padding: 44px;
   box-sizing: border-box;
   background: white;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 span.responsive-menu-box {
-  margin-top: 66px;
+  margin-top: 22px;
 }
 .logo {
   width: 30%;
@@ -26,6 +29,9 @@ div#responsive-menu-wrapper {
   display: none;
 }
 @media only screen and (min-width: 768px) {
+  header {
+    position: inherit;
+  }
   .logo {
     width: 10%;
     display: inline;

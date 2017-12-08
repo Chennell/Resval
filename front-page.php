@@ -41,7 +41,7 @@
   <!--  Middle section     -------------------------------->
   <!--  Most popular views   -->
   <div class="mostPopularProjectsFP">
-    <div class="title_FP">
+    <!-- <div class="title_FP">
       <h2>Most popular projects</h2>
     </div>
 

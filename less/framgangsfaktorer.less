@@ -28,30 +28,37 @@ div.expander-container{
   max-width: 800px;
   padding-top: @ws_4;
 }
-.expander-trigger{
+.framgangsfaktor-trigger{
   width: 100%;
   padding: @ws_2;
+  font-size: 16px;
+  line-height: 22px;
   border: solid 1px @color-mintgreen;
   border-radius: 4px;
   display: block;
   position: relative;
   box-sizing: border-box;
+  text-align: left;
   //-- when open
   background-color: @color-mintgreen;
   color: white;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.expander-trigger:after{
-  content: "+";
+.framgangsfaktor:after{
+  content: "\f078";
+  line-height: @ws_2;
   position: absolute;
   right: @ws_2;
   top: @ws_2;
+  font-family: FontAwesome;
+  text-align: center;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
   width: @ws_2;
   height: @ws_2;
-  line-height: @ws_2;
-  border-radius: 50%;
-  text-align: center;
+  font-size: 12px;
   //-- when closed
   // color: @color-mintgreen;
   //border: solid 1px @color-mintgreen;
@@ -62,7 +69,7 @@ div.expander-container{
 
 .expanding-area{
   width: 100%;
-  padding: @ws_2;
+  padding-top: @ws_2;
   box-sizing: border-box;
   display: none;
   //when open

@@ -43,6 +43,8 @@ var topic_bike = document.getElementsByClassName('cat-item-14');
 var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
 var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
 
+// var timelow = document.getElementsByClassName('cat-item-23').classList.add('icon');
+
 for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
     event.currentTarget.nextElementSibling.classList.toggle('show');

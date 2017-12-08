@@ -29,6 +29,21 @@ jQuery(window).load(function() {
     animation: "slide",
     animationLoop: false,
     // itemMargin: 5
-    
+
   });
 });
+
+
+
+// -- CATEGORY ICONS
+var filters = document.getElementsByClassName('filters-form')
+var iconArea = document.getElementsByClassName('icon-area');
+var topic_bike = document.getElementsByClassName('cat-item-14');
+
+var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
+var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
+
+for (var i = 0; i<categoryTrigger.length; i++){
+    categoryTrigger[i].addEventListener("click" ,function (event){
+    event.currentTarget.nextElementSibling.classList.toggle('show');
+});}

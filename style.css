@@ -853,11 +853,14 @@ div.expander-container {
 .framgangsfaktor-trigger {
   width: 100%;
   padding: 22px;
+  font-size: 16px;
+  line-height: 22px;
   border: solid 1px #95d3c3;
   border-radius: 4px;
   display: block;
   position: relative;
   box-sizing: border-box;
+  text-align: left;
   background-color: #95d3c3;
   color: white;
   border-bottom-left-radius: 0;

@@ -2,6 +2,10 @@
 <?php get_header();?>
 
 <div class="frontPageContainer">
+  <?php do_shortcode(
+    '[wcp-carousel id="57"]'
+    ) ?>
+
 
   <!--    Top section About section  ------------------------------------------------->
   <div class="topSectionFP">
@@ -40,16 +44,44 @@
     <!-- <div class="title_FP">
       <h2>Most popular projects</h2>
     </div>
-    <ul>
-      <li>
-        <div class="">
-          <p>Image<br> here!</p>
-      </div>
-      </li>
-    </ul> -->
-    <?php dynamic_sidebar('project-slider'); ?>
-    </div>
+
+
+<!-- PROJECT SLIDER ----------------------------------------------------------->
+    <!-- Carousel slider -->
+    <?php //the_content(); ?>
   </div>
+
+  <!-- Flexslider -->
+
+  <div class="project-slider">
+    <div class="flexslider">
+      <ul class="slides">
+    <?php
+       if( have_rows('project_slider') ):
+      // loop through the rows of data
+      while ( have_rows('project_slider') ) : the_row();
+        $project = get_sub_field('project_on_front_page');
+        $projectTitle = $project->post_title;
+        $projectImage = get_the_post_thumbnail($project, 'about_logo');
+        $projecturl = get_permalink($project)
+      ?>
+      <!-- Place somewhere in the <body> of your page -->
+         <li class="singleProjectSlider">
+             <div class="projectSliderdiv">
+
+             <span class="">
+                <?php echo $projectImage; ?>
+               <a href="<?php echo $projecturl ?>">
+                 <h2>
+                   <?php echo $projectTitle; ?>
+                 </h2>
+                 </a>
+            </span>
+             </div>
+         </li>
+         <?php endwhile; endif;?>
+       </ul>
+     </div>
   </div>
 
   <!-- Sponsor Area -->

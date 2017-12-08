@@ -4,7 +4,9 @@
 </a>
 <div class="info-box">
     <p>
-        This is some random content about the project.
+       <?php
+            the_field(hover_description);
+        ?>
     </p>
 </div>
 <a href="<?php the_permalink()?>">

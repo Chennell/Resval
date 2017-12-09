@@ -15,10 +15,13 @@
 @ws_8: 88px;
 
 
-//-----Here we start with the styling-------------------
+//-----Here we start with the styling------------------
+
 .post-grid{
-   padding: @ws_4;
+    //padding: @ws_4;
     padding-top: 0;
+    width: 300px;
+    margin: 0 auto;
 }
 ul.gridParent{
 //    margin-top: @ws_1;
@@ -153,10 +156,14 @@ input.search-submit:focus{
 @media only screen and (min-width : 768px) {
 
     .post-grid{
-        padding: @ws_8 @ws_4 0 @ws_4;
+        //padding: @ws_8 @ws_4 0 @ws_4;
+        width: 1000px;
+        margin: 0 auto;
 
         ul.gridParent{
             grid-template-columns: 300px 300px 300px;
+            width: 960px;
+            margin: 0 auto;
         }
 
     }

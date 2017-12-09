@@ -1,6 +1,7 @@
 <?php
 
     get_header()?>
+    <main>
     <div class="post-grid">
         <div class="search_form">
             <?php
@@ -46,7 +47,7 @@
         ?>
     </ul>
 </div>
-
+</main>
 <?php
     get_footer()
 ?>

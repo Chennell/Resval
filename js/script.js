@@ -27,15 +27,15 @@ for (var i = 0; i<framgangsfaktorTrigger.length; i++){
 jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
-    animationLoop: false,
-    // itemMargin: 5
+    animationLoop: true,
+
 
   });
 });
 
 
 
--- CATEGORY ICONS
+// -- CATEGORY ICONS
 var filters = document.getElementsByClassName('filters-form');
 var iconArea = document.getElementsByClassName('icon-area');
 var topic_bike = document.getElementsByClassName('cat-item-14');

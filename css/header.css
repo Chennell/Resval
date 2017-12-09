@@ -32,6 +32,7 @@ div#responsive-menu-wrapper {
 @media only screen and (min-width: 768px) {
   header {
     position: inherit;
+    border-bottom: none;
   }
   .logo {
     width: 10%;

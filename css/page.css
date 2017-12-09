@@ -1,6 +1,3 @@
-main {
-  margin-top: 88px;
-}
 div.column-left,
 div.column-right {
   width: 100%;
@@ -23,20 +20,17 @@ li.sponsor-container > a > img.sponsor-logo {
   width: 100%;
 }
 div.image-slider {
-  left: 88px;
   width: 100%;
   height: auto;
+  margin: auto auto;
 }
 li.project-image,
 li.project-image.flex-active-slide {
-  list-style: none;
   text-align: center;
 }
 li.project-image img,
 li.project-image.flex-active-slide img {
-  width: auto;
-  max-height: 210px;
-  max-width: 410px;
+  padding: 5px;
   box-sizing: border-box;
 }
 li.project-image span.project-image-caption,
@@ -71,7 +65,7 @@ li.sponsor-container {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: 0;
+    padding-top: 0 !important;
   }
   div.column-left,
   div.column-right {
@@ -116,5 +110,10 @@ li.sponsor-container {
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  div.column-right {
+    max-height: 1080px;
   }
 }

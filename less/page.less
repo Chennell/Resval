@@ -4,6 +4,7 @@
 @color-lightgreen: #7ea989;
 @color-darkgreen: #2e5047;
 @color-yellow: #f1d417;
+@color-darkgrey: #414042;
 
 //whitespace (ws)
 @ws_1: 11px;
@@ -12,10 +13,6 @@
 @ws_6: 66px;
 @ws_8: 88px;
 
-main{
-  margin-top: @ws_8;
-  // min-height: 100vh;
-}
 
 // -- COLUMN LEFT AND RIGHT ----------------------------------------------------
 
@@ -52,22 +49,17 @@ li.sponsor-container> a > img.sponsor-logo{
 
 // -- FLEXSLIDER ---------------------------------------------------------------
 div.image-slider{
-  left: @ws_8;
   width: 100%;
   height: auto;
+  margin: auto auto;
 }
 
-ul.slides{}
-
-
 li.project-image, li.project-image.flex-active-slide{
-  list-style: none;
+
   text-align: center;
 
   img{
-    width: auto;
-    max-height: 210px;
-    max-width: 410px;
+    padding: 5px;
     box-sizing: border-box;
   }
 
@@ -125,7 +117,7 @@ main{
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 0;
+  padding-top: 0 !important;
 }
   // -- COLUMN LEFT AND RIGHT --------------------------------------------------
 
@@ -240,10 +232,8 @@ div.column-left{}
 }
 
 
-@media only screen and (min-width : 1024px) {
-  // -- COLUMN LEFT IMAGE ------------------------------------------------------
-
-  div.column-left> img{
-
+@media only screen and (min-width : 1920px) {
+  div.column-right{
+    max-height: 1080px;
   }
 }

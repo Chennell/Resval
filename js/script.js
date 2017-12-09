@@ -62,4 +62,5 @@ for (var i = 0; i<categoryTrigger.length; i++){
 // }
 // else {
 //  alert("this element is not overflowing!!");
+>>>>>>> 0c17a95d126edf9b3763a875c6ed5b3fcf192b17
 // }

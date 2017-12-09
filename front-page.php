@@ -46,78 +46,52 @@
       </div>
 
 
-  <!-- PROJECT SLIDER ----------------------------------------------------------->
-      <!-- Carousel slider -->
-      <?php //the_content(); ?>
+<!-- PROJECT SLIDER --------------------------------------------------------->
+    <!-- Carousel slider -->
+    <div class="carouselProject">
+      <?php the_content(); ?>
     </div>
 
-    <!-- Flexslider -->
 
-    <div class="project-slider">
-      <div class="flexslider">
-        <ul class="slides">
-      <?php
-         if( have_rows('project_slider') ):
-        // loop through the rows of data
-        while ( have_rows('project_slider') ) : the_row();
-          $project = get_sub_field('project_on_front_page');
-          $projectTitle = $project->post_title;
-          $projectImage = get_the_post_thumbnail($project, 'about_logo');
-          $projecturl = get_permalink($project)
-        ?>
-        <!-- Place somewhere in the <body> of your page -->
-           <li class="singleProjectSlider">
-               <div class="projectSliderdiv">
 
-               <span class="">
-                  <?php echo $projectImage; ?>
-                 <a href="<?php echo $projecturl ?>">
-                   <h2>
-                     <?php echo $projectTitle; ?>
-                   </h2>
-                   </a>
-              </span>
-               </div>
-           </li>
-           <?php endwhile; endif;?>
-         </ul>
-       </div>
-    </div>
+  <!-- Flexslider -->
+<!--
+  <div class="project-slider">
+    <div class="flexsliderProject">
+      <ul class="projectCard">
+    <?php
+      /* if( have_rows('project_slider') ):
+      // loop through the rows of data
+      while ( have_rows('project_slider') ) : the_row();
+        $project = get_sub_field('project_on_front_page');
+        $projectTitle = $project->post_title;
+        $projectImage = get_the_post_thumbnail($project);
+        $projecturl = get_permalink($project)
+        */
+      ?>
 
-    <!-- Sponsor Area -->
-    <!-- <div class="sponsor-area">
-      <?php
-         //if( have_rows('sponsrade_loggor_repeater') ):
-        // loop through the rows of data
-        //while ( have_rows('sponsrade_loggor_repeater') ) : the_row(); ?>
-        <!-- Place somewhere in the <body> of your page -->
-       <!-- <div class="flexslider">
-         <ul class="slides">
-           <li class="sponsor-container">
-             <a href="<?php //the_sub_field('sponsrade_url'); ?>">
-               <img class="sponsor-logo" src="<?php //echo wp_get_attachment_image_url(the_sub_field('sponsrade_loggor'), 'about_logo'); ?>" />
-             </a>
-           </li>
-         </ul>
-       </div> -->
-       <?php //endwhile; endif;?>
-  <!--  </div> -->
+      -->
+      <!-- Place somewhere in the <body> of your page -->
+       <!--   <li class="singleProjectSlider">
+             <div class="projectSliderdiv">
 
-  <div class="image-slider">
-    <div class="flexslider">
-      <ul class="slides">
-        <?php if (have_posts()): while (have_posts()): the_post();?>
-        <!-- include featured image -->
-        <li class="project-image">
-            <?php the_post_thumbnail( 'grid_thumbnail' ); ?>
-            <span class="project-image-caption"><?php the_sub_field('image_description') ?></span>
-        </li>
-        <?php endwhile; endif;?>
+             <span class="">
+                <?php //echo $projectImage; ?>
+               <a href="<?php //echo $projecturl ?>">
+                 <h2>
+                   <?php //echo $projectTitle; ?>
+                 </h2>
+                 </a>
+            </span>
+             </div>
+         </li>
+         <?php //endwhile; endif;?>
        </ul>
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
      </div>
-  </div>
-
-
+  </div> -->
+ </div>
     <!--  Last section     -------------------------------->
     <!--  Contact info   -->
    <div class="contactbackground">
@@ -139,7 +113,7 @@
    </div>
 
 
-  </div>
+
 
 </main>
 <!--     Footer       -->

@@ -71,17 +71,72 @@
     margin: @ws_2 0;
   }
 
-  .mostPopularProjectsFP>ul>li>div{
-     margin: @ws_1;
-     border: 2px dashed black;
-     border-radius: 50%;
-     height:100px;
-     width: 100px;
+  // .mostPopularProjectsFP>ul>li>div{
+  //    margin: @ws_1;
+  //    border: 2px dashed black;
+  //    border-radius: 50%;
+  //    height:100px;
+  //    width: 100px;
+  //
+  //  }
+  //  .mostPopularProjectsFP>ul>li>div>p{
+  //    margin: 30px;
+  //  }
+.carouselProject{
+  section{
 
-   }
-   .mostPopularProjectsFP>ul>li>div>p{
-     margin: 30px;
-   }
+    .slick-prev{
+      left:-@ws_1;
+      z-index: 10;
+    }
+    .slick-next{
+      right:-@ws_1;
+      z-index: 10;
+    }
+    div.slick-list{
+      div.slick-track{
+        img{
+          margin: auto;
+          // height: 200;
+          // width: none;
+          max-height: 200px;
+        }
+
+        div{
+          div{
+            background-color: @color-darkgreen;
+            padding:@ws_2;
+
+            div.car-caption{
+              color: white;
+              padding: 0;
+
+              h3{
+                margin-top: 11px;
+                text-align: left;
+              }
+
+                p{
+                  font-size: 10px;
+                  text-align: left;
+                  a{
+                    font-size: 10px;
+                  }
+                }
+
+           }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 // Contact info section -----------------------------------------------------------
@@ -183,6 +238,20 @@
       margin: 30px;
     }
 
+
+
+
+    .project-slider{
+      .flexsliderProject{
+        .projectCard{
+          overflow: hidden;
+          .singleProjectSlider{
+            float:left;
+            width: 50%;
+          }
+        }
+      }
+    }
 
 // Contact section ----------------------------------------------------
   .contactInfoFP{

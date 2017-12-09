@@ -19,15 +19,19 @@
 }
 
 div.content-wrapper{
-  padding: @ws_2;
+  padding: @ws_4;
   width: 100%;
   box-sizing: border-box;
+
+  div.framgangsfaktor-container{
+    padding-top: @ws_2;
+  }
 }
 
 div.expander-container{
   width: 100%;
   max-width: 800px;
-  
+
 }
 .framgangsfaktor-trigger{
   width: 100%;
@@ -40,7 +44,9 @@ div.expander-container{
   position: relative;
   box-sizing: border-box;
   text-align: left;
-  //-- when open
+
+}
+.framgangsfaktor-open{
   background-color: @color-mintgreen;
   color: white;
   border-bottom-left-radius: 0;
@@ -54,8 +60,8 @@ div.expander-container{
   top: @ws_2;
   font-family: FontAwesome;
   text-align: center;
-  color: white;
-  border: solid 1px white;
+  color: @color-mintgreen;
+  border: solid 1px @color-mintgreen;
   border-radius: 50%;
   width: @ws_2;
   height: @ws_2;
@@ -64,8 +70,8 @@ div.expander-container{
   // color: @color-mintgreen;
   //border: solid 1px @color-mintgreen;
   // -- when open
-  color: white;
-  border: solid 1px white;
+  // color: white;
+  // border: solid 1px white;
 }
 
 .expanding-area{
@@ -73,7 +79,6 @@ div.expander-container{
   padding-top: @ws_2;
   box-sizing: border-box;
   display: none;
-  //when open
   border: solid 1px @color-mintgreen;
 
   p.framgangsfaktor_description{

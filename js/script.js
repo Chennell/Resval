@@ -10,14 +10,15 @@ for (var i = 0; i<expandTrigger.length; i++){
     expandTrigger[i].addEventListener("click" ,function expander (event){
     this.parentNode.childNodes[3].classList.toggle('show');
     this.firstElementChild.classList.toggle('expander-modifier');
-
 });}
+
 
 for (var i = 0; i<framgangsfaktorTrigger.length; i++){
     framgangsfaktorTrigger[i].addEventListener("click" ,function framgangsfaktor (event){
     this.parentNode.childNodes[3].classList.toggle('show');
+    this.classList.toggle('framgangsfaktor-open');
     this.classList.toggle('expander-modifier');
-
+    click = true;
 });}
 
 
@@ -28,8 +29,6 @@ jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
     animationLoop: true,
-
-
   });
 });
 
@@ -62,5 +61,4 @@ for (var i = 0; i<categoryTrigger.length; i++){
 // }
 // else {
 //  alert("this element is not overflowing!!");
->>>>>>> 0c17a95d126edf9b3763a875c6ed5b3fcf192b17
 // }

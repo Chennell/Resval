@@ -16,8 +16,9 @@ for (var i = 0; i<expandTrigger.length; i++){
 for (var i = 0; i<framgangsfaktorTrigger.length; i++){
     framgangsfaktorTrigger[i].addEventListener("click" ,function (event){
     this.parentNode.childNodes[3].classList.toggle('show');
-    this.classList.toggle('expander-modifier');
-
+    this.classList.toggle('framgangsfaktor-open');
+    this.classList.toggle('framgangsfaktor-modifier');
+    click = true;
 });}
 
 
@@ -49,4 +50,3 @@ for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
     event.currentTarget.nextElementSibling.classList.toggle('show');
 });}
-

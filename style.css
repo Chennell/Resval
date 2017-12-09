@@ -523,8 +523,9 @@ ul.slides {
   overflow: hidden;
 }
 .post-grid {
-  padding: 44px;
   padding-top: 0;
+  width: 300px;
+  margin: 0 auto;
 }
 ul.gridParent {
   display: grid;
@@ -630,10 +631,13 @@ input.search-submit:focus {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   .post-grid {
-    padding: 88px 44px 0 44px;
+    width: 1000px;
+    margin: 0 auto;
   }
   .post-grid ul.gridParent {
     grid-template-columns: 300px 300px 300px;
+    width: 960px;
+    margin: 0 auto;
   }
   .gridParent li {
     float: left;

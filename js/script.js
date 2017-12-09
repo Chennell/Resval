@@ -17,7 +17,7 @@ for (var i = 0; i<framgangsfaktorTrigger.length; i++){
     framgangsfaktorTrigger[i].addEventListener("click" ,function framgangsfaktor (event){
     this.parentNode.childNodes[3].classList.toggle('show');
     this.classList.toggle('framgangsfaktor-open');
-    this.classList.toggle('expander-modifier');
+    this.classList.toggle('framgangsfaktor-modifier');
     click = true;
 });}
 

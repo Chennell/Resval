@@ -47,14 +47,14 @@
 
 <!-- PROJECT SLIDER --------------------------------------------------------->
     <!-- Carousel slider -->
-<<<<<<< HEAD
+
     <!-- <div class="carouselProject">
       <!-- <?php //the_content(); ?> -->
       <!-- <div class="project-slider">
         <div class="flexslider">
           <ul class="slides"> -->
             <?php
-                if (have_posts()): while (have_posts()): the_post();
+                // if (have_posts()): while (have_posts()): the_post();
             ?>
 
                 <!-- </li> -->
@@ -65,20 +65,14 @@
           <!-- </ul>
         </div>
       </div>
-=======
+
     <div class="carouselProject">
       <?php //the_content(); ?>
->>>>>>> ec4dbc776f6ebeca25a9292cfc207a267a2f9a54
+
     </div>
 </div> -->
 
 
-
-
-<<<<<<< HEAD
-      <!-- Place somewhere in the <body> of your page -->
-         <li class="singleProjectSlider">
-=======
   <!-- Flexslider -->
 
   <div class="project-slider">
@@ -98,7 +92,7 @@
 
       <!-- Place somewhere in the <body> of your page -->
       <li class="singleProjectSlider">
->>>>>>> ec4dbc776f6ebeca25a9292cfc207a267a2f9a54
+
              <div class="projectSliderdiv">
 
              <span class="">
@@ -117,12 +111,11 @@
        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
      </div>
   </div>
-<<<<<<< HEAD
-=======
+
  </div>
 
+ </div>
 
->>>>>>> ec4dbc776f6ebeca25a9292cfc207a267a2f9a54
 
     <!--  Last section     -------------------------------->
     <!--  Contact info   -->

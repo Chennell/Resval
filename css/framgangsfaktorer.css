@@ -2,9 +2,12 @@
   display: block !important;
 }
 div.content-wrapper {
-  padding: 22px;
+  padding: 44px;
   width: 100%;
   box-sizing: border-box;
+}
+div.content-wrapper div.framgangsfaktor-container {
+  padding-top: 22px;
 }
 div.expander-container {
   width: 100%;
@@ -21,6 +24,8 @@ div.expander-container {
   position: relative;
   box-sizing: border-box;
   text-align: left;
+}
+.framgangsfaktor-open {
   background-color: #95d3c3;
   color: white;
   border-bottom-left-radius: 0;
@@ -34,12 +39,12 @@ div.expander-container {
   top: 22px;
   font-family: FontAwesome;
   text-align: center;
+  color: #95d3c3;
+  border: solid 1px #95d3c3;
   border-radius: 50%;
   width: 22px;
   height: 22px;
   font-size: 12px;
-  color: white;
-  border: solid 1px white;
 }
 .expanding-area {
   width: 100%;

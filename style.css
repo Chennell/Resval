@@ -754,7 +754,7 @@ div.column-left,
 div.column-right {
   width: 100%;
   box-sizing: border-box;
-  padding: 66px 44px;
+  padding: 44px 22px;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -795,17 +795,6 @@ div.column-right {
 }
 div.column-right > div.scroll-y > p:last-child {
   padding-bottom: 44px;
-}
-div.sponsor-area {
-  margin-top: 44px;
-}
-li.sponsor-container {
-  margin-top: 11px;
-  width: 50%;
-  height: 200px;
-  float: left;
-  padding-left: 11px;
-  box-sizing: border-box;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -908,24 +897,25 @@ input.submit-button:hover {
 }
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
-}
-div.column-right > div.scroll-y div.ingredients-container div.ingredients-container:first-child {
-  padding-left: 0 !important;
+  overflow: hidden;
+  margin-left: -22px;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort,
 div.column-right > div.scroll-y div.ingredients-container span.time,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize,
 div.column-right > div.scroll-y div.ingredients-container span.budget {
   display: inline;
-  width: 50px;
-  height: 50px;
+  width: 25%;
+  max-width: 70px;
+  float: left;
   padding-left: 22px;
+  box-sizing: border-box;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort img,
 div.column-right > div.scroll-y div.ingredients-container span.time img,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize img,
 div.column-right > div.scroll-y div.ingredients-container span.budget img {
-  width: 50px;
+  width: 100%;
 }
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
@@ -950,6 +940,8 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 }
 .expander-modifier:after {
   content: '\f077' !important;
+  color: white !important;
+  border: solid 1px white !important;
 }
 span.project-image-caption {
   margin-top: 10px;
@@ -961,11 +953,10 @@ span.project-image-caption {
   span.budget {
     width: 70px;
   }
-  span.effort img,
-  span.time img,
-  span.groupsize img,
-  span.budget img {
-    width: 70px;
+}
+@media only screen and (min-width: 1920px) {
+  li.project-image {
+    width: 100%;
   }
 }
 ol.flex-control-nav.flex-control-paging {
@@ -986,9 +977,12 @@ button:active {
   display: block !important;
 }
 div.content-wrapper {
-  padding: 22px;
+  padding: 44px;
   width: 100%;
   box-sizing: border-box;
+}
+div.content-wrapper div.framgangsfaktor-container {
+  padding-top: 22px;
 }
 div.expander-container {
   width: 100%;
@@ -1005,6 +999,8 @@ div.expander-container {
   position: relative;
   box-sizing: border-box;
   text-align: left;
+}
+.framgangsfaktor-open {
   background-color: #95d3c3;
   color: white;
   border-bottom-left-radius: 0;
@@ -1018,12 +1014,12 @@ div.expander-container {
   top: 22px;
   font-family: FontAwesome;
   text-align: center;
+  color: #95d3c3;
+  border: solid 1px #95d3c3;
   border-radius: 50%;
   width: 22px;
   height: 22px;
   font-size: 12px;
-  color: white;
-  border: solid 1px white;
 }
 .expanding-area {
   width: 100%;

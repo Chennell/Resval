@@ -1,23 +1,24 @@
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
-}
-div.column-right > div.scroll-y div.ingredients-container div.ingredients-container:first-child {
-  padding-left: 0 !important;
+  overflow: hidden;
+  margin-left: -22px;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort,
 div.column-right > div.scroll-y div.ingredients-container span.time,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize,
 div.column-right > div.scroll-y div.ingredients-container span.budget {
   display: inline;
-  width: 50px;
-  height: 50px;
+  width: 25%;
+  max-width: 70px;
+  float: left;
   padding-left: 22px;
+  box-sizing: border-box;
 }
 div.column-right > div.scroll-y div.ingredients-container span.effort img,
 div.column-right > div.scroll-y div.ingredients-container span.time img,
 div.column-right > div.scroll-y div.ingredients-container span.groupsize img,
 div.column-right > div.scroll-y div.ingredients-container span.budget img {
-  width: 50px;
+  width: 100%;
 }
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
@@ -42,6 +43,8 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 }
 .expander-modifier:after {
   content: '\f077' !important;
+  color: white !important;
+  border: solid 1px white !important;
 }
 span.project-image-caption {
   margin-top: 10px;
@@ -53,11 +56,10 @@ span.project-image-caption {
   span.budget {
     width: 70px;
   }
-  span.effort img,
-  span.time img,
-  span.groupsize img,
-  span.budget img {
-    width: 70px;
+}
+@media only screen and (min-width: 1920px) {
+  li.project-image {
+    width: 100%;
   }
 }
 ol.flex-control-nav.flex-control-paging {

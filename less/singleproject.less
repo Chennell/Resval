@@ -22,22 +22,24 @@ div.column-right>div.scroll-y{
 
   div.ingredients-container{
     padding: @ws_2 0;
-
-    div.ingredients-container:first-child{
-      padding-left: 0 !important;
-    }
+    overflow: hidden;
+    margin-left: -22px;
 
     span.effort, span.time, span.groupsize, span.budget{
       display: inline;
-      width: 50px;
-      height: 50px;
+      width: 25%;
+      max-width: 70px;
+      float: left;
       padding-left: @ws_2;
+      box-sizing: border-box;
+
 
       // -- icon size
       img{
-        width: 50px;
+        width: 100%;
       }
     }
+
   }
 
   div.project-description{
@@ -81,6 +83,8 @@ div.column-right>div.scroll-y{
 //-- ARROW UP ------------------------------------------------------------------
 .expander-modifier:after{
   content: '\f077' !important;
+  color: white !important;
+  border: solid 1px white !important; 
 }
 
 //-- FLEXSLIDER  ---------------------------------------------------------------
@@ -97,11 +101,29 @@ span.project-image-caption{
       span.effort, span.time, span.groupsize, span.budget{
         width: 70px;
 
+
         img{
-          width: 70px;
+
         }
       }
+
+      li.project-image{
+
+          // width: 400px !important;
+
+      }
   }
+
+
+  // -- MEDIA QUERY --------------------------------------------------------------
+  @media only screen and (min-width : 1920px) {
+
+        li.project-image{
+
+            width: 100%;
+
+        }
+    }
 
   // -- hide flexslider liststyle
   ol.flex-control-nav.flex-control-paging{

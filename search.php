@@ -44,7 +44,7 @@
             </li>
         <?php
             endwhile; 
-                else: echo "<h2 class='resultat-error'> Din sökning gav inga resultat</h2>";
+            else: echo "<h2 class='resultat-error'> Din sökning gav inga resultat</h2>";
             endif;
         ?>
     </ul>

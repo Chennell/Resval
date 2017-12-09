@@ -7,7 +7,7 @@
           <a href="<?php the_field('footer_link') ?>">Prenumerera på nyhetsbrev</a>
         </p>
 
-        <div id="footer-logo-container">
+        <div id="footer-logo-container" align="right">
             <ul>
               <?php dynamic_sidebar('footer-sidebar');?>
             </ul>

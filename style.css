@@ -1153,8 +1153,7 @@ footer .smallfooter .footer-text .copyright {
     text-align: left;
   }
   footer .smallfooter .footer-text #footer-logo-container {
-    margin: 11px 0;
-    align: right;
+    margin: 0;
   }
   footer .smallfooter .footer-text #footer-logo-container ul {
     overflow: hidden;

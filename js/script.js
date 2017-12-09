@@ -49,3 +49,4 @@ for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
     event.currentTarget.nextElementSibling.classList.toggle('show');
 });}
+

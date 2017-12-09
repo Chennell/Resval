@@ -401,28 +401,27 @@ div#responsive-menu-wrapper {
   }
   nav > div.menu-menu-container > ul.menu > li:hover {
     border-bottom: 1px solid #7ea989;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
   nav > div.menu-menu-container > ul.menu > li.current-menu-item {
     border-bottom: 1px solid #7ea989;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
     background-color: #7ea989;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0);
+    margin-left: 11px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
     border: 1px solid #7ea989 !important;
     background: none;
     padding-bottom: 11px;
-    box-sizing: border-box;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1).current-menu-item {
     border: 1px solid #7ea989 !important;
     background: none;
     padding-bottom: 11px;
-    box-sizing: border-box;
   }
 }
 .frontPageContainer {

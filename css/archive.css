@@ -167,3 +167,6 @@ input[type=checkbox] {
     display: block;
   }
 }
+.filter-icon {
+  background: green;
+}

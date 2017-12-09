@@ -46,11 +46,11 @@ div.column-right>div.scroll-y{
       div.expander-container{
         a.expander-trigger{
 
-        h4.icon-handle{
+        button.icon-handle{
           display: inline-block;
           position: relative;
         }
-        h4.icon-handle:after{
+        button.icon-handle:after{
           content: "\f078";
           line-height: @ws_2;
           position: absolute;
@@ -90,7 +90,7 @@ span.project-image-caption{
 
       span.effort, span.time, span.groupsize, span.budget{
         width: 70px;
-        
+
         img{
           width: 70px;
         }
@@ -100,4 +100,15 @@ span.project-image-caption{
   // -- hide flexslider liststyle
   ol.flex-control-nav.flex-control-paging{
     display: none;
+  }
+
+  // -- buttons
+  button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+
+
   }

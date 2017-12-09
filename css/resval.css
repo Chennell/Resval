@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,400,400i,700');
+html {
+  background: #eee;
+}
 body {
   min-width: 320px;
+  max-width: 1366px;
   margin: 0 auto;
+  background: white;
 }
 * {
   font-family: 'Roboto', sans-serif;

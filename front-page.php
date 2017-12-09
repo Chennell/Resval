@@ -2,7 +2,7 @@
 <?php get_header();?>
 <main>
   <div class="frontPageContainer">
-    <?php //do_shortcode('[wcp-carousel id="175" order="DESC" orderby="date" count="10"]') ?>
+    <?php do_shortcode('[wcp-carousel id="57"]') ?>
 
 
     <!--    Top section About section  ------------------------------------------------->
@@ -39,15 +39,12 @@
     <!--  Middle section     -------------------------------->
     <!--  Most popular views   -->
     <div class="mostPopularProjectsFP">
-      <!-- <div class="title_FP">
-        <h2>Most popular projects</h2>
-      </div>
 
 
 <!-- PROJECT SLIDER --------------------------------------------------------->
     <!-- Carousel slider -->
     <div class="carouselProject">
-      <?php the_content(); ?>
+      <?php //the_content(); ?>
     </div>
 
 
@@ -90,6 +87,9 @@
      </div>
   </div> -->
  </div>
+
+
+ 
     <!--  Last section     -------------------------------->
     <!--  Contact info   -->
    <div class="contactbackground">

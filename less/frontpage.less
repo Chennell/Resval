@@ -25,43 +25,46 @@
   }
 
   // -- SECTION ABOUT --------------------------------------------
-  .topp_img_hem{
-    width: 100%;
+
+// The image
+.topSectionFP{
+  .topLeftFP{
+    .div_topp_img_hem{
+      .topp_img_hem{
+        width: 100%;
+      }
+    }
   }
 
-  /*    The text    */
-  .div_topp_text_hem{
-    margin: @ws_1 0;
-  }
+  // The text
+  .topRightFP{
+    .div_topp_text_hem{
+      margin: @ws_1 0;
+      .title_FP{
+        text-align: center;
+      }
+      p{
+        margin-top: @ws_1;
+        line-height: @lh_1;
+      }
+    }
 
-// The titles
-  .title_FP{
-    text-align: center;
+    // The button
+    .buttonContainerFP{
+      text-align: center;
+      button{
+        padding: @ws_1;
+        background-color: @color-lightgreen;
+        width: 40%;
+        margin-top: @ws_2;
+        border:none;
+        a{
+          color:white;
+        }
+      }
+    }
   }
-.div_topp_text_hem>p{
-  margin-top: @ws_1;
-  line-height: @lh_1;
 }
-
-//  The button
-.buttonContainerFP{
-  text-align: center;
-
-  button{
-   padding: @ws_1;
-   background-color: @color-lightgreen;
-   width: 40%;
-   margin-top: @ws_2;
-   border:none;
-     a{
-       color:white;
-
-     }
-   }
-}
-
-
-
 
 
 
@@ -104,7 +107,7 @@
 
         div{
           div{
-            background-color: @color-darkgreen;
+            // background-color: @color-darkgreen;
             padding:@ws_2;
 
             div.car-caption{
@@ -193,25 +196,27 @@
      overflow:hidden;
      margin: 0 -@ws_2;
 
-   }
-   .topLeftFP{
-     width: 50%;
-     float:left;
-   }
+     .topLeftFP{
+       width: 50%;
+       float:left;
 
-   .topRightFP{
-     float:right;
-     width: 50%;
-   }
+       .div_topp_img_hem{
+         padding: 0 @ws_1;
+         margin: 0 @ws_2;
+       }
+     }
 
-   .div_topp_img_hem{
-     padding: 0 @ws_1;
-     margin: 0 @ws_2;
-   }
-   .div_topp_text_hem{
-     padding: 0 @ws_1;
-     margin: 0 @ws_2;
-   }
+     .topRightFP{
+       float:right;
+       width: 50%;
+
+       .div_topp_text_hem{
+         padding: 0 @ws_1;
+         margin: 0 @ws_2;
+       }
+     }
+
+  }
 
 // Most popular views section ----------------------------------------------------
    .mostPopularProjectsFP{

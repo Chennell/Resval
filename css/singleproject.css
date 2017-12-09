@@ -43,6 +43,9 @@ div.column-right > div.scroll-y div.project-description div.description-section 
 }
 .expander-modifier:after {
   content: '\f077' !important;
+}
+.framgangsfaktor-modifier:after {
+  content: '\f077' !important;
   color: white !important;
   border: solid 1px white !important;
 }

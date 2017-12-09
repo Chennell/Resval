@@ -16,8 +16,9 @@ for (var i = 0; i<expandTrigger.length; i++){
 for (var i = 0; i<framgangsfaktorTrigger.length; i++){
     framgangsfaktorTrigger[i].addEventListener("click" ,function (event){
     this.parentNode.childNodes[3].classList.toggle('show');
-    this.classList.toggle('expander-modifier');
-
+    this.classList.toggle('framgangsfaktor-open');
+    this.classList.toggle('framgangsfaktor-modifier');
+    click = true;
 });}
 
 
@@ -38,7 +39,6 @@ jQuery(window).load(function() {
 // -- CATEGORY ICONS
 var filters = document.getElementsByClassName('filters-form')
 var iconArea = document.getElementsByClassName('icon-area');
-var topic_bike = document.getElementsByClassName('cat-item-14');
 
 var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
 var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
@@ -50,3 +50,15 @@ for (var i = 0; i<categoryTrigger.length; i++){
     event.currentTarget.nextElementSibling.classList.toggle('show');
 });}
 
+
+var cat_item = document.getElementsByClassName('cat-item');
+// cat_item.length
+var cat_item_arr = [];
+
+function addClass(){
+  for (var i=0; i <= cat_item.length[i]; i++){
+    cat_item[i].classList.toggle('framgangsfaktor-modifier');
+  }
+}
+
+addClass();

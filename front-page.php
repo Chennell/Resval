@@ -2,9 +2,7 @@
 <?php get_header();?>
 <main>
   <div class="frontPageContainer">
-    <?php do_shortcode(
-      '[wcp-carousel id="57"]'
-      ) ?>
+    <?php //do_shortcode('[wcp-carousel id="175" order="DESC" orderby="date" count="10"]') ?>
 
 
     <!--    Top section About section  ------------------------------------------------->

@@ -135,40 +135,38 @@
     </div>
    </div>
 
-   <div class="logofooter">
-     <hr class="footerLine" />
+   <!--  Sponsor logo     -------------------------------->
 
-    <!--  Sponsor logo     -------------------------------->
+    <div class="logoContainerFooter">
 
-     <div class="logoContainerFooter">
+          <ul>
+            <li>
+              <div class="portraitlogo">
+                <img src="<?php the_field('logotype_4');?>" alt="">
+              </div>
+            </li>
 
-           <ul>
-             <li>
-               <div class="portraitlogo">
-                 <img src="<?php the_field('logotype_4');?>" alt="">
-               </div>
-             </li>
+            <li>
+              <div class="landscapelogo">
+                <img src="<?php the_field('logotype_1');?>" alt="">
+              </div>
+            </li>
 
-             <li>
-               <div class="landscapelogo">
-                 <img src="<?php the_field('logotype_1');?>" alt="">
-               </div>
-             </li>
+            <li>
+              <div class="landscapelogo">
+                <img src="<?php the_field('logotype_2');?>" alt="">
+              </div>
+            </li>
 
-             <li>
-               <div class="landscapelogo">
-                 <img src="<?php the_field('logotype_2');?>" alt="">
-               </div>
-             </li>
+            <li>
+              <div class="landscapelogo">
+                <img src="<?php the_field('logotype_3');?>" alt="">
+              </div>
+            </li>
+          </ul>
+    </div>
 
-             <li>
-               <div class="landscapelogo">
-                 <img src="<?php the_field('logotype_3');?>" alt="">
-               </div>
-             </li>
-           </ul>
-     </div>
-   </div>
+
 
 
 

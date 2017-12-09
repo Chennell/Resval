@@ -88,27 +88,27 @@ div.info-box{
 
 
 // -- The filters/project type ---------------------------
-div.filterbox{
-    overflow: hidden
-}
-ul.project_type{
-    float: right;
-}
-
-li.filter{
-    display: inline;
-
-    a{
-    text-transform: uppercase;
-    padding: 5px;
-    margin: @ws_1;
-    float: left;
-
-        img{
-            height: 60px;
-        }
-    }
-}
+//div.filterbox{
+//    overflow: hidden
+//}
+//ul.project_type{
+//    float: right;
+//}
+//
+//li.filter{
+//    display: inline;
+//
+//    a{
+//    text-transform: uppercase;
+//    padding: 5px;
+//    margin: @ws_1;
+//    float: left;
+//
+//        img{
+//            height: 60px;
+//        }
+//    }
+//}
 
 //--- THE SEARCH BOX-----------------------------------
 input.form-control{
@@ -141,14 +141,50 @@ input.search-submit:focus{
 .filters-form>div>ul>li>ul>li>h4{
   position: relative;
 }
-.cat-item-23:after{
-  content: url(http://resval.local/wp-content/themes/Resval/img/effort-low.png);
-  line-height: @ws_2;
-  position: absolute;
-  right: @ws_2;
-  top: @ws_2;
-  width: 50px !important;
+
+
+
+//--- STYLING OF FILTERS--------------------------
+
+.searchandfilter{
+    height: 130px;
+    
+    label{
+        position: relative;
+        display: inline-block;
+    }
 }
+
+input[type=checkbox]{
+    visibility: hidden;
+    //position: relative;
+}
+
+.cat-item-32 input[type=checkbox]:before{
+    content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
+    transform: scale(.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    //margin-top: -50px;
+    //margin-right: @ws_2;
+    z-index: 100;
+    visibility: visible;
+    display: block;
+}
+
+.cat-item-32 input[type=checkbox]:checked:before{
+    content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+    transform: scale(.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    //margin-top: -50px;
+    margin-right: @ws_2;
+    z-index: 100;
+    //visibility: visible;
+}
+
 
 
 // -- MEDIA QUERY --------------------------------------------------------------
@@ -159,10 +195,15 @@ input.search-submit:focus{
         //padding: @ws_8 @ws_4 0 @ws_4;
         width: 1000px;
         margin: 0 auto;
+        
+        .filterbox{
+            width: 945px;
+            margin: 0 auto;
+        }
 
         ul.gridParent{
             grid-template-columns: 300px 300px 300px;
-            width: 960px;
+            width: 945px;
             margin: 0 auto;
         }
 

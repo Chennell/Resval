@@ -633,24 +633,6 @@ div.info-box p {
 .post-grid-pic a img {
   width: 100%;
 }
-div.filterbox {
-  overflow: hidden;
-}
-ul.project_type {
-  float: right;
-}
-li.filter {
-  display: inline;
-}
-li.filter a {
-  text-transform: uppercase;
-  padding: 5px;
-  margin: 11px;
-  float: left;
-}
-li.filter a img {
-  height: 60px;
-}
 input.form-control {
   -webkit-appearance: none;
   background: none;
@@ -679,13 +661,34 @@ input.search-submit:focus {
 .filters-form > div > ul > li > ul > li > h4 {
   position: relative;
 }
-.cat-item-23:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/effort-low.png);
-  line-height: 22px;
+.searchandfilter {
+  height: 130px;
+}
+.searchandfilter label {
+  position: relative;
+  display: inline-block;
+}
+input[type=checkbox] {
+  visibility: hidden;
+}
+.cat-item-32 input[type=checkbox]:before {
+  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
+  transform: scale(0.15);
   position: absolute;
-  right: 22px;
-  top: 22px;
-  width: 50px !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: visible;
+  display: block;
+}
+.cat-item-32 input[type=checkbox]:checked:before {
+  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+  transform: scale(0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 22px;
+  z-index: 100;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -693,9 +696,13 @@ input.search-submit:focus {
     width: 1000px;
     margin: 0 auto;
   }
+  .post-grid .filterbox {
+    width: 945px;
+    margin: 0 auto;
+  }
   .post-grid ul.gridParent {
     grid-template-columns: 300px 300px 300px;
-    width: 960px;
+    width: 945px;
     margin: 0 auto;
   }
   .gridParent li {

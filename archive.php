@@ -27,7 +27,7 @@
         $terms = get_terms(array('taxonomy' => 'project-time', 'hide_empty' => true )); ?>
 
           <div class="filters">
-          <?php echo do_shortcode( '[searchandfilter class="filters-form" type="checkbox,checkbox,checkbox,checkbox" hide_empty="0, 0, 0, 0" taxonomies="project-topic,project-cost,project-time,project-difficulty"  headings="Topic, Cost, Time, Difficulty"]' ); ?>
+          <?php echo do_shortcode( '[searchandfilter class="filters-form" type=",checkbox,checkbox,checkbox,checkbox" hide_empty=",0, 0, 0, 0" hierarchical="0, 0, 0, 0" taxonomies="search,project-topic,project-cost,project-time,project-difficulty"  headings="Search,Topic,Cost,Time,Difficulty"]' ); ?>
         </div>
 
       </div>

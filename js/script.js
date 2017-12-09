@@ -7,14 +7,14 @@ var framgangsfaktor = document.getElementsByClassName("framgangsfaktor");
 var framgangsfaktorTrigger= document.getElementsByClassName('framgangsfaktor-trigger');
 
 for (var i = 0; i<expandTrigger.length; i++){
-    expandTrigger[i].addEventListener("click" ,function expander (event){
+    expandTrigger[i].addEventListener("click" ,function (event){
     this.parentNode.childNodes[3].classList.toggle('show');
     this.firstElementChild.classList.toggle('expander-modifier');
+
 });}
 
-
 for (var i = 0; i<framgangsfaktorTrigger.length; i++){
-    framgangsfaktorTrigger[i].addEventListener("click" ,function framgangsfaktor (event){
+    framgangsfaktorTrigger[i].addEventListener("click" ,function (event){
     this.parentNode.childNodes[3].classList.toggle('show');
     this.classList.toggle('framgangsfaktor-open');
     this.classList.toggle('framgangsfaktor-modifier');
@@ -28,14 +28,16 @@ for (var i = 0; i<framgangsfaktorTrigger.length; i++){
 jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
-    animationLoop: true,
+    animationLoop: false,
+    // itemMargin: 5
+
   });
 });
 
 
 
 // -- CATEGORY ICONS
-var filters = document.getElementsByClassName('filters-form');
+var filters = document.getElementsByClassName('filters-form')
 var iconArea = document.getElementsByClassName('icon-area');
 var topic_bike = document.getElementsByClassName('cat-item-14');
 
@@ -48,17 +50,3 @@ for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
     event.currentTarget.nextElementSibling.classList.toggle('show');
 });}
-
-
-// // -- Scroll icon anmiation only when overflow scroll available
-// var scrollarea = document.getElementsByClassName('scroll-y');
-// var scrollicon = document.getElementsByClassName('fa fa-arrow-circle-down');
-//
-//
-//
-// if (jQuery("scrollarea").prop('scrollWidth') > jQuery("scrollarea").width() ) {
-//   this.classList.toggle('show');
-// }
-// else {
-//  alert("this element is not overflowing!!");
-// }

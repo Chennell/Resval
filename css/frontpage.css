@@ -1,31 +1,30 @@
 .frontPageContainer {
   padding: 11px;
 }
-.topp_img_hem {
+.topSectionFP .topLeftFP .div_topp_img_hem .topp_img_hem {
   width: 100%;
 }
-/*    The text    */
-.div_topp_text_hem {
+.topSectionFP .topRightFP .div_topp_text_hem {
   margin: 11px 0;
 }
-.title_FP {
+.topSectionFP .topRightFP .div_topp_text_hem .title_FP {
   text-align: center;
 }
-.div_topp_text_hem > p {
+.topSectionFP .topRightFP .div_topp_text_hem p {
   margin-top: 11px;
   line-height: 150%;
 }
-.buttonContainerFP {
+.topSectionFP .topRightFP .buttonContainerFP {
   text-align: center;
 }
-.buttonContainerFP button {
+.topSectionFP .topRightFP .buttonContainerFP button {
   padding: 11px;
   background-color: #7ea989;
   width: 40%;
   margin-top: 22px;
   border: none;
 }
-.buttonContainerFP button a {
+.topSectionFP .topRightFP .buttonContainerFP button a {
   color: white;
 }
 .mostPopularProjectsFP {
@@ -44,7 +43,6 @@
   max-height: 200px;
 }
 .carouselProject section div.slick-list div.slick-track div div {
-  background-color: #2e5047;
   padding: 22px;
 }
 .carouselProject section div.slick-list div.slick-track div div div.car-caption {
@@ -97,19 +95,19 @@
     overflow: hidden;
     margin: 0 -22px;
   }
-  .topLeftFP {
+  .topSectionFP .topLeftFP {
     width: 50%;
     float: left;
   }
-  .topRightFP {
-    float: right;
-    width: 50%;
-  }
-  .div_topp_img_hem {
+  .topSectionFP .topLeftFP .div_topp_img_hem {
     padding: 0 11px;
     margin: 0 22px;
   }
-  .div_topp_text_hem {
+  .topSectionFP .topRightFP {
+    float: right;
+    width: 50%;
+  }
+  .topSectionFP .topRightFP .div_topp_text_hem {
     padding: 0 11px;
     margin: 0 22px;
   }

@@ -488,6 +488,7 @@ div#responsive-menu-wrapper {
 }
 .contactbackground {
   background-color: #ecd45d;
+  width: 100%;
 }
 .contactbackground .contactInfoFP {
   margin: 22px 0;
@@ -507,15 +508,33 @@ div#responsive-menu-wrapper {
   margin-top: 22px;
   border: none;
 }
+.logoContainerFooter ul {
+  overflow: hidden;
+  margin: 22px -11px;
+}
+.logoContainerFooter ul li {
+  float: left;
+  width: 25%;
+}
+.logoContainerFooter ul li div {
+  margin: 0 11px;
+}
+.logoContainerFooter ul li div img {
+  max-width: 90% !important;
+  display: block;
+}
+.logoContainerFooter ul li .portraitlogo {
+  max-width: 80% !important;
+}
+.logoContainerFooter ul li .landscapelogo {
+  padding-top: 45px;
+}
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
   ----------------------*/
 @media only screen and (min-width: 768px) {
   .frontPageContainer {
     padding: 44px;
-  }
-  .title_FP {
-    text-align: left;
   }
   .topSectionFP {
     overflow: hidden;
@@ -1083,97 +1102,48 @@ footer {
   background: white;
   text-align: center;
 }
-footer .logofooter {
-  padding: 0 11px;
-}
-footer .logofooter .footerLine {
-  border-top: 1px solid #eee;
-  /*
-      style from Vinay Raghu on CodePen
-      height: 1px;
-      background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      border: 0;
-      */
-}
-footer .logofooter .footerlinks {
-  margin-top: 22px;
-}
-footer .logofooter .footerlinks p a {
-  text-align: center;
-}
-footer .logofooter .logoContainerFooter ul {
-  overflow: hidden;
-  margin: 22px -11px;
-}
-footer .logofooter .logoContainerFooter ul li {
-  float: left;
-  width: 25%;
-}
-footer .logofooter .logoContainerFooter ul li div {
-  margin: 0 11px;
-}
-footer .logofooter .logoContainerFooter ul li div img {
-  max-width: 90% !important;
-  display: block;
-}
-footer .logofooter .logoContainerFooter ul li .portraitlogo {
-  max-width: 80% !important;
-}
-footer .logofooter .logoContainerFooter ul li .landscapelogo {
-  padding-top: 45px;
-}
-footer .copyright {
-  margin-top: 11px;
-  background-color: #2e5047;
-  padding: 22px;
-  text-align: center;
-  clear: both;
-}
-footer .copyright p {
-  color: white;
-}
 footer .smallfooter {
   background-color: #2e5047;
   color: white;
   padding: 22px 22px;
 }
-footer .smallfooter ul {
-  overflow: hidden;
+footer .smallfooter .footer-text {
+  margin-top: 11px;
+  clear: both;
 }
-footer .smallfooter ul li {
-  float: left;
-  width: 50%;
-}
-footer .smallfooter ul li .contactInfoFP2 {
-  text-align: left;
-}
-footer .smallfooter ul li .contactInfoFP2 .title_FP2 > h2 {
+footer .smallfooter .footer-text .newsletter a {
   color: white;
 }
-footer .smallfooter ul li .contactInfoFP2 p {
-  color: white;
+footer .smallfooter .footer-text #footer-logo-container ul li #footer-logo {
+  width: 100px;
+  margin: 11px auto;
 }
-footer .smallfooter ul li .copyright {
-  text-align: right;
-}
-footer .smallfooter ul li .copyright p {
+footer .smallfooter .footer-text .copyright {
   color: white;
-}
-footer .smallfooter ul li .copyright p a {
-  color: white;
+  margin-top: 11px;
+  font-size: 10px;
 }
 @media only screen and (min-width: 768px) {
-  footer .logofooter {
-    height: 200px;
-    padding: 0 44px;
+  footer .smallfooter .footer-text .newsletter {
+    text-align: left;
   }
-  footer .logofooter .logoContainerFooter ul li div img {
-    max-width: 140px !important;
+  footer .smallfooter .footer-text #footer-logo-container {
+    margin: 11px 0;
+    align: right;
   }
-  footer .logofooter .copyright {
-    margin-top: 22px;
+  footer .smallfooter .footer-text #footer-logo-container ul {
+    overflow: hidden;
+    width: 50%;
+  }
+  footer .smallfooter .footer-text #footer-logo-container ul li {
+    float: left;
+    width: 50%;
+  }
+  footer .smallfooter .footer-text #footer-logo-container ul li #footer-logo {
+    width: 140px;
+    margin: 11px 0;
+  }
+  footer .smallfooter .footer-text .copyright {
+    text-align: left;
   }
 }

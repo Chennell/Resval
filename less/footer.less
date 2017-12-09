@@ -20,153 +20,72 @@ footer{
   background: white;
   text-align: center;
 
-  .logofooter{
-    // margin-top: @ws_2;
-    padding: 0 @ws_1;
-
-    .footerLine{
-      border-top: 1px solid #eee;
-
-      // margin-top: @ws_4;
-      /*
-      style from Vinay Raghu on CodePen
-      height: 1px;
-      background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-      border: 0;
-      */
-    }
-
-// Old newspaper link
-    .footerlinks{
-      margin-top: @ws_2;
-
-      p{
-        a{
-          text-align: center;
-         }
-       }
-     }
-
-
-    .logoContainerFooter{
-      ul{
-        overflow: hidden;
-        margin: @ws_2 -@ws_1;
-
-        li{
-          float: left;
-          width: 25%;
-
-          div{
-            margin: 0 @ws_1;
-            // padding: 0 @ws_1;
-                img{
-                  max-width: 90% !important;
-                  display: block;
-                // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                // filter: grayscale(100%);
-                // vertical-align: bottom;
-
-              }
-            }
-
-            // Does not work
-            .portraitlogo{
-              max-width: 80% !important;
-            }
-
-            .landscapelogo{
-              padding-top: 45px;
-            }
-         }
-       }
-     }
-   }
-
-
-  .copyright{
-    margin-top: @ws_1;
+  .smallfooter{
     background-color: @color-darkgreen;
-    padding: @ws_2;
-    text-align: center;
-    clear: both;
+    color: white;
+    padding: @ws_2 @ws_2;
 
-    p{
-      color: white;
-    }
-  }
-// Other version
-.smallfooter{
-  background-color: @color-darkgreen;
-  color: white;
-  padding: @ws_2 @ws_2;
+    .footer-text{
+      margin-top: @ws_1;
+      clear: both;
 
-  ul{
-    overflow: hidden;
-    li{
-      float: left;
-      width: 50%;
-
-      .contactInfoFP2{
-        text-align: left;
-        .title_FP2>h2{
-            color: white;
+        .newsletter{
+            a{
+              color: white;
+            }
           }
+          #footer-logo-container{
 
-        p{
-          color: white;
+            ul{
+              li{
+                #footer-logo{
+                  width: 100px;
+                  margin:@ws_1 auto;
+            }
+          }
         }
       }
-      .copyright{
-        // margin-top: @ws_1;
-        // padding: @ws_2;
-        // text-align: center;
-        // clear: both;
-        text-align: right;
 
-        p{
-          color: white;
-          a{
-            color: white;
-          }
+        .copyright{
+          color:white;
+          margin-top: @ws_1;
+          // text-align: left;
+          font-size: 10px;
         }
       }
     }
   }
 
-}
-
-
-}
-
-
-
-
-  @media only screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) {
 footer{
-.logofooter{
-  height: 200px;
-  padding: 0 @ws_4;
-
-  .logoContainerFooter{
-    ul{
-      li{
-        div{
-          img{
-            max-width: 140px !important;
-        }
+.smallfooter{
+    .footer-text{
+      .newsletter{
+        text-align: left;
       }
+      #footer-logo-container{
+        margin:@ws_1 0;
+        align:right;
+        ul{
+          overflow: hidden;
+          width: 50%;
+
+          li{
+            float: left;
+            width: 50%;
+
+            #footer-logo{
+              width: 140px;
+              margin:@ws_1 0;
+            }
+           }
+          }
+        }
+
+     .copyright{
+       text-align: left;
+      }
+     }
     }
   }
-}
-
-  .copyright{
-    margin-top: @ws_2;
-
-  }
- }
-}
 }

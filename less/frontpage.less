@@ -145,6 +145,7 @@
 // Contact info section -----------------------------------------------------------
 .contactbackground{
   background-color: rgb(236, 212, 93);
+  width: 100%;
 
   .contactInfoFP{
     margin: @ws_2 0;
@@ -177,6 +178,46 @@
     }
   }
 }
+
+
+// Sponsor logo
+.logoContainerFooter{
+  ul{
+    overflow: hidden;
+    margin: @ws_2 -@ws_1;
+
+    li{
+      float: left;
+      width: 25%;
+
+      div{
+        margin: 0 @ws_1;
+        // padding: 0 @ws_1;
+            img{
+              max-width: 90% !important;
+              display: block;
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            // filter: grayscale(100%);
+            // vertical-align: bottom;
+
+          }
+        }
+
+        // Does not work
+        .portraitlogo{
+          max-width: 80% !important;
+        }
+
+        .landscapelogo{
+          padding-top: 45px;
+        }
+     }
+   }
+ }
+
+
+
+
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
   ----------------------*/
@@ -189,7 +230,7 @@
 
    // The titles
     .title_FP{
-       text-align: left;
+       // text-align: left;
      }
  // Top section ----------------------------------------------------
    .topSectionFP{

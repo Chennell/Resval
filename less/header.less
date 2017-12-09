@@ -3,6 +3,7 @@
 @color-lightgreen: #7ea989;
 @color-darkgreen: #2e5047;
 @color-yellow: #f1d417;
+@color-darkgrey: #414042;
 
 //whitespace (ws)
 @ws_1: 11px;
@@ -18,6 +19,7 @@
 header{
     overflow: hidden;
     width: 100vW;
+    max-width: 1366px !important;
     padding: @ws_4;
 
     box-sizing: border-box;
@@ -25,6 +27,7 @@ header{
     position: fixed;
     z-index: 100;
     top: 0;
+    // border-bottom: solid 1px @color-darkgrey;
   // background: -webkit-linear-gradient(#ffffff 60%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   // background: -o-linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
   // background: linear-gradient(#ffffff 70%,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
@@ -62,9 +65,10 @@ div#responsive-menu-wrapper{
 
 //--------------------THIS IS THE BIG MENU
 @media only screen and (min-width : 768px){
-    
+
     header{
         position: inherit;
+        border-bottom: none;
     }
 
     .logo{

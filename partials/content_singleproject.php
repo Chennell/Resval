@@ -87,8 +87,14 @@
         <span class="description"><?php the_field( 'decscription_short' ); ?></span>
       </div>
       <div class="description-section">
-        <h4>Ni behöver </h4>
-        <span class="description"><?php the_field( 'description_ingeredients' ); ?></span>
+        <div class="expander-container">
+          <button onclick="expander" class="expander-trigger">
+           <h4 class="icon-handle">Ni behöver</h4>
+         </button>
+          <div class="expanding-area" class="expanding-area">
+            <span><?php the_field('description_ingeredients') ?></span>
+          </div>
+        </div>
       </div>
       <div class="description-section">
         <h4>Gör så här</h4>
@@ -100,9 +106,9 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" class="expander-trigger" class="expander-trigger">
+        <button onclick="expander" class="expander-trigger">
            <h4 class="icon-handle">Mer detaljer</h4>
-          </a>
+         </button>
           <div class="expanding-area" class="expanding-area">
             <span class="description"><?php the_field( 'description_details' ); ?></span>
           </div>
@@ -110,9 +116,9 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" class="expander-trigger" class="expander-trigger">
+          <button onclick="expander" class="expander-trigger">
            <h4 class="icon-handle">Kontakt</h4>
-          </a>
+         </button>
           <div class="expanding-area" class="expanding-area">
             <span><?php the_field('kontakt_person') ?></span>
           </div>

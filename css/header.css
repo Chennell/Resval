@@ -2,6 +2,7 @@
 header {
   overflow: hidden;
   width: 100vW;
+  max-width: 1366px !important;
   padding: 44px;
   box-sizing: border-box;
   background: white;
@@ -31,6 +32,7 @@ div#responsive-menu-wrapper {
 @media only screen and (min-width: 768px) {
   header {
     position: inherit;
+    border-bottom: none;
   }
   .logo {
     width: 10%;

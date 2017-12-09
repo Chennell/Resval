@@ -15,7 +15,7 @@
 @ws_8: 88px;
 
 
-//-----Here we start with the styling------------------
+//-----Here we style the post grid------------------
 
 .post-grid{
     //padding: @ws_4;
@@ -45,6 +45,7 @@ ul.gridParent{
     height: 300px;
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
     transition: opacity 0.6s;
     opacity: 1;
     display: table;
@@ -54,6 +55,7 @@ ul.gridParent{
 a h3.title-grid{
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
     transition: opacity 0.6s;
     text-transform: uppercase;
     color: #ffffff;
@@ -65,75 +67,128 @@ a h3.title-grid{
 div.info-box{
     position: absolute;
     text-align: center;
-    //padding: @ws_1;
     width: 100%;
-    //right: -100px;
-    //top: 50%;
-    //transform: translateY(-50%);
-    //z-index: 11;
     background-color: @color-mintgreen;
-    //transition: 0.4s linear;
     bottom: 0;
-
     p{
         padding: @ws_1;
     }
 }
 
+
+//div.info-box{
+//        position: absolute;
+//        text-align: center;
+//        height: 150px;
+//        padding: @ws_1;
+//        opacity: 1;
+//        right: -100px;
+//        top: 50%;
+//        transform: translateY(-50%);
+//        z-index: 11;
+//        background-color: @color-mintgreen;
+//        transition: 0.4s linear;
+//        -webkit-transition: 0.4s linear;
+//        -moz-transition: 0.4s linear;
+//        -ms-transition: 0.4s linear;
+//        transition: 0.4s linear;
+//        padding: @ws_1;
+//        //width: 0;
+//
+//        p{
+//          display: none;
+//            padding: 0;
+//        }
+//    }
+
 .post-grid-pic a img{
     width: 100%;
 }
 
-
-
-
-// -- The filters/project type ---------------------------
-//div.filterbox{
-//    overflow: hidden
-//}
-//ul.project_type{
-//    float: right;
-//}
+//    .a-project:hover, element.hover_effect{
+//        
+//        .hover{
+//            -webkit-user-select: none;
+//            -webkit-touch-callout: none; 
+//        }
 //
-//li.filter{
-//    display: inline;
+//        .opacityBox{
+//            opacity: 0;
+//            -webkit-transition: opacity 0.6s;
+//            -moz-transition: opacity 0.6s;
+//            -ms-transition: opacity 0.6s;
+//            transition: opacity 0.6s;
+//        }
 //
-//    a{
-//    text-transform: uppercase;
-//    padding: 5px;
-//    margin: @ws_1;
-//    float: left;
+//        h3.title-grid{
+//            opacity: 0;
+//            -webkit-transition: opacity 0.6s;
+//            -moz-transition: opacity 0.6s;
+//            -ms-transition: opacity 0.6s;
+//            transition: opacity 0.6s;
+//        }
 //
-//        img{
-//            height: 60px;
+//        div.info-box{
+//            width: 178px;
+//            right: 0px;
+//            transition: 0.6s linear;
+//
+//            p{
+//              display: block;
+//            }
 //        }
 //    }
-//}
 
-//--- THE SEARCH BOX-----------------------------------
-input.form-control{
-    -webkit-appearance: none;
-    background: none;
-    border: none;
-    border-bottom: solid 1px @color-mintgreen;
-    width: 198px;
-    float: left;
-    margin-right: @ws_2;
-    float: left;
-    padding-top: @ws_2;
+
+//--- THE SEARCH BOX------------------------------
+
+.search_form{
+    width: 945px;
+    margin: 0 auto;
+
+    input.form-control{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: none;
+        border: none;
+        border-bottom: solid 1px @color-mintgreen;
+        width: 198px;
+        float: left;
+        margin-right: @ws_2;
+        float: left;
+        padding-top: @ws_2;
+    }
+    input.search-submit{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: none;
+        border: solid 1px @color-mintgreen;
+        border-radius: 10px;
+        padding: @ws_1;
+    }
+    input.search-submit:hover,
+    input.search-submit:focus{
+        background-color: @color-mintgreen;
+        color: #fff;
+    }
+    
 }
-input.search-submit{
-    -webkit-appearance: none;
-    background: none;
-    border: solid 1px @color-mintgreen;
-    border-radius: 10px;
-    padding: @ws_1;
+
+
+
+//-----If no search result------------------------
+.resultat-error{
+    text-align: center;
+    width: 300px;
 }
-input.search-submit:hover,
-input.search-submit:focus{
-    background-color: @color-mintgreen;
-    color: #fff;
-}
+
+
+//--- STYLING OF FILTERS--------------------------
+
 
 .filters-form>div>ul>li>ul{
   display: none;
@@ -143,12 +198,9 @@ input.search-submit:focus{
 }
 
 
-
-//--- STYLING OF FILTERS--------------------------
-
 .searchandfilter{
     height: 130px;
-    
+
     label{
         position: relative;
         display: inline-block;
@@ -195,10 +247,14 @@ input[type=checkbox]{
         //padding: @ws_8 @ws_4 0 @ws_4;
         width: 1000px;
         margin: 0 auto;
-        
+
         .filterbox{
             width: 945px;
             margin: 0 auto;
+        }
+        
+        .resultat-error{
+            width: 940px;
         }
 
         ul.gridParent{
@@ -229,6 +285,8 @@ input[type=checkbox]{
         transition: 0.4s linear;
         -webkit-transition: 0.4s linear;
         -moz-transition: 0.4s linear;
+        -ms-transition: 0.4s linear;
+        transition: 0.4s linear;
         padding: @ws_1;
         width: 0;
 
@@ -244,6 +302,7 @@ input[type=checkbox]{
             opacity: 0;
             -webkit-transition: opacity 0.6s;
             -moz-transition: opacity 0.6s;
+            -ms-transition: opacity 0.6s;
             transition: opacity 0.6s;
         }
 
@@ -251,6 +310,7 @@ input[type=checkbox]{
             opacity: 0;
             -webkit-transition: opacity 0.6s;
             -moz-transition: opacity 0.6s;
+            -ms-transition: opacity 0.6s;
             transition: opacity 0.6s;
         }
 
@@ -264,4 +324,9 @@ input[type=checkbox]{
             }
         }
     }
+}
+
+
+.filter-icon{
+  background: green;
 }

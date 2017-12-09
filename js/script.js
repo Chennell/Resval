@@ -56,9 +56,25 @@ var cat_item = document.getElementsByClassName('cat-item');
 var cat_item_arr = [];
 
 function addClass(){
-  for (var i=0; i <= cat_item.length[i]; i++){
-    cat_item[i].classList.toggle('framgangsfaktor-modifier');
+  for (var i=0; i < cat_item.length; i++){
+    
+    cat_item[i].classList.add("filter-icon" + (i + 1));
+
   }
 }
 
 addClass();
+
+
+
+
+
+
+
+//--------------Hover on touch------------------------
+//jQuery(document).ready(function() {
+//    jQuery('.hover').bind('touchstart touchend', function(e) {
+//        e.preventDefault();
+//        jQuery(this).toggleClass('hover_effect');
+//    });
+//});

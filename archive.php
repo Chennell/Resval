@@ -17,89 +17,19 @@
 
         //$my_query = new WP_Query($args);?>
         <div class="filterbox">
-            <ul class="project_type"><?php
+            <div class="project_type"><?php
         //--- GETS the post types, categories.
         $terms = get_terms(array('taxonomy' => 'project-cat', 'hide_empty' => true ));
-                
-//        $categorie_id = ;        
-        
-        foreach ($terms as $value) { 
-            ?>
-                
-                    <?php if($value->slug == 'arbetspendling'){ ?>
-              <li class="filter">          
-                <a href="/project-cat/<?php echo $value->slug ?>">
-                    <img src='<?= get_template_directory_uri(); ?>/img/effort-low.png' alt='Low Effort' title='Effort:Easy'>
-                </a>
-            </li>
-            <?php } else if($value->slug == 'cykel') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/effort-middle.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'gang') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/effort-high.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'kampanjer-och-nudging') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'kollektivtrafik') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'ovrigt') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'resfritt') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'smart-bilanvandning') {?>                    
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }else if($value->slug == 'tjansteresor') {?>   
-                <li class="filter">       
-                    <a href="/project-cat/<?php echo $value->slug ?>">
-                        <img src='<?= get_template_directory_uri(); ?>/img/time-low.png' alt='Low Effort' title='Effort:Easy'>
-                    </a>
-                </li>
-                
-    <?php
-            }
-        }
-    ?>    
-       </ul>
+        $terms = get_terms(array('taxonomy' => 'project-topic', 'hide_empty' => true ));
+        $terms = get_terms(array('taxonomy' => 'project-cost', 'hide_empty' => true ));
+        $terms = get_terms(array('taxonomy' => 'project-difficulty', 'hide_empty' => true ));
+        $terms = get_terms(array('taxonomy' => 'project-time', 'hide_empty' => true )); ?>
+
+          <div class="filters">
+          <?php echo do_shortcode( '[searchandfilter class="filters-form" type="checkbox,checkbox,checkbox,checkbox" hide_empty="0, 0, 0, 0" taxonomies="project-topic,project-cost,project-time,project-difficulty"  headings="Topic, Cost, Time, Difficulty"]' ); ?>
+        </div>
+
+      </div>
     </div>
 <!--THIS loops through and displays the projects-->
     <ul class="gridParent">
@@ -115,11 +45,11 @@
             endwhile; endif;
         ?>
     </ul>
-</div> 
+</div>
 
 <?php
-    get_footer() 
-?> 
+    get_footer()
+?>
 
 
 

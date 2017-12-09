@@ -1,6 +1,7 @@
 .post-grid {
-  padding: 44px;
   padding-top: 0;
+  width: 300px;
+  margin: 0 auto;
 }
 ul.gridParent {
   display: grid;
@@ -89,13 +90,30 @@ input.search-submit:focus {
   background-color: #95d3c3;
   color: #fff;
 }
+.filters-form > div > ul > li > ul {
+  display: none;
+}
+.filters-form > div > ul > li > ul > li > h4 {
+  position: relative;
+}
+.cat-item-23:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/effort-low.png);
+  line-height: 22px;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  width: 50px !important;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
   .post-grid {
-    padding: 88px 44px 0 44px;
+    width: 1000px;
+    margin: 0 auto;
   }
   .post-grid ul.gridParent {
     grid-template-columns: 300px 300px 300px;
+    width: 960px;
+    margin: 0 auto;
   }
   .gridParent li {
     float: left;

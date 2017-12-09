@@ -2,8 +2,9 @@
   display: block !important;
 }
 div.content-wrapper {
-  padding: 88px;
+  padding: 22px;
   width: 100%;
+  box-sizing: border-box;
 }
 div.expander-container {
   width: 100%;
@@ -47,4 +48,7 @@ div.expander-container {
   box-sizing: border-box;
   display: none;
   border: solid 1px #95d3c3;
+}
+.expanding-area p.framgangsfaktor_description {
+  padding: 11px;
 }

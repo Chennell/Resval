@@ -100,9 +100,9 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" class="expander-trigger" class="expander-trigger">
+        <button onclick="expander" class="expander-trigger framgangsfaktor">
            <h4 class="icon-handle">Mer detaljer</h4>
-          </a>
+         </button>
           <div class="expanding-area" class="expanding-area">
             <span class="description"><?php the_field( 'description_details' ); ?></span>
           </div>
@@ -110,9 +110,9 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
-          <a href="#" class="expander-trigger" class="expander-trigger">
-           <h4 class="icon-handle">Kontakt</h4>
-          </a>
+          <button onclick="expander" class="expander-trigger icon-handle">
+           <h4>Kontakt</h4>
+         </button>
           <div class="expanding-area" class="expanding-area">
             <span><?php the_field('kontakt_person') ?></span>
           </div>

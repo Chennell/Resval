@@ -15,10 +15,13 @@
 @ws_8: 88px;
 
 
-//-----Here we start with the styling-------------------
+//-----Here we start with the styling------------------
+
 .post-grid{
-   padding: @ws_4;
+    //padding: @ws_4;
     padding-top: 0;
+    width: 300px;
+    margin: 0 auto;
 }
 ul.gridParent{
 //    margin-top: @ws_1;
@@ -27,7 +30,7 @@ ul.gridParent{
     width: 100%;
     margin: 0 auto;
     grid-column-gap: @ws_2;
-    
+
     li{
         margin-bottom: @ws_2;
         position: relative;
@@ -71,7 +74,7 @@ div.info-box{
     background-color: @color-mintgreen;
     //transition: 0.4s linear;
     bottom: 0;
-    
+
     p{
         padding: @ws_1;
     }
@@ -132,29 +135,45 @@ input.search-submit:focus{
     color: #fff;
 }
 
-
-
+.filters-form>div>ul>li>ul{
+  display: none;
+}
+.filters-form>div>ul>li>ul>li>h4{
+  position: relative;
+}
+.cat-item-23:after{
+  content: url(http://resval.local/wp-content/themes/Resval/img/effort-low.png);
+  line-height: @ws_2;
+  position: absolute;
+  right: @ws_2;
+  top: @ws_2;
+  width: 50px !important;
+}
 
 
 // -- MEDIA QUERY --------------------------------------------------------------
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) {
-    
+
     .post-grid{
-        padding: @ws_8 @ws_4 0 @ws_4;
-        
+        //padding: @ws_8 @ws_4 0 @ws_4;
+        width: 1000px;
+        margin: 0 auto;
+
         ul.gridParent{
             grid-template-columns: 300px 300px 300px;
+            width: 960px;
+            margin: 0 auto;
         }
-        
+
     }
-    
+
     .gridParent li{
         float: left;
         //margin-right: @ws_2;
         position: relative;
     }
-    
+
     div.info-box{
         position: absolute;
         text-align: center;
@@ -173,11 +192,11 @@ input.search-submit:focus{
         width: 0;
 
         p{
-          display: none; 
+          display: none;
             padding: 0;
         }
     }
-    
+
     .a-project:hover {
 
         .opacityBox{
@@ -200,8 +219,8 @@ input.search-submit:focus{
             transition: 0.6s linear;
 
             p{
-              display: block;  
+              display: block;
             }
         }
-    } 
+    }
 }

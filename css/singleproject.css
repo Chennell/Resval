@@ -22,11 +22,11 @@ div.column-right > div.scroll-y div.ingredients-container span.budget img {
 div.column-right > div.scroll-y div.project-description div.description-section {
   padding-top: 22px;
 }
-div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger h4.icon-handle {
+div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger button.icon-handle {
   display: inline-block;
   position: relative;
 }
-div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger h4.icon-handle:after {
+div.column-right > div.scroll-y div.project-description div.description-section div.expander-container a.expander-trigger button.icon-handle:after {
   content: "\f078";
   line-height: 22px;
   position: absolute;
@@ -63,4 +63,11 @@ span.project-image-caption {
 }
 ol.flex-control-nav.flex-control-paging {
   display: none;
+}
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
 }

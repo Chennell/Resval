@@ -1,9 +1,10 @@
 <!--      Header        -->
 <?php get_header();?>
 
+
 <div class="frontPageContainer">
   <?php do_shortcode(
-    '[wcp-carousel id="57"]'
+    '[wcp-carousel id="57" order="DESC" orderby="date" count="10"]'
     ) ?>
 
 
@@ -27,7 +28,7 @@
 
         <!-- The button -->
         <div class="buttonContainerFP">
-          <button type="button" name="button">
+          <button class"front-page-button" type="button" name="button">
             <a href="<?php the_field('fremsid_knapp'); ?>"><?php the_field('fremsida_knapp_label'); ?></a>
           </button>
         </div>
@@ -46,45 +47,53 @@
     </div>
 
 
-<!-- PROJECT SLIDER ----------------------------------------------------------->
+<!-- PROJECT SLIDER --------------------------------------------------------->
     <!-- Carousel slider -->
-    <?php //the_content(); ?>
-  </div>
+    <div class="carouselProject">
+      <?php the_content(); ?>
+    </div>
+
+
 
   <!-- Flexslider -->
-
+<!--
   <div class="project-slider">
-    <div class="flexslider">
-      <ul class="slides">
+    <div class="flexsliderProject">
+      <ul class="projectCard">
     <?php
-       if( have_rows('project_slider') ):
+      /* if( have_rows('project_slider') ):
       // loop through the rows of data
       while ( have_rows('project_slider') ) : the_row();
         $project = get_sub_field('project_on_front_page');
         $projectTitle = $project->post_title;
-        $projectImage = get_the_post_thumbnail($project, 'about_logo');
+        $projectImage = get_the_post_thumbnail($project);
         $projecturl = get_permalink($project)
+        */
       ?>
+
+      -->
       <!-- Place somewhere in the <body> of your page -->
-         <li class="singleProjectSlider">
+       <!--   <li class="singleProjectSlider">
              <div class="projectSliderdiv">
 
              <span class="">
-                <?php echo $projectImage; ?>
-               <a href="<?php echo $projecturl ?>">
+                <?php //echo $projectImage; ?>
+               <a href="<?php //echo $projecturl ?>">
                  <h2>
-                   <?php echo $projectTitle; ?>
+                   <?php //echo $projectTitle; ?>
                  </h2>
                  </a>
             </span>
              </div>
          </li>
-         <?php endwhile; endif;?>
+         <?php //endwhile; endif;?>
        </ul>
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
      </div>
-  </div>
+  </div> -->
 
-
+ </div>
 
 
   <!--  Last section     -------------------------------->
@@ -109,5 +118,7 @@
 
 
 </div>
+
+
 <!--     Footer       -->
 <?php get_footer(); ?>

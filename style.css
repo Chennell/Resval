@@ -427,15 +427,36 @@ div#responsive-menu-wrapper {
 .mostPopularProjectsFP {
   margin: 22px 0;
 }
-.mostPopularProjectsFP > ul > li > div {
-  margin: 11px;
-  border: 2px dashed black;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+.carouselProject section .slick-prev {
+  left: -11px;
+  z-index: 10;
 }
-.mostPopularProjectsFP > ul > li > div > p {
-  margin: 30px;
+.carouselProject section .slick-next {
+  right: -11px;
+  z-index: 10;
+}
+.carouselProject section div.slick-list div.slick-track img {
+  margin: auto;
+  max-height: 200px;
+}
+.carouselProject section div.slick-list div.slick-track div div {
+  background-color: #2e5047;
+  padding: 22px;
+}
+.carouselProject section div.slick-list div.slick-track div div div.car-caption {
+  color: white;
+  padding: 0;
+}
+.carouselProject section div.slick-list div.slick-track div div div.car-caption h3 {
+  margin-top: 11px;
+  text-align: left;
+}
+.carouselProject section div.slick-list div.slick-track div div div.car-caption p {
+  font-size: 10px;
+  text-align: left;
+}
+.carouselProject section div.slick-list div.slick-track div div div.car-caption p a {
+  font-size: 10px;
 }
 .contactbackground {
   background-color: #ecd45d;
@@ -508,6 +529,13 @@ div#responsive-menu-wrapper {
   }
   .mostPopularProjectsFP > ul > li > div > p {
     margin: 30px;
+  }
+  .project-slider .flexsliderProject .projectCard {
+    overflow: hidden;
+  }
+  .project-slider .flexsliderProject .projectCard .singleProjectSlider {
+    float: left;
+    width: 50%;
   }
   .contactInfoFP {
     text-align: left;

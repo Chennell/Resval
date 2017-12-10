@@ -76,7 +76,7 @@
                   endwhile; endif;
               ?>
 
-      
+
           </ul>
      </div>
     </div>
@@ -104,34 +104,23 @@
 
    <!--  Sponsor logo     -------------------------------->
 
-    <div class="logoContainerFooter">
-
-          <ul>
-            <li>
-              <div class="portraitlogo">
-                <img src="<?php the_field('logotype_4');?>" alt="">
-              </div>
-            </li>
-
-            <li>
-              <div class="landscapelogo">
-                <img src="<?php the_field('logotype_1');?>" alt="">
-              </div>
-            </li>
-
-            <li>
-              <div class="landscapelogo">
-                <img src="<?php the_field('logotype_2');?>" alt="">
-              </div>
-            </li>
-
-            <li>
-              <div class="landscapelogo">
-                <img src="<?php the_field('logotype_3');?>" alt="">
-              </div>
-            </li>
-          </ul>
-    </div>
+   <div class="logoContainerFooter">
+     <ul>
+   <?php
+      if( have_rows('sponsrade_loggor_repeater') ):
+     // loop through the rows of data
+     while ( have_rows('sponsrade_loggor_repeater') ) : the_row(); ?>
+     <!-- Place somewhere in the <body> of your page -->
+        <li class="project-image">
+            <div>
+              <a href="<?php echo wp_get_attachment_image_url(the_sub_field('sponsrade_url')); ?>">
+                <img src="<?php echo wp_get_attachment_image_url(the_sub_field('sponsrade_loggor')); ?>" alt="">
+              </a>
+            </div>
+        </li>
+        <?php endwhile; endif;?>
+      </ul>
+   </div>
 
 
 

@@ -253,6 +253,9 @@ div.hover-box p {
   .logoContainerFooter ul li:nth-child(2n+1) {
     clear: none;
   }
+  .logoContainerFooter ul li:nth-child(4n+1) {
+    clear: both;
+  }
   .a-project:hover .opacity-box {
     opacity: 0;
     -webkit-transition: opacity 0.6s;

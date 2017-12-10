@@ -69,7 +69,8 @@ div.info-box p {
   float: left;
   padding-top: 22px;
 }
-.search_form input.search-submit {
+input.search-submit,
+.filters-form input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -79,8 +80,10 @@ div.info-box p {
   border-radius: 10px;
   padding: 11px;
 }
-.search_form input.search-submit:hover,
-.search_form input.search-submit:focus {
+input.search-submit:hover,
+input.search-submit:focus,
+.filters-form input[type="submit"]:hover,
+.filters-form input[type="submit"]:focus {
   background-color: #95d3c3;
   color: #fff;
 }

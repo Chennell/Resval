@@ -98,7 +98,49 @@ input.search-submit:focus,
   position: relative;
 }
 .searchandfilter {
-  height: 130px;
+  height: 100%;
+  position: relative;
+}
+.searchandfilter ul {
+  width: 100%;
+}
+.searchandfilter li {
+  list-style: none;
+  display: block !important;
+  padding-right: 10px;
+  text-align: center;
+}
+.searchandfilter ul > li > ul:not(.children) {
+  position: absolute;
+  overflow: hidden;
+  height: 94px;
+  width: 300px;
+  padding: 5px;
+  box-sizing: border-box;
+  left: 0;
+  background-color: #ffffff;
+}
+.searchandfilter ul > li > ul:not(.children):first-child {
+  position: absolute;
+  overflow: hidden;
+  height: 94px !important;
+  width: 300px;
+  padding: 5px;
+  box-sizing: border-box;
+  left: 0;
+  background-color: #ffffff;
+}
+li.cat-item {
+  top: 50px;
+}
+.form-height {
+  height: 150px !important;
+}
+.item-color {
+  color: #7ea989 !important;
+}
+.hide {
+  display: none !important;
 }
 .filter-icon1,
 .filter-icon2,
@@ -206,6 +248,7 @@ input[type=checkbox] {
 .filter-icon23 input[type=checkbox]:after,
 .filter-icon24 input[type=checkbox]:after {
   position: absolute;
+  transform: scale(0.2);
   visibility: visible;
 }
 .filter-icon1 input[type=checkbox]:checked:after,
@@ -233,101 +276,247 @@ input[type=checkbox] {
 .filter-icon23 input[type=checkbox]:checked:after,
 .filter-icon24 input[type=checkbox]:checked:after {
   position: absolute;
+  transform: scale(0.2);
 }
 .filter-icon1 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_color_hog.png);
-  top: -326px;
-  left: -190px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
+  left: -158px;
 }
 .filter-icon2 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
-  left: -245px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -263px;
+  left: -74px;
 }
 .filter-icon3 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -234px;
 }
 .filter-icon4 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -221px;
 }
 .filter-icon5 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -343px;
 }
 .filter-icon6 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -387px;
 }
 .filter-icon7 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -378px;
 }
 .filter-icon8 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
   left: -380px;
 }
+.filter-icon9 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -263px;
+  left: 433px;
+}
+.filter-icon10 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+  top: -244px;
+  left: -158px;
+}
+.filter-icon11 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_lag.png);
+  top: -263px;
+  left: -74px;
+}
+.filter-icon12 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_mellan.png);
+  top: -282px;
+  left: -12px;
+}
+.filter-icon13 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_hog.png);
+  top: -244px;
+  left: -158px;
+}
+.filter-icon14 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_lag.png);
+  top: -263px;
+  left: -174px;
+}
 .filter-icon15 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
-  top: -326px;
-  left: -180px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_mellan.png);
+  top: -282px;
+  left: 12px;
 }
 .filter-icon16 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_mellan.png);
-  top: -326px;
-  left: -210px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_hog.png);
+  top: -244px;
+  left: -158px;
 }
 .filter-icon17 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_lag.png);
-  top: -326px;
-  left: -234px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_lag.png);
+  top: -263px;
+  left: -177px;
+}
+.filter-icon18 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_mellan.png);
+  top: -282px;
+  left: 12px;
+}
+.filter-icon19 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_both.png);
+  top: -277px;
+  left: -169px;
+}
+.filter-icon20 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_landsbygd.png);
+  top: -262px;
+  left: -74px;
+}
+.filter-icon21 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_stad.png);
+  top: -281px;
+  left: -25px;
+}
+.filter-icon22 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_both.png);
+  top: -277px;
+  left: -169px;
+}
+.filter-icon23 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_foretag.png);
+  top: -262px;
+  left: -74px;
+}
+.filter-icon24 input[type=checkbox]:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_offentlig.png);
+  top: -281px;
+  left: -25px;
 }
 .filter-icon1 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_gray_hog.png);
-  top: -326px;
-  left: -192px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
+  left: -185px;
 }
 .filter-icon2 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -245px;
 }
 .filter-icon3 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -234px;
 }
 .filter-icon4 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -221px;
 }
 .filter-icon5 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -343px;
 }
 .filter-icon6 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -387px;
 }
 .filter-icon7 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -378px;
 }
 .filter-icon8 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
-  top: -326px;
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
   left: -380px;
+}
+.filter-icon9 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -263px;
+  left: 433px;
+}
+.filter-icon10 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+  top: -244px;
+  left: -158px;
+}
+.filter-icon11 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_lag.png);
+  top: -263px;
+  left: -74px;
+}
+.filter-icon12 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_mellan.png);
+  top: -282px;
+  left: -12px;
+}
+.filter-icon13 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_hog.png);
+  top: -244px;
+  left: -158px;
+}
+.filter-icon14 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_lag.png);
+  top: -263px;
+  left: -74px;
+}
+.filter-icon15 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_mellan.png);
+  top: -282px;
+  left: -12px;
+}
+.filter-icon16 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_hog.png);
+  top: -244px;
+  left: -158px;
+}
+.filter-icon17 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_lag.png);
+  top: -263px;
+  left: -74px;
+}
+.filter-icon18 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_mellan.png);
+  top: -282px;
+  left: -12px;
+}
+.filter-icon19 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_both.png);
+  top: -277px;
+  left: -169px;
+}
+.filter-icon20 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_landsbygd.png);
+  top: -262px;
+  left: -74px;
+}
+.filter-icon21 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_stad.png);
+  top: -281px;
+  left: -25px;
+}
+.filter-icon22 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_both.png);
+  top: -277px;
+  left: -169px;
+}
+.filter-icon23 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_foretag.png);
+  top: -262px;
+  left: -74px;
+}
+.filter-icon24 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_offentlig.png);
+  top: -281px;
+  left: -25px;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) {
@@ -346,6 +535,7 @@ input[type=checkbox] {
     grid-template-columns: 300px 300px 300px;
     width: 945px;
     margin: 0 auto;
+    margin-top: 44px;
   }
   .gridParent li {
     float: left;
@@ -394,23 +584,211 @@ input[type=checkbox] {
   .a-project:hover div.info-box p {
     display: block;
   }
-}
-.searchandfilter ul > li > ul:not(.children) {
-  position: absolute;
-  overflow: hidden;
-  height: 70px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-li.cat-item {
-  top: 50px;
-}
-.form-height {
-  height: 150px !important;
-}
-.item-color {
-  color: #7ea989 !important;
-}
-.hide {
-  display: none !important;
+  .searchandfilter {
+    height: 130px;
+  }
+  .searchandfilter li {
+    display: inline-block !important;
+  }
+  .filter-icon1 input[type=checkbox]:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon2 input[type=checkbox]:after {
+    top: -244px;
+    left: -245px;
+  }
+  .filter-icon3 input[type=checkbox]:after {
+    top: -244px;
+    left: -234px;
+  }
+  .filter-icon4 input[type=checkbox]:after {
+    top: -244px;
+    left: -221px;
+  }
+  .filter-icon5 input[type=checkbox]:after {
+    top: -244px;
+    left: -343px;
+  }
+  .filter-icon6 input[type=checkbox]:after {
+    top: -244px;
+    left: -387px;
+  }
+  .filter-icon7 input[type=checkbox]:after {
+    top: -244px;
+    left: -378px;
+  }
+  .filter-icon8 input[type=checkbox]:after {
+    top: -244px;
+    left: -380px;
+  }
+  .filter-icon9 input[type=checkbox]:after {
+    top: -263px;
+    left: 433px;
+  }
+  .filter-icon10 input[type=checkbox]:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon11 input[type=checkbox]:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon12 input[type=checkbox]:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon13 input[type=checkbox]:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon14 input[type=checkbox]:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon15 input[type=checkbox]:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon16 input[type=checkbox]:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon17 input[type=checkbox]:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon18 input[type=checkbox]:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon19 input[type=checkbox]:after {
+    top: -277px;
+    left: -180px;
+  }
+  .filter-icon20 input[type=checkbox]:after {
+    top: -243px;
+    left: -210px;
+  }
+  .filter-icon21 input[type=checkbox]:after {
+    top: -243px;
+    left: -234px;
+  }
+  .filter-icon22 input[type=checkbox]:after {
+    top: -277px;
+    left: -180px;
+  }
+  .filter-icon23 input[type=checkbox]:after {
+    top: -243px;
+    left: -210px;
+  }
+  .filter-icon24 input[type=checkbox]:after {
+    top: -243px;
+    left: -234px;
+  }
+  .filter-icon1 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon2 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -245px;
+  }
+  .filter-icon3 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -234px;
+  }
+  .filter-icon4 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -221px;
+  }
+  .filter-icon5 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -343px;
+  }
+  .filter-icon6 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -387px;
+  }
+  .filter-icon7 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -378px;
+  }
+  .filter-icon8 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -380px;
+  }
+  .filter-icon9 input[type=checkbox]:checked:after {
+    top: -263px;
+    left: 433px;
+  }
+  .filter-icon10 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon11 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon12 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon13 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon14 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon15 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon16 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -185px;
+  }
+  .filter-icon17 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -177px;
+  }
+  .filter-icon18 input[type=checkbox]:checked:after {
+    top: -244px;
+    left: -169px;
+  }
+  .filter-icon19 input[type=checkbox]:checked:after {
+    top: -277px;
+    left: -180px;
+  }
+  .filter-icon20 input[type=checkbox]:checked:after {
+    top: -243px;
+    left: -210px;
+  }
+  .filter-icon21 input[type=checkbox]:checked:after {
+    top: -243px;
+    left: -234px;
+  }
+  .filter-icon22 input[type=checkbox]:checked:after {
+    top: -277px;
+    left: -180px;
+  }
+  .filter-icon23 input[type=checkbox]:checked:after {
+    top: -243px;
+    left: -210px;
+  }
+  .filter-icon24 input[type=checkbox]:checked:after {
+    top: -243px;
+    left: -234px;
+  }
+  .searchandfilter ul > li > ul:not(.children) {
+    position: absolute;
+    overflow: hidden;
+    height: 94px;
+    width: 945px !important;
+    padding: 5px;
+    box-sizing: border-box;
+    left: 0;
+  }
 }

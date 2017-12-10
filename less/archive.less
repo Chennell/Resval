@@ -346,6 +346,7 @@ input[type=checkbox]{
 }
 
 .filter-icon1 input[type=checkbox]:after,
+.filter-icon1 input[type=checkbox]::after,
 .filter-icon2 input[type=checkbox]:after,
 .filter-icon3 input[type=checkbox]:after,
 .filter-icon4 input[type=checkbox]:after,
@@ -370,12 +371,16 @@ input[type=checkbox]{
 .filter-icon23 input[type=checkbox]:after,
 .filter-icon24 input[type=checkbox]:after{
     position: absolute;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
     transform: scale(0.2);
     visibility: visible;
 }
 
 //the styling for the cecked boxes
 .filter-icon1 input[type=checkbox]:checked:after,
+.filter-icon1 input[type=checkbox]:checked::after,
 .filter-icon2 input[type=checkbox]:checked:after,
 .filter-icon3 input[type=checkbox]:checked:after,
 .filter-icon4 input[type=checkbox]:checked:after,
@@ -400,137 +405,140 @@ input[type=checkbox]{
 .filter-icon23 input[type=checkbox]:checked:after,
 .filter-icon24 input[type=checkbox]:checked:after{
     position: absolute;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
     transform: scale(0.2);
 }
 
 //Get every icon this is TOPIC
-.filter-icon1 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+.filter-icon1 input[type=checkbox]:after, .filter-icon1 input[type=checkbox]::after{
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon2 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon3 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -282px;
     left: 12px;
 }
 .filter-icon4 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -198px;
     left: -158px;
 }
 .filter-icon5 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -216px;
     left: -74px;
 }
 .filter-icon6 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -235px;
     left: 12px;
 }
 .filter-icon7 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -244px;
     left: -378px;
 }
 .filter-icon8 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -244px;
     left: -380px;
 }
 .filter-icon9 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -263px;
     left: 433px;
 }
 
 //this is KOSTNAD
 .filter-icon10 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon11 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon12 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_gray_mellan.png);
     top: -282px;
     left: 12px;
 }
 
 //this is TID
 .filter-icon13 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_grey_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon14 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_grey_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon15 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_grey_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_grey_mellan.png);
     top: -282px;
     left: 12px;
 }
 
 //this is SVÅRIGHETSGRAD
 .filter-icon16 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_grey_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon17 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_grey_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon18 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_grey_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_grey_mellan.png);
     top: -282px;
     left: 12px;
 }
 
 //this is PLATS
 .filter-icon19 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_both.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_grey_both.png);
     top: -277px;
     left: -169px;
 }
 .filter-icon20 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_landsbygd.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_grey_landsbygd.png);
     top: -262px;
     left: -74px;
 }
 .filter-icon21 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_grey_stad.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_grey_stad.png);
     top: -281px;
     left: 25px;
 }
 
 //this is ORGANISATIONSTYP
 .filter-icon22 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_both.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_grey_both.png);
     top: -277px;
     left: -169px;
 }
 .filter-icon23 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_foretag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_grey_foretag.png);
     top: -262px;
     left: -74px;
 }
 .filter-icon24 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_grey_offentlig.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_grey_offentlig.png);
     top: -281px;
     left: 25px;
 }
@@ -538,48 +546,48 @@ input[type=checkbox]{
 
 
 //Get every icon when the box is checked-------------------
-.filter-icon1 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+.filter-icon1 input[type=checkbox]:checked:after, .filter-icon1 input[type=checkbox]:checked::after{
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -185px;
 }
 .filter-icon2 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -245px;
 }
 .filter-icon3 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -234px;
 }
 .filter-icon4 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -221px;
 }
 .filter-icon5 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -343px;
 }
 .filter-icon6 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -387px;
 }
 .filter-icon7 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -378px;
 }
 .filter-icon8 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -380px;
 }
 .filter-icon9 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -263px;
     left: 433px;
 }
@@ -587,17 +595,17 @@ input[type=checkbox]{
 
 //This is KOSTNAD CHECKED
 .filter-icon10 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon11 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon12 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_color_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/kostnad_color_mellan.png);
     top: -282px;
     left: 12px;
 }
@@ -605,17 +613,17 @@ input[type=checkbox]{
 
 //This is TID CHECKED
 .filter-icon13 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_color_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon14 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_color_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon15 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/tid_color_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/tid_color_mellan.png);
     top: -282px;
     left: 12px;
 }
@@ -623,17 +631,17 @@ input[type=checkbox]{
 
 //This is SVÅRIGHETSGRAD CHECKED
 .filter-icon16 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_hog.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_color_hog.png);
     top: -244px;
     left: -158px;
 }
 .filter-icon17 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_lag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_color_lag.png);
     top: -263px;
     left: -74px;
 }
 .filter-icon18 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/Level_color_mellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Level_color_mellan.png);
     top: -282px;
     left: 12px;
 }
@@ -641,34 +649,34 @@ input[type=checkbox]{
 
 //This is Plats CHECKED
 .filter-icon19 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_both.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_color_both.png);
     top: -277px;
     left: -169px;
 }
 .filter-icon20 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_landsbygd.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_color_landsbygd.png);
     top: -262px;
     left: -74px;
 }
 .filter-icon21 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/plats_color_stad.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/plats_color_stad.png);
     top: -281px;
     left: 25px;
 }
 
 //This is ORGANISATIONSTYP CHECKED
 .filter-icon22 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_both.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_color_both.png);
     top: -277px;
     left: -169px;
 }
 .filter-icon23 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_foretag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_color_foretag.png);
     top: -262px;
     left: -74px;
 }
 .filter-icon24 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/org_color_offentlig.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/org_color_offentlig.png);
     top: -281px;
     left: 25px;
 }
@@ -716,6 +724,9 @@ input[type=checkbox]{
         opacity: 1;
         right: -100px;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         z-index: 11;
         background-color: @color-mintgreen;

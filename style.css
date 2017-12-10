@@ -300,6 +300,9 @@ body {
 main {
   padding-top: 120px;
 }
+.404 {
+  max-height: calc(100vh - 150px);
+}
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;

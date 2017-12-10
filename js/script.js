@@ -37,7 +37,7 @@ jQuery(window).load(function() {
 
 
 // -- CATEGORY ICONS
-var filters = document.getElementsByClassName('filters-form')
+var filters = document.getElementsByClassName('filters-form');
 var iconArea = document.getElementsByClassName('icon-area');
 
 var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
@@ -48,16 +48,19 @@ var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
 for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
     event.currentTarget.nextElementSibling.classList.toggle('show');
+    // jQuery('categoryTrigger').not(this).classList.add('hide');
+    event.currentTarget.classList.toggle('item-color');
+    // filters.style.height
 });}
 
 
 var cat_item = document.getElementsByClassName('cat-item');
 // cat_item.length
-var cat_item_arr = [];
+// var cat_item_arr = [];
 
 function addClass(){
   for (var i=0; i < cat_item.length; i++){
-    
+
     cat_item[i].classList.add("filter-icon" + (i + 1));
 
   }

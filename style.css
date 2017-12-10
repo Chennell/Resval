@@ -346,6 +346,7 @@ h2.page-title {
   main {
     margin-top: 0;
     margin-bottom: 44px;
+    height: calc(100vh - 277px);
   }
 }
 /*-- HEADER ------------------------------------------------------------------*/
@@ -1575,6 +1576,7 @@ div.column-right > div.scroll-y > p:last-child {
   }
   div.column-right div.scroll-y {
     overflow-y: scroll;
+    width: 100%;
   }
   div.column-right i.fa.fa-arrow-circle-down {
     position: absolute;
@@ -1621,8 +1623,13 @@ textarea.contact-label {
 textarea.contact-label {
   border: solid 1px white;
 }
-div.column-right > div.form-container {
+div.form-container {
   text-align: center;
+  margin: auto auto;
+}
+.wpcf7-form-control-wrap {
+  display: block;
+  padding-top: 5px;
 }
 input.submit-button {
   -webkit-appearance: none;
@@ -1640,6 +1647,12 @@ input.submit-button {
 input.submit-button:hover {
   background: white;
   color: #95d3c3;
+}
+div.contact-container {
+  margin: auto auto;
+}
+span.contact-content {
+  font-size: 16px !important;
 }
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
@@ -1700,7 +1713,7 @@ span.project-image-caption {
   span.time,
   span.groupsize,
   span.budget {
-    width: 70px;
+    max-width: 90px !important;
   }
 }
 @media only screen and (min-width: 1920px) {

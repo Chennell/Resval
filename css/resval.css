@@ -57,5 +57,6 @@ h2.page-title {
   main {
     margin-top: 0;
     margin-bottom: 44px;
+    height: calc(100vh - 277px);
   }
 }

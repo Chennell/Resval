@@ -269,11 +269,6 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
-.flexslider {
-  max-width: 700px;
-  margin: -20;
-  padding: 0;
-}
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;

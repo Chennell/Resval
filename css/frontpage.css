@@ -1,5 +1,6 @@
-.frontPageContainer {
-  padding: 11px;
+.topSectionFP,
+.logoContainerFooter {
+  padding: 22px;
 }
 .topSectionFP .topLeftFP .div_topp_img_hem .topp_img_hem {
   width: 100%;
@@ -195,4 +196,12 @@
 }
 ul.slides {
   overflow: hidden;
+}
+li.a-project.flex-active-slide,
+li.a-project {
+  width: 300px !important;
+  margin-left: 10px;
+}
+.flexslider {
+  max-width: auto !important;
 }

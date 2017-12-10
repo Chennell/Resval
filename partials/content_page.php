@@ -38,7 +38,7 @@
               <!-- scroll hint -->
               <div class="scroll-hint">
                 <!-- <p class="scroll-icon">scroll</p> -->
-                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                <!-- <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> -->
               </div>
 
            </div>

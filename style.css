@@ -277,11 +277,6 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
-.flexslider {
-  max-width: 700px;
-  margin: -20;
-  padding: 0;
-}
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
@@ -424,8 +419,9 @@ div#responsive-menu-wrapper {
     padding-bottom: 11px;
   }
 }
-.frontPageContainer {
-  padding: 11px;
+.topSectionFP,
+.logoContainerFooter {
+  padding: 22px;
 }
 .topSectionFP .topLeftFP .div_topp_img_hem .topp_img_hem {
   width: 100%;
@@ -621,6 +617,14 @@ div#responsive-menu-wrapper {
 }
 ul.slides {
   overflow: hidden;
+}
+li.a-project.flex-active-slide,
+li.a-project {
+  width: 300px !important;
+  margin-left: 10px;
+}
+.flexslider {
+  max-width: auto !important;
 }
 .post-grid {
   padding-top: 0;

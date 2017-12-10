@@ -18,7 +18,7 @@ for (var i = 0; i<framgangsfaktorTrigger.length; i++){
     this.parentNode.childNodes[3].classList.toggle('show');
     this.classList.toggle('framgangsfaktor-open');
     this.classList.toggle('framgangsfaktor-modifier');
-    click = true;
+    // click = true;
 });}
 
 
@@ -42,29 +42,38 @@ var iconArea = document.getElementsByClassName('icon-area');
 
 var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
 var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
-      var categoryTriggers = document.querySelector(".filters-form").querySelectorAll("h4");
+
 // var timelow = document.getElementsByClassName('cat-item-23').classList.add('icon');
 
 for (var i = 0; i<categoryTrigger.length; i++){
-  if (categoryTrigger[i].classList.contains('item-color')){
-      categoryTrigger[i].classList.remove('item-color');
-  }
-  if (categoryTrigger[i].nextElementSibling.classList.contains('show')){
-      categoryTrigger[i].nextElementSibling.classList.remove('show');
-  }
     categoryTrigger[i].addEventListener("click" ,function (event){
+      if((event.currentTarget.classList.contains('item-color')) == false){
+        for (var i = 0; i<categoryTrigger.length; i++){
+          if (categoryTrigger[i].classList.contains('item-color')){
+              categoryTrigger[i].classList.remove('item-color');
+              categoryTrigger[i].nextElementSibling.classList.remove('show');
+          }
+        }
+        event.currentTarget.nextElementSibling.classList.toggle('show');
+        event.currentTarget.classList.toggle('item-color');
+        console.log('false');
+      }else{
+        for (var i = 0; i<categoryTrigger.length; i++){
+          if (categoryTrigger[i].classList.contains('item-color')){
+              categoryTrigger[i].classList.remove('item-color');
+              categoryTrigger[i].nextElementSibling.classList.remove('show');
+          }
+        }
+      }
 
-      // for (var i = 0; i<categoryTrigger.length; i++){
-      //   if (categoryTrigger[i].classList.contains('item-color')){
-      //       categoryTrigger[i].classList.remove('item-color');
-      //   }
-      //   if (categoryTrigger[i].nextElementSibling.classList.contains('show')){
-      //       categoryTrigger[i].nextElementSibling.classList.remove('show');
-      //   }
+
+      // if (event.currentTarget.classList.contains('item-color')){
+      //     event.currentTarget.classList.remove('item-color');
       // }
+      // if (event.currentTarget.nextElementSibling.classList.contains('show')){
+      //     event.currentTarget.nextElementSibling.classList.remove('show');
+      // }else
 
-    event.currentTarget.nextElementSibling.classList.toggle('show');
-    event.currentTarget.classList.toggle('item-color');
 });}
 
 

@@ -1640,6 +1640,7 @@ textarea.contact-label {
 }
 textarea.contact-label {
   border: solid 1px white;
+  box-sizing: border-box;
 }
 div.form-container {
   text-align: center;
@@ -1810,6 +1811,14 @@ div.expander-container {
 }
 .expanding-area p.framgangsfaktor_description {
   padding: 11px;
+}
+.inputfile {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: none;
 }
 .form-container.bidra {
   overflow-y: scroll;

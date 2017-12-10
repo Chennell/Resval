@@ -26,15 +26,15 @@ register_sidebar ($args);
   'name' => 'Footer',
   'id' => 'footer-sidebar',
   'description' => 'Appears in the footer area on every page',
-  'before_widget' => '<li><div id="innerdivFooterLogos" class="widget %2$s">',
+  'before_widget' => '<li><div id="footer-logo"">',
   'after_widget' => '</div></li>',
 
   ) );
-     
 
-     
+
+
 /* Bidra form
--------------------------------- */   
+-------------------------------- */
   $args = array(
     'id'            => 'bidra-form',
     /** Visible name in the Admin Dashboard Widget page */

@@ -117,11 +117,9 @@
  </div>
 
 
-    <!--  Last section     -------------------------------->
-    <!--  Contact info   -->
+    <!--  Contact info     -------------------------------->
+
    <div class="contactbackground">
-
-
     <div class="contactInfoFP">
       <div class="title_FP">
         <h2><?php the_field('kontakt_titel'); ?></h2>
@@ -135,6 +133,41 @@
         </button>
       </div>
     </div>
+   </div>
+
+   <div class="logofooter">
+     <hr class="footerLine" />
+
+    <!--  Sponsor logo     -------------------------------->
+
+     <div class="logoContainerFooter">
+
+           <ul>
+             <li>
+               <div class="portraitlogo">
+                 <img src="<?php the_field('logotype_4');?>" alt="">
+               </div>
+             </li>
+
+             <li>
+               <div class="landscapelogo">
+                 <img src="<?php the_field('logotype_1');?>" alt="">
+               </div>
+             </li>
+
+             <li>
+               <div class="landscapelogo">
+                 <img src="<?php the_field('logotype_2');?>" alt="">
+               </div>
+             </li>
+
+             <li>
+               <div class="landscapelogo">
+                 <img src="<?php the_field('logotype_3');?>" alt="">
+               </div>
+             </li>
+           </ul>
+     </div>
    </div>
 
 

@@ -421,6 +421,9 @@ div#responsive-menu-wrapper {
     padding-bottom: 11px;
   }
 }
+main {
+  margin: 0;
+}
 .logoContainerFooter,
 .mostPopularProjectsFP {
   padding: 22px;
@@ -430,6 +433,7 @@ h2.section-title {
 }
 .topSectionFP {
   background: #95d3c3;
+  padding: 22px 22px 44px;
 }
 .topSectionFP .topLeftFP .div_topp_img_hem .topp_img_hem {
   width: 100%;
@@ -447,18 +451,15 @@ h2.section-title {
 .topSectionFP .topRightFP .buttonContainerFP {
   text-align: center;
 }
-.topSectionFP .topRightFP .buttonContainerFP button {
+.topSectionFP .topRightFP .buttonContainerFP a button {
   padding: 11px;
-  background-color: #7ea989;
+  background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
   margin-top: 22px;
   border: none;
 }
-.topSectionFP .topRightFP .buttonContainerFP button a {
-  color: white;
-}
 .mostPopularProjectsFP {
-  margin: 22px 0;
+  padding: 44px 22px;
 }
 .carouselProject section .slick-prev {
   left: -11px;
@@ -491,7 +492,7 @@ h2.section-title {
   font-size: 10px;
 }
 .contactbackground {
-  background-color: #ecd45d;
+  background-color: #7ea989;
   width: 100%;
 }
 .contactbackground .contactInfoFP {
@@ -504,7 +505,7 @@ h2.section-title {
 .contactbackground .contactInfoFP .contactButtonContainerFP {
   text-align: center;
 }
-.contactbackground .contactInfoFP .contactButtonContainerFP button {
+.contactbackground .contactInfoFP .contactButtonContainerFP a button {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
@@ -513,6 +514,7 @@ h2.section-title {
 }
 .logoContainerFooter {
   text-align: center;
+  padding: 44px 22px;
 }
 .logoContainerFooter ul {
   overflow: hidden;
@@ -526,13 +528,7 @@ h2.section-title {
   margin: 0;
 }
 .logoContainerFooter ul li div img {
-  max-width: 60% !important;
-}
-.logoContainerFooter ul li .portraitlogo {
-  max-width: 80% !important;
-}
-.logoContainerFooter ul li .landscapelogo {
-  padding-top: 45px;
+  max-height: 50px !important;
 }
 .logoContainerFooter ul li:nth-child(2n+1) {
   clear: left;
@@ -601,6 +597,7 @@ div.hover-box p {
   .topSectionFP {
     overflow: hidden;
     margin: 0 -22px;
+    padding: 66px 22px;
   }
   .topSectionFP .topLeftFP {
     width: 50%;
@@ -617,6 +614,12 @@ div.hover-box p {
   .topSectionFP .topRightFP .div_topp_text_hem {
     padding: 0 11px;
     margin: 0 22px;
+  }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button {
+    font-size: 14px;
+  }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .mostPopularProjectsFP {
     margin: 44px 0;
@@ -646,17 +649,19 @@ div.hover-box p {
     float: left;
     width: 50%;
   }
-  .contactInfoFP {
-    text-align: left;
+  .contactbackground {
+    padding: 22px 0;
   }
-  .contactButtonContainerFP > button {
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button {
     width: 25%;
+    font-size: 14px;
   }
-  .contactButtonContainerFP {
-    text-align: left;
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .logoContainerFooter {
     margin: 0 44px;
+    padding: 88px 22px;
   }
   .logoContainerFooter ul {
     overflow: hidden;
@@ -671,7 +676,7 @@ div.hover-box p {
     padding: 0 11px;
   }
   .logoContainerFooter ul li div img {
-    max-width: 90% !important;
+    max-height: 80px !important;
   }
   .logoContainerFooter ul li:nth-child(2n+1) {
     clear: none;
@@ -992,23 +997,23 @@ input[type=checkbox] {
 }
 .filter-icon3 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
-  top: -244px;
-  left: -234px;
+  top: -282px;
+  left: 12px;
 }
 .filter-icon4 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
-  top: -244px;
-  left: -221px;
+  top: -198px;
+  left: -158px;
 }
 .filter-icon5 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
-  top: -244px;
-  left: -343px;
+  top: -216px;
+  left: -74px;
 }
 .filter-icon6 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);
-  top: -244px;
-  left: -387px;
+  top: -235px;
+  left: 12px;
 }
 .filter-icon7 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/icons-mini/kostnad_gray_hog.png);

@@ -15,8 +15,13 @@ textarea.contact-label {
 textarea.contact-label {
   border: solid 1px white;
 }
-div.column-right > div.form-container {
+div.form-container {
   text-align: center;
+  margin: auto auto;
+}
+.wpcf7-form-control-wrap {
+  display: block;
+  padding-top: 5px;
 }
 input.submit-button {
   -webkit-appearance: none;
@@ -34,4 +39,10 @@ input.submit-button {
 input.submit-button:hover {
   background: white;
   color: #95d3c3;
+}
+div.contact-container {
+  margin: auto auto;
+}
+span.contact-content {
+  font-size: 16px !important;
 }

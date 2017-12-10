@@ -346,6 +346,7 @@ h2.page-title {
   main {
     margin-top: 0;
     margin-bottom: 44px;
+    height: calc(100vh - 277px);
   }
 }
 /*-- HEADER ------------------------------------------------------------------*/
@@ -450,7 +451,7 @@ h2.section-title {
 .topSectionFP .topRightFP .buttonContainerFP {
   text-align: center;
 }
-.topSectionFP .topRightFP .buttonContainerFP button {
+.topSectionFP .topRightFP .buttonContainerFP a button {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
@@ -504,7 +505,7 @@ h2.section-title {
 .contactbackground .contactInfoFP .contactButtonContainerFP {
   text-align: center;
 }
-.contactbackground .contactInfoFP .contactButtonContainerFP button {
+.contactbackground .contactInfoFP .contactButtonContainerFP a button {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
@@ -614,6 +615,12 @@ div.hover-box p {
     padding: 0 11px;
     margin: 0 22px;
   }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button {
+    font-size: 14px;
+  }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
   .mostPopularProjectsFP {
     margin: 44px 0;
   }
@@ -645,14 +652,12 @@ div.hover-box p {
   .contactbackground {
     padding: 22px 0;
   }
-  .contactInfoFP {
-    text-align: left;
-  }
-  .contactButtonContainerFP > button {
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button {
     width: 25%;
+    font-size: 14px;
   }
-  .contactButtonContainerFP {
-    text-align: left;
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .logoContainerFooter {
     margin: 0 44px;
@@ -1589,6 +1594,7 @@ div.column-right > div.scroll-y > p:last-child {
   }
   div.column-right div.scroll-y {
     overflow-y: scroll;
+    width: 100%;
   }
   div.column-right i.fa.fa-arrow-circle-down {
     position: absolute;
@@ -1635,8 +1641,13 @@ textarea.contact-label {
 textarea.contact-label {
   border: solid 1px white;
 }
-div.column-right > div.form-container {
+div.form-container {
   text-align: center;
+  margin: auto auto;
+}
+.wpcf7-form-control-wrap {
+  display: block;
+  padding-top: 5px;
 }
 input.submit-button {
   -webkit-appearance: none;
@@ -1654,6 +1665,12 @@ input.submit-button {
 input.submit-button:hover {
   background: white;
   color: #95d3c3;
+}
+div.contact-container {
+  margin: auto auto;
+}
+span.contact-content {
+  font-size: 16px !important;
 }
 div.column-right > div.scroll-y div.ingredients-container {
   padding: 22px 0;
@@ -1714,7 +1731,7 @@ span.project-image-caption {
   span.time,
   span.groupsize,
   span.budget {
-    width: 70px;
+    max-width: 90px !important;
   }
 }
 @media only screen and (min-width: 1920px) {

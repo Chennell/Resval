@@ -61,15 +61,17 @@ h2.section-title{
     // The button
     .buttonContainerFP{
       text-align: center;
+      a{
       button{
         padding: @ws_1;
-        background-color: rgba(255, 255, 255, 0.4);;
+        background-color: rgba(255, 255, 255, 0.4);
         width: 40%;
         margin-top: @ws_2;
         border:none;
-        a{
+
           // color:white;
         }
+
       }
     }
   }
@@ -166,7 +168,7 @@ h2.section-title{
 
     .contactButtonContainerFP{
       text-align: center;
-
+      a{
        button{
         padding: @ws_1;
         // background-color: @color-lightgreen;
@@ -176,9 +178,6 @@ h2.section-title{
         margin-top: @ws_2;
         border: none;
         // border:1px solid @color-darkgrey;
-
-        a{
-          // color:white;
 
         }
       }
@@ -331,6 +330,15 @@ div.hover-box{
        .div_topp_text_hem{
          padding: 0 @ws_1;
          margin: 0 @ws_2;
+
+         .buttonContainerFP>a{
+           button{
+           font-size: 14px;
+         }
+           button:hover{
+              background-color: rgba(255, 255, 255, 0.6);
+           }
+         }
        }
      }
 
@@ -376,19 +384,26 @@ div.hover-box{
 // Contact section ----------------------------------------------------
 .contactbackground{
   padding: @ws_2 0;
-}
 
   .contactInfoFP{
-    text-align: left;
+    // text-align: left;
 
+   .contactButtonContainerFP{
+      // text-align: left;
+        a{
+          // font-size: 14px;
+          button{
+            width: 25%;
+            font-size: 14px;
+          }
+          button:hover{
+             background-color: rgba(255, 255, 255, 0.6);
+          }
+        }
+    }
   }
+ }
 
-  .contactButtonContainerFP>button{
-    width: 25%;
-  }
-  .contactButtonContainerFP{
-    text-align: left;
-  }
 
   // Sponsor logo ------------------------------------------------------
   .logoContainerFooter{

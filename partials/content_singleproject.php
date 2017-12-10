@@ -33,50 +33,50 @@
     <div class="ingredients-container">
       <!-- effort -->
       <span class="effort">
-        <?php if(get_field( 'projekt_effort' )== "Easy"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/effort-low.png" alt="Low Effort" title="Effort:Easy">
+        <?php if(get_field( 'projekt_effort' )== "Låg"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/Level_color_lag.png" alt="Level Låg" title="Level Låg">
         <?php }
-        else if(get_field( 'projekt_effort' )== "Medium"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/effort-middle.png" alt="Medium Effort" title="Effort:Moderate">
+        else if(get_field( 'projekt_effort' )== "Mellan"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/Level_color_mellan.png" alt="Level Mellan" title="Level Mellan">
         <?php }
-        else if(get_field( 'projekt_effort' )== "Hard"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/effort-high" alt="High Effort" title="Effort:Hard">
+        else if(get_field( 'projekt_effort' )== "Hög"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/Level_color_hog.png" alt="Level Hög" title="Level Hög">
         <?php }?>
       </span>
       <!-- time -->
       <span class="time"><?php
-        if(get_field( 'projekt_time' )== "Little"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/time-low.png" alt="Low" title="low time">
+        if(get_field( 'projekt_time' )== "Låg"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/tid_color_lag.png" alt="Low" title="Tid Låg">
         <?php }
-        else if(get_field( 'projekt_time' )== "Moderate"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/time-middle.png" alt="Moderate Time" title="moderate time">
+        else if(get_field( 'projekt_time' )== "Mellan"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/tid_color_mellan.png" alt="Moderate Time" title="Tid Mellan">
         <?php }
-        else if(get_field( 'projekt_time' )== "A Lot"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/time-high.png" alt="High Time" title="high time">
+        else if(get_field( 'projekt_time' )== "Hög"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/tid_color_hog.png" alt="High Time" title="Tid Hög">
         <?php }?>
       </span>
       <!-- target group -->
       <span class="groupsize"><?php
-        if(get_field( 'project_group-size' )== "1-10"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/countryside.png" alt="Low Size" title="low size">
+        if(get_field( 'project_audience' )== "Båda"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/org_color_both.png" alt="Both" title="Both">
         <?php }
-        else if(get_field( 'project_group-size' )== "10-50"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/city.png" alt="Medium Size" title="medium size">
+        else if(get_field( 'project_audience' )== "Företag"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/org_color_foretag.png" alt="Företag" title="Företag">
         <?php }
-        else if(get_field( 'project_group-size' )== "50-100"){?>
-          <img src="<?= get_template_directory_uri(); ?>/img/citycountryside.png" alt="High Size" title="high size">
+        else if(get_field( 'project_audience' )== "Offentlig"){?>
+          <img src="<?= get_template_directory_uri(); ?>/img/org_color_offentlig.png" alt="Offentlig" title="Offentlig">
         <?php }?>
       </span>
       <!-- budget -->
       <span class="budget">
-          <?php if(get_field( 'projekt_budget' )== "Low"){?>
-            <img src="<?= get_template_directory_uri(); ?>/img/budget-low.png" alt="Low Budget" title="low budget">
+          <?php if(get_field( 'projekt_budget' )== "Låg"){?>
+            <img src="<?= get_template_directory_uri(); ?>/img/kostnad_color_lag.png" alt="Low Budget" title="low budget">
           <?php }
-          else if(get_field( 'projekt_budget' )== "Moderate"){?>
-            <img src="<?= get_template_directory_uri(); ?>/img/budget-middle.png" alt="Medium Budget" title="medium budget">
+          else if(get_field( 'projekt_budget' )== "Mellan"){?>
+            <img src="<?= get_template_directory_uri(); ?>/img/kostnad_color_mellan.png" alt="Medium Budget" title="medium budget">
           <?php }
-          else if(get_field( 'projekt_budget' )== "High"){?>
-            <img src="<?= get_template_directory_uri(); ?>/img/budget-high.png" alt="High Budget" title="high budget">
+          else if(get_field( 'projekt_budget' )== "Hög"){?>
+            <img src="<?= get_template_directory_uri(); ?>/img/kostnad_color_hog.png" alt="High Budget" title="high budget">
           <?php }?>
       </span>
     </div>
@@ -106,16 +106,19 @@
       </div>
       <div class="description-section">
         <div class="expander-container">
+        <?php if( get_field('description_details') ): ?>
         <button onclick="expander" class="expander-trigger">
            <h4 class="icon-handle">Mer detaljer</h4>
          </button>
           <div class="expanding-area" class="expanding-area">
-            <span class="description"><?php the_field( 'description_details' ); ?></span>
+	             <span class="description"><?php the_field( 'description_details' ); ?></span>
           </div>
+           <?php endif; ?>
         </div>
       </div>
       <div class="description-section">
         <div class="expander-container">
+          <?php if( get_field('kontakt_person') ): ?>
           <button onclick="expander" class="expander-trigger">
            <h4 class="icon-handle">Kontakt</h4>
          </button>
@@ -123,6 +126,7 @@
             <span><?php the_field('kontakt_person') ?></span>
           </div>
         </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>

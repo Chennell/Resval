@@ -430,6 +430,12 @@ main {
 .mostPopularProjectsFP {
   padding: 22px;
 }
+.logoContainerFooter,
+.mostPopularProjectsFP,
+.contactbackground,
+.logoContainerFooter {
+  padding: 88px 0 !important;
+}
 h2.section-title {
   text-align: center;
   margin-bottom: 22px;
@@ -542,7 +548,7 @@ ul.slides {
 li.a-project.flex-active-slide,
 li.a-project {
   width: 300px !important;
-  margin: 0 7px;
+  margin: 0 22px !important;
 }
 .flexslider {
   max-width: auto !important;

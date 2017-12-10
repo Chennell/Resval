@@ -209,11 +209,18 @@ div.info-box{
     display: inline-block;
 }
 
-input[type=checkbox]{
-    visibility: hidden;
-    //position: relative;
+
+.filter-icon1 > label, .filter-icon2 > label, .filter-icon3 > label, .filter-icon4 > label, .filter-icon5 > label,.filter-icon6 > label,.filter-icon7 > label,.filter-icon8 > label,.filter-icon9 > label{
+  visibility: hidden;
 }
 
+.filter-icon1 > label >input, .filter-icon2 > label >input, .filter-icon3 > label >input, .filter-icon4 > label >input, .filter-icon5 > label >input, .filter-icon6 > label >input, .filter-icon7 > label>input, .filter-icon8 > label>input, .filter-icon9 > label>input{
+  visibility: visible;
+}
+input[type=checkbox]{
+    visibility: hidden !important;
+    //position: relative;
+}
 .filter-icon1 input[type=checkbox]:after{
     content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
     transform: scale(.15);

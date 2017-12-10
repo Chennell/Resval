@@ -28,23 +28,29 @@ footer{
     .footer-text{
       margin-top: @ws_1;
       clear: both;
+      ul{
+        li{
 
-        .newsletter{
-            a{
-              color: white;
+          .newsletter{
+              a{
+                color: white;
+              }
             }
-          }
           #footer-logo-container{
-
-            ul{
-              li{
-                #footer-logo{
-                  width: 100px;
-                  margin:@ws_1 auto;
+              ul{
+                li{
+                  #footer-logo{
+                    width: 100px;
+                    margin:@ws_1 auto;
+              }
             }
           }
         }
+        }
       }
+
+
+
 
         .copyright{
           color:white;
@@ -60,27 +66,45 @@ footer{
 footer{
 .smallfooter{
     .footer-text{
-      .newsletter{
-        text-align: left;
-      }
-      #footer-logo-container{
-        margin: 0;
-        // align:right;
-        ul{
-          overflow: hidden;
+
+      ul{
+        overflow: hidden;
+        li{
           width: 50%;
+          float: left;
+          position: relative;
+          height: 50px;
 
-          li{
-            float: left;
-            width: 50%;
+          .newsletter{
+            text-align: left;
+            // display: inline-block;
+            // vertical-align: bottom;
+            position: absolute;
+            bottom: 0;
+            // left:0;
 
-            #footer-logo{
-              width: 140px;
-              margin:@ws_1 0;
-            }
-           }
           }
+          #footer-logo-container{
+            margin: 0;
+            // align:right;
+            ul{
+              overflow: hidden;
+              width: 50%;
+
+              li{
+                float: left;
+                // width: 50%;
+
+                #footer-logo{
+                  // width: 140px;
+                  margin:@ws_1 0;
+                }
+               }
+              }
+            }
         }
+      }
+
 
      .copyright{
        text-align: left;

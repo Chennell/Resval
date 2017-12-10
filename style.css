@@ -830,7 +830,6 @@ input[type=checkbox] {
 .filter-icon23 input[type=checkbox]:after,
 .filter-icon24 input[type=checkbox]:after {
   position: absolute;
-  transform: scale(0.15);
   visibility: visible;
 }
 .filter-icon1 input[type=checkbox]:checked:after,
@@ -858,10 +857,9 @@ input[type=checkbox] {
 .filter-icon23 input[type=checkbox]:checked:after,
 .filter-icon24 input[type=checkbox]:checked:after {
   position: absolute;
-  transform: scale(0.15);
 }
 .filter-icon1 input[type=checkbox]:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
+  content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_color_hog.png);
   top: -326px;
   left: -190px;
 }
@@ -916,7 +914,7 @@ input[type=checkbox] {
   left: -234px;
 }
 .filter-icon1 input[type=checkbox]:checked:after {
-  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+  content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_gray_hog.png);
   top: -326px;
   left: -192px;
 }

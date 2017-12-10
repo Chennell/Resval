@@ -97,29 +97,42 @@ div.info-box p {
 .searchandfilter {
   height: 130px;
 }
-.searchandfilter label {
+.filter-icon1 {
   position: relative;
   display: inline-block;
 }
 input[type=checkbox] {
   visibility: hidden;
 }
-.cat-item-32 input[type=checkbox]:before {
+.filter-icon1 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
   transform: scale(0.15);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -326px;
+  left: -192px;
   z-index: 100;
   visibility: visible;
   display: block;
 }
-.cat-item-32 input[type=checkbox]:checked:before {
+.filter-icon2 {
+  position: relative;
+}
+.filter-icon2 input[type=checkbox]:after {
   content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
   transform: scale(0.15);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -326px;
+  left: -192px;
+  z-index: 100;
+  visibility: visible;
+  display: block;
+}
+.filter-icon1 input[type=checkbox]:checked:after {
+  content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+  transform: scale(0.15);
+  position: absolute;
+  top: -326px;
+  left: -192px;
   margin-right: 22px;
   z-index: 100;
 }
@@ -188,7 +201,4 @@ input[type=checkbox] {
   .a-project:hover div.info-box p {
     display: block;
   }
-}
-.filter-icon {
-  background: green;
 }

@@ -106,10 +106,10 @@ div.info-box{
 }
 
 //    .a-project:hover, element.hover_effect{
-//        
+//
 //        .hover{
 //            -webkit-user-select: none;
-//            -webkit-touch-callout: none; 
+//            -webkit-touch-callout: none;
 //        }
 //
 //        .opacityBox{
@@ -175,7 +175,7 @@ div.info-box{
         background-color: @color-mintgreen;
         color: #fff;
     }
-    
+
 }
 
 
@@ -201,10 +201,12 @@ div.info-box{
 .searchandfilter{
     height: 130px;
 
-    label{
-        position: relative;
-        display: inline-block;
-    }
+
+}
+
+.filter-icon1{
+    position: relative;
+    display: inline-block;
 }
 
 input[type=checkbox]{
@@ -212,12 +214,12 @@ input[type=checkbox]{
     //position: relative;
 }
 
-.cat-item-32 input[type=checkbox]:before{
+.filter-icon1 input[type=checkbox]:after{
     content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
     transform: scale(.15);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -326px;
+    left: -192px;
     //margin-top: -50px;
     //margin-right: @ws_2;
     z-index: 100;
@@ -225,12 +227,28 @@ input[type=checkbox]{
     display: block;
 }
 
-.cat-item-32 input[type=checkbox]:checked:before{
+.filter-icon2{
+  position: relative;
+}
+.filter-icon2 input[type=checkbox]:after{
     content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
     transform: scale(.15);
     position: absolute;
-    top: 0;
-    left: 0;
+    top:-326px;
+    left: -192px;
+    //margin-top: -50px;
+    //margin-right: @ws_2;
+    z-index: 100;
+    visibility: visible;
+    display: block;
+}
+
+.filter-icon1 input[type=checkbox]:checked:after{
+    content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+    transform: scale(.15);
+    position: absolute;
+    top: -326px;;
+    left: -192px;
     //margin-top: -50px;
     margin-right: @ws_2;
     z-index: 100;
@@ -252,7 +270,7 @@ input[type=checkbox]{
             width: 945px;
             margin: 0 auto;
         }
-        
+
         .resultat-error{
             width: 940px;
         }
@@ -324,9 +342,4 @@ input[type=checkbox]{
             }
         }
     }
-}
-
-
-.filter-icon{
-  background: green;
 }

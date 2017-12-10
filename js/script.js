@@ -53,11 +53,11 @@ for (var i = 0; i<categoryTrigger.length; i++){
 
 var cat_item = document.getElementsByClassName('cat-item');
 // cat_item.length
-var cat_item_arr = [];
+// var cat_item_arr = [];
 
 function addClass(){
   for (var i=0; i < cat_item.length; i++){
-    
+
     cat_item[i].classList.add("filter-icon" + (i + 1));
 
   }

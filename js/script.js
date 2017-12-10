@@ -47,25 +47,27 @@ var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
 
 for (var i = 0; i<categoryTrigger.length; i++){
     categoryTrigger[i].addEventListener("click" ,function (event){
+      var categoryTriggers = document.querySelector(".filters-form").querySelectorAll("h4");
+      for (var i = 0; i<categoryTriggers.length; i++){
+      if (categoryTriggers[i].classList.contains('item-color')){
+          categoryTriggers[i].classList.remove('item-color');
+      }
+      if (categoryTriggers[i].nextElementSibling.classList.contains('show')){
+          categoryTriggers[i].nextElementSibling.classList.remove('show');
+      }
+    }
+
     event.currentTarget.nextElementSibling.classList.toggle('show');
-    // jQuery('categoryTrigger').not(this).classList.add('hide');
     event.currentTarget.classList.toggle('item-color');
-    // filters.style.height
 });}
 
 
 var cat_item = document.getElementsByClassName('cat-item');
-// cat_item.length
-// var cat_item_arr = [];
-
 function addClass(){
   for (var i=0; i < cat_item.length; i++){
-
     cat_item[i].classList.add("filter-icon" + (i + 1));
-
   }
 }
-
 addClass();
 
 

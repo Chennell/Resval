@@ -43,7 +43,7 @@ div.info-box {
   position: absolute;
   text-align: center;
   width: 100%;
-  background-color: #95d3c3;
+  background-color: #7ea989;
   bottom: 0;
 }
 div.info-box p {
@@ -63,7 +63,7 @@ div.info-box p {
   appearance: none;
   background: none;
   border: none;
-  border-bottom: solid 1px #95d3c3;
+  border-bottom: solid 1px #7ea989;
   width: 198px;
   margin-right: 22px;
   float: left;
@@ -76,7 +76,7 @@ input.search-submit,
   -ms-appearance: none;
   appearance: none;
   background: none;
-  border: solid 1px #95d3c3;
+  border: solid 1px #7ea989;
   border-radius: 10px;
   padding: 11px;
 }
@@ -84,7 +84,7 @@ input.search-submit:hover,
 input.search-submit:focus,
 .filters-form input[type="submit"]:hover,
 .filters-form input[type="submit"]:focus {
-  background-color: #95d3c3;
+  background-color: #7ea989;
   color: #fff;
 }
 .resultat-error {
@@ -360,7 +360,7 @@ input[type=checkbox] {
     top: 50%;
     transform: translateY(-50%);
     z-index: 11;
-    background-color: #95d3c3;
+    background-color: #7ea989;
     -webkit-transition: 0.4s linear;
     -moz-transition: 0.4s linear;
     -ms-transition: 0.4s linear;

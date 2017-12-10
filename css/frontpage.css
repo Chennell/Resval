@@ -28,7 +28,7 @@ h2.section-title {
 .topSectionFP .topRightFP .buttonContainerFP {
   text-align: center;
 }
-.topSectionFP .topRightFP .buttonContainerFP button {
+.topSectionFP .topRightFP .buttonContainerFP a button {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
@@ -82,7 +82,7 @@ h2.section-title {
 .contactbackground .contactInfoFP .contactButtonContainerFP {
   text-align: center;
 }
-.contactbackground .contactInfoFP .contactButtonContainerFP button {
+.contactbackground .contactInfoFP .contactButtonContainerFP a button {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.4);
   width: 40%;
@@ -192,6 +192,12 @@ div.hover-box p {
     padding: 0 11px;
     margin: 0 22px;
   }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a {
+    font-size: 14px;
+  }
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
   .mostPopularProjectsFP {
     margin: 44px 0;
   }
@@ -223,14 +229,14 @@ div.hover-box p {
   .contactbackground {
     padding: 22px 0;
   }
-  .contactInfoFP {
-    text-align: left;
+  .contactbackground .contactInfoFP .contactButtonContainerFP a {
+    font-size: 14px;
   }
-  .contactButtonContainerFP > button {
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button {
     width: 25%;
   }
-  .contactButtonContainerFP {
-    text-align: left;
+  .contactbackground .contactInfoFP .contactButtonContainerFP a button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .logoContainerFooter {
     margin: 0 44px;

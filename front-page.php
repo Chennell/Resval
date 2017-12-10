@@ -29,9 +29,11 @@
 
           <!-- The button -->
           <div class="buttonContainerFP">
-            <button type="button" name="button">
-              <a href="<?php the_field('fremsid_knapp'); ?>"><?php the_field('fremsida_knapp_label'); ?></a>
-            </button>
+            <a href="<?php the_field('fremsid_knapp'); ?>">
+              <button type="button" name="button">
+                <?php the_field('fremsida_knapp_label'); ?>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -95,9 +97,11 @@
 
       <!-- The button -->
       <div class="contactButtonContainerFP">
-        <button type="button" name="button">
-          <a href="<?php the_field('kontakt_knapp'); ?>"><?php the_field('kontakt_knapp_label'); ?></a>
-        </button>
+        <a href="<?php the_field('kontakt_knapp'); ?>">
+          <button type="button" name="button">
+            <?php the_field('kontakt_knapp_label'); ?>
+          </button>
+        </a>
       </div>
     </div>
    </div>

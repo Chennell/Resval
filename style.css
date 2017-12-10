@@ -1843,28 +1843,6 @@ div.expander-container {
   max-width: 400px;
   margin-top: 11px;
 }
-.skicka {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  color: #95d3c3;
-  padding: 11px;
-  width: 200px;
-  font-family: 'Oswald';
-  font-size: 20px;
-  margin-top: 22px;
-}
-.skicka:hover,
-.skicka:focus {
-  border: solid 1px #ffffff;
-  color: #ffffff;
-  background-color: #95d3c3;
-  font-family: 'Oswald';
-  font-size: 20px;
-}
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {
   clear: both;

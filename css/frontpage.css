@@ -65,7 +65,6 @@
   width: 100%;
 }
 .contactbackground .contactInfoFP {
-  margin: 22px 0;
   text-align: center;
   padding: 44px 0;
 }
@@ -82,26 +81,31 @@
   margin-top: 22px;
   border: none;
 }
+.logoContainerFooter {
+  text-align: center;
+}
 .logoContainerFooter ul {
   overflow: hidden;
   margin: 22px -11px;
 }
 .logoContainerFooter ul li {
   float: left;
-  width: 25%;
+  width: 50%;
 }
 .logoContainerFooter ul li div {
-  margin: 0 11px;
+  margin: 0;
 }
 .logoContainerFooter ul li div img {
-  max-width: 90% !important;
-  display: block;
+  max-width: 60% !important;
 }
 .logoContainerFooter ul li .portraitlogo {
   max-width: 80% !important;
 }
 .logoContainerFooter ul li .landscapelogo {
   padding-top: 45px;
+}
+.logoContainerFooter ul li:nth-child(2n+1) {
+  clear: left;
 }
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
@@ -166,6 +170,27 @@
   }
   .contactButtonContainerFP {
     text-align: left;
+  }
+  .logoContainerFooter {
+    margin: 0 44px;
+  }
+  .logoContainerFooter ul {
+    overflow: hidden;
+    margin: 22px -11px;
+  }
+  .logoContainerFooter ul li {
+    float: left;
+    width: 25%;
+  }
+  .logoContainerFooter ul li div {
+    margin: 0;
+    padding: 0 11px;
+  }
+  .logoContainerFooter ul li div img {
+    max-width: 90% !important;
+  }
+  .logoContainerFooter ul li:nth-child(2n+1) {
+    clear: none;
   }
 }
 ul.slides {

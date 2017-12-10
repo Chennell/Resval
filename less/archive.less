@@ -160,22 +160,24 @@ div.info-box{
         float: left;
         padding-top: @ws_2;
     }
-    input.search-submit{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        background: none;
-        border: solid 1px @color-mintgreen;
-        border-radius: 10px;
-        padding: @ws_1;
-    }
-    input.search-submit:hover,
-    input.search-submit:focus{
-        background-color: @color-mintgreen;
-        color: #fff;
-    }
+}
 
+input.search-submit, .filters-form input[type="submit"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    border: solid 1px @color-mintgreen;
+    border-radius: 10px;
+    padding: @ws_1;
+}
+input.search-submit:hover,
+input.search-submit:focus,
+.filters-form input[type="submit"]:hover,
+.filters-form input[type="submit"]:focus{
+    background-color: @color-mintgreen;
+    color: #fff;
 }
 
 
@@ -312,7 +314,7 @@ input[type=checkbox]{
 .filter-icon23 input[type=checkbox]:after,
 .filter-icon24 input[type=checkbox]:after{
     position: absolute;
-    transform: scale(.15);
+    //transform: scale(.15);
     visibility: visible;
 }
 
@@ -342,12 +344,12 @@ input[type=checkbox]{
 .filter-icon23 input[type=checkbox]:checked:after,
 .filter-icon24 input[type=checkbox]:checked:after{
     position: absolute;
-    transform: scale(.15);
+    //transform: scale(.15);
 }
 
 //Get every icon this is TOPIC
 .filter-icon1 input[type=checkbox]:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/svarlag.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_color_hog.png);
     top: -326px;
     left: -190px;
 }
@@ -414,7 +416,7 @@ input[type=checkbox]{
 
 //Get every icon when the box is checked
 .filter-icon1 input[type=checkbox]:checked:after{
-    content: url(http://resval.local/wp-content/themes/Resval/img/svarmellan.png);
+    content: url(http://resval.local/wp-content/themes/Resval/img/Mini/kostnad_gray_hog.png);
     top: -326px;
     left: -192px;
 }
@@ -453,6 +455,7 @@ input[type=checkbox]{
     top: -326px;
     left: -380px;
 }
+
 
 
 

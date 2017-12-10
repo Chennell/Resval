@@ -3,18 +3,25 @@
 
 <div class="smallfooter">
       <div class="footer-text">
-        <p class="newsletter">
-          <a href="<?php the_field('footer_link') ?>">Prenumerera på nyhetsbrev</a>
-        </p>
+        <ul>
 
-        <div id="footer-logo-container" align="right">
-            <ul>
-              <?php dynamic_sidebar('footer-sidebar');?>
-            </ul>
-        </div>
+          <li>
+            <p class="newsletter">
+              <a href="<?php the_field('footer_link') ?>">Prenumerera på nyhetsbrev</a>
+            </p>
+          </li>
 
-          <p class="copyright">© copyright - Hela Resan</p>
-        </div>
+          <li>
+            <div id="footer-logo-container" align="right">
+                <ul>
+                  <?php dynamic_sidebar('footer-sidebar');?>
+                </ul>
+            </div>
+          </li>
+        </ul>
+
+        <p class="copyright">© copyright - Hela Resan</p>
+    </div>
 </div>
 
 </footer>

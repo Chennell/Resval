@@ -1386,10 +1386,10 @@ footer .smallfooter .footer-text {
   margin-top: 11px;
   clear: both;
 }
-footer .smallfooter .footer-text .newsletter a {
+footer .smallfooter .footer-text ul li .newsletter a {
   color: white;
 }
-footer .smallfooter .footer-text #footer-logo-container ul li #footer-logo {
+footer .smallfooter .footer-text ul li #footer-logo-container ul li #footer-logo {
   width: 100px;
   margin: 11px auto;
 }
@@ -1399,22 +1399,31 @@ footer .smallfooter .footer-text .copyright {
   font-size: 10px;
 }
 @media only screen and (min-width: 768px) {
-  footer .smallfooter .footer-text .newsletter {
-    text-align: left;
+  footer .smallfooter .footer-text ul {
+    overflow: hidden;
   }
-  footer .smallfooter .footer-text #footer-logo-container {
+  footer .smallfooter .footer-text ul li {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 50px;
+  }
+  footer .smallfooter .footer-text ul li .newsletter {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+  }
+  footer .smallfooter .footer-text ul li #footer-logo-container {
     margin: 0;
   }
-  footer .smallfooter .footer-text #footer-logo-container ul {
+  footer .smallfooter .footer-text ul li #footer-logo-container ul {
     overflow: hidden;
     width: 50%;
   }
-  footer .smallfooter .footer-text #footer-logo-container ul li {
+  footer .smallfooter .footer-text ul li #footer-logo-container ul li {
     float: left;
-    width: 50%;
   }
-  footer .smallfooter .footer-text #footer-logo-container ul li #footer-logo {
-    width: 140px;
+  footer .smallfooter .footer-text ul li #footer-logo-container ul li #footer-logo {
     margin: 11px 0;
   }
   footer .smallfooter .footer-text .copyright {

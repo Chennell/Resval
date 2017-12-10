@@ -7,7 +7,7 @@
 
           <li>
             <p class="newsletter">
-              <a href="<?php the_field('footer_link') ?>">Prenumerera på nyhetsbrev</a>
+              <a href="<?php the_field('footer_link'); ?>"><?php the_field('footer_link_label'); ?></a>
             </p>
           </li>
 

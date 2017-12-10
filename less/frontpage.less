@@ -3,7 +3,7 @@
 @color-mintgreen: #95d3c3;
 @color-lightgreen: #7ea989;
 @color-darkgreen: #2e5047;
-@color-yellow: #f1d417;
+@color-yellow: #ecd45d;
 @color-darkgrey: #555555;
 // -- GRID ---------------------------------------------------------------------
 
@@ -20,6 +20,10 @@
 
 
   // -- FRONT PAGE ---------------------------------------------------------------
+
+  main{
+    margin: 0;
+  }
 .logoContainerFooter, .mostPopularProjectsFP{
     padding: @ws_2;
   }
@@ -29,6 +33,7 @@ h2.section-title{
   // -- SECTION ABOUT --------------------------------------------
   .topSectionFP{
     background: @color-mintgreen;
+    padding:@ws_2 @ws_2 @ws_4;
   }
 // The image
 .topSectionFP{
@@ -58,12 +63,12 @@ h2.section-title{
       text-align: center;
       button{
         padding: @ws_1;
-        background-color: @color-lightgreen;
+        background-color: rgba(255, 255, 255, 0.4);;
         width: 40%;
         margin-top: @ws_2;
         border:none;
         a{
-          color:white;
+          // color:white;
         }
       }
     }
@@ -75,7 +80,8 @@ h2.section-title{
   // Most popular views section -------------------------------------------------------
 
   .mostPopularProjectsFP{
-    margin: @ws_2 0;
+    // margin: @ws_2 0;
+    padding:@ws_4 @ws_2;
   }
 
   // .mostPopularProjectsFP>ul>li>div{
@@ -144,8 +150,9 @@ h2.section-title{
 
 // Contact info section -----------------------------------------------------------
 .contactbackground{
-  background-color: rgb(236, 212, 93);
+  background-color:@color-lightgreen;
   width: 100%;
+
 
   .contactInfoFP{
     // margin: @ws_2 0;
@@ -183,6 +190,7 @@ h2.section-title{
 // Sponsor logo
 .logoContainerFooter{
   text-align: center;
+  padding: @ws_4 @ws_2;
   ul{
     overflow: hidden;
     margin: @ws_2 -@ws_1;
@@ -195,19 +203,19 @@ h2.section-title{
         margin: 0;
         // padding: 0 @ws_1;
             img{
-              max-width: 60% !important;
+              max-height: 50px !important;
 
           }
         }
 
-        // Does not work
-        .portraitlogo{
-          max-width: 80% !important;
-        }
-
-        .landscapelogo{
-          padding-top: 45px;
-        }
+        // // Does not work
+        // .portraitlogo{
+        //   max-width: 80% !important;
+        // }
+        //
+        // .landscapelogo{
+        //   padding-top: 45px;
+        // }
      }
      li:nth-child(2n+1){
        clear:left;
@@ -304,6 +312,7 @@ div.hover-box{
    .topSectionFP{
      overflow:hidden;
      margin: 0 -@ws_2;
+     padding: @ws_6 @ws_2;
 
      .topLeftFP{
        width: 50%;
@@ -352,9 +361,6 @@ div.hover-box{
       margin: 30px;
     }
 
-
-
-
     .project-slider{
       .flexsliderProject{
         .projectCard{
@@ -368,8 +374,13 @@ div.hover-box{
     }
 
 // Contact section ----------------------------------------------------
+.contactbackground{
+  padding: @ws_2 0;
+}
+
   .contactInfoFP{
     text-align: left;
+
   }
 
   .contactButtonContainerFP>button{
@@ -381,8 +392,8 @@ div.hover-box{
 
   // Sponsor logo ------------------------------------------------------
   .logoContainerFooter{
-
     margin: 0 @ws_4;
+    padding: @ws_8 @ws_2;
 
     ul{
       overflow: hidden;
@@ -395,17 +406,25 @@ div.hover-box{
         div{
           margin: 0;
           padding: 0 @ws_1;
-              img{
-                max-width: 90% !important;
 
-            }
+          img{
+            max-height: 80px !important;
+
+        }
+
           }
        }
        li:nth-child(2n+1){
          clear:none;
        }
+       // ul:first-child li{
+       //   width: 30% !important;
+       // }
      }
    }
+   // .logoContainerFooter ul li div img{
+   //   height: 70px;
+   // }
 
 //-- hover for project SLIDER
 .a-project:hover {

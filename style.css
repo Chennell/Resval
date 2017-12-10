@@ -780,6 +780,10 @@ input.search-submit,
   border-radius: 10px;
   padding: 11px;
 }
+.filters-form input[type="submit"] {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
 input.search-submit:hover,
 input.search-submit:focus,
 .filters-form input[type="submit"]:hover,
@@ -1232,7 +1236,7 @@ input[type=checkbox] {
     grid-template-columns: 300px 300px 300px;
     width: 945px;
     margin: 0 auto;
-    margin-top: 44px;
+    margin-top: 66px;
   }
   .gridParent li {
     float: left;
@@ -1287,6 +1291,9 @@ input[type=checkbox] {
   .searchandfilter li {
     display: inline-block !important;
   }
+  .searchandfilter li h4 {
+    margin-right: 22px;
+  }
   .filter-icon1 input[type=checkbox]:after {
     top: -244px;
     left: -185px;
@@ -1324,64 +1331,64 @@ input[type=checkbox] {
     left: 433px;
   }
   .filter-icon10 input[type=checkbox]:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon11 input[type=checkbox]:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon12 input[type=checkbox]:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon13 input[type=checkbox]:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon14 input[type=checkbox]:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon15 input[type=checkbox]:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon16 input[type=checkbox]:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon17 input[type=checkbox]:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon18 input[type=checkbox]:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon19 input[type=checkbox]:after {
     top: -277px;
-    left: -180px;
+    left: -175px;
   }
   .filter-icon20 input[type=checkbox]:after {
     top: -243px;
-    left: -210px;
+    left: -135px;
   }
   .filter-icon21 input[type=checkbox]:after {
     top: -243px;
-    left: -234px;
+    left: -137px;
   }
   .filter-icon22 input[type=checkbox]:after {
-    top: -277px;
-    left: -180px;
+    top: -278px;
+    left: -175px;
   }
   .filter-icon23 input[type=checkbox]:after {
     top: -243px;
-    left: -210px;
+    left: -135px;
   }
   .filter-icon24 input[type=checkbox]:after {
     top: -243px;
-    left: -234px;
+    left: -113px;
   }
   .filter-icon1 input[type=checkbox]:checked:after {
     top: -244px;
@@ -1420,69 +1427,69 @@ input[type=checkbox] {
     left: 433px;
   }
   .filter-icon10 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon11 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon12 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon13 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon14 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon15 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon16 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -185px;
+    top: -243px;
+    left: -180px;
   }
   .filter-icon17 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -177px;
+    top: -243px;
+    left: -139px;
   }
   .filter-icon18 input[type=checkbox]:checked:after {
-    top: -244px;
-    left: -169px;
+    top: -243px;
+    left: -97px;
   }
   .filter-icon19 input[type=checkbox]:checked:after {
     top: -277px;
-    left: -180px;
+    left: -175px;
   }
   .filter-icon20 input[type=checkbox]:checked:after {
     top: -243px;
-    left: -210px;
+    left: -135px;
   }
   .filter-icon21 input[type=checkbox]:checked:after {
     top: -243px;
-    left: -234px;
+    left: -137px;
   }
   .filter-icon22 input[type=checkbox]:checked:after {
-    top: -277px;
-    left: -180px;
+    top: -278px;
+    left: -175px;
   }
   .filter-icon23 input[type=checkbox]:checked:after {
     top: -243px;
-    left: -210px;
+    left: -135px;
   }
   .filter-icon24 input[type=checkbox]:checked:after {
     top: -243px;
-    left: -234px;
+    left: -113px;
   }
   .searchandfilter ul > li > ul:not(.children) {
     position: absolute;
     overflow: hidden;
-    height: 94px;
+    height: 112px;
     width: 945px !important;
     padding: 5px;
     box-sizing: border-box;

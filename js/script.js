@@ -42,20 +42,26 @@ var iconArea = document.getElementsByClassName('icon-area');
 
 var categoryTrigger = document.querySelector(".filters-form").querySelectorAll("h4");
 var iconArea = document.querySelector(".filters-form").querySelectorAll("h4");
-
+      var categoryTriggers = document.querySelector(".filters-form").querySelectorAll("h4");
 // var timelow = document.getElementsByClassName('cat-item-23').classList.add('icon');
 
 for (var i = 0; i<categoryTrigger.length; i++){
+  if (categoryTrigger[i].classList.contains('item-color')){
+      categoryTrigger[i].classList.remove('item-color');
+  }
+  if (categoryTrigger[i].nextElementSibling.classList.contains('show')){
+      categoryTrigger[i].nextElementSibling.classList.remove('show');
+  }
     categoryTrigger[i].addEventListener("click" ,function (event){
-    //   var categoryTriggers = document.querySelector(".filters-form").querySelectorAll("h4");
-    //   for (var i = 0; i<categoryTriggers.length; i++){
-    //   if (categoryTriggers[i].classList.contains('item-color')){
-    //       categoryTriggers[i].classList.remove('item-color');
-    //   }
-    //   if (categoryTriggers[i].nextElementSibling.classList.contains('show')){
-    //       categoryTriggers[i].nextElementSibling.classList.remove('show');
-    //   }
-    // }
+
+      // for (var i = 0; i<categoryTrigger.length; i++){
+      //   if (categoryTrigger[i].classList.contains('item-color')){
+      //       categoryTrigger[i].classList.remove('item-color');
+      //   }
+      //   if (categoryTrigger[i].nextElementSibling.classList.contains('show')){
+      //       categoryTrigger[i].nextElementSibling.classList.remove('show');
+      //   }
+      // }
 
     event.currentTarget.nextElementSibling.classList.toggle('show');
     event.currentTarget.classList.toggle('item-color');

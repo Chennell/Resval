@@ -43,26 +43,41 @@
     <!--  Middle section     -------------------------------->
     <!--  Most popular views   -->
     <div class="mostPopularProjectsFP">
+      <h2 class="section-title">Our latest Projects</h2>
       <div class="flexslider">
         <ul class="slides">
-          <?php
-          $args = array(
-            'post_type'       =>  'project',
-            'posts_per_page'  => 6,
-            'orderby' => 'date'
-          );
-
-          $projects_query = new WP_Query($args);
-          if ($projects_query->have_posts()): while ($projects_query->have_posts()): $projects_query->the_post(); ?>
-            <li class="a-project">
-               <?php
-                    get_template_part('partials/project-grid');
-                ?>
-            </li>
             <?php
-                endwhile; endif;
-            ?>
-         </ul>
+            $args = array(
+              'post_type'       =>  'project',
+              'posts_per_page'  => 6,
+              'orderby' => 'date'
+            );
+
+            $projects_query = new WP_Query($args);
+            if ($projects_query->have_posts()): while ($projects_query->have_posts()): $projects_query->the_post(); ?>
+              <li class="a-project">
+                <a href="<?php the_permalink()?>">
+                    <div class="opacity-box"><h3 class="title-grid"> <?php the_title(); ?></h3></div>
+                </a>
+                <a href="<?php the_permalink()?>">
+                    <div class="hover-box">
+                        <p>
+                           <?php
+                                the_field(hover_description);
+                            ?>
+                        </p>
+                    </div>
+                </a>
+                <a href="<?php the_permalink()?>">
+                    <?php the_post_thumbnail('grid_thumbnail'); ?>
+                </a>
+              </li>
+              <?php
+                  endwhile; endif;
+              ?>
+
+      
+          </ul>
      </div>
     </div>
 

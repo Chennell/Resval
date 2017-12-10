@@ -1,6 +1,12 @@
-.topSectionFP,
-.logoContainerFooter {
+.logoContainerFooter,
+.mostPopularProjectsFP {
   padding: 22px;
+}
+h2.section-title {
+  text-align: center;
+}
+.topSectionFP {
+  background: #95d3c3;
 }
 .topSectionFP .topLeftFP .div_topp_img_hem .topp_img_hem {
   width: 100%;
@@ -108,13 +114,67 @@
 .logoContainerFooter ul li:nth-child(2n+1) {
   clear: left;
 }
+ul.slides {
+  overflow: hidden;
+}
+li.a-project.flex-active-slide,
+li.a-project {
+  width: 300px !important;
+  margin: 0 7px;
+}
+.flexslider {
+  max-width: auto !important;
+}
+div.hover-box > p {
+  display: none;
+}
+.opacity-box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  opacity: 1;
+  display: table;
+  text-align: center;
+}
+div.hover-box {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  background-color: #95d3c3;
+  bottom: 0;
+  opacity: 0;
+}
+div.hover-box p {
+  padding: 11px;
+}
+.a-project:hover .opacity-box {
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  opacity: 0;
+}
+.a-project:hover div.hover-box {
+  position: absolute;
+  text-align: center;
+  background-color: #95d3c3;
+  bottom: 0;
+  opacity: 1;
+}
+.a-project:hover div.hover-box p {
+  padding: 11px;
+  display: block;
+  width: 100%;
+}
 /* ---------------------------------------------------------------------------------------------------------------------
        ipad version
   ----------------------*/
 @media only screen and (min-width: 768px) {
-  .frontPageContainer {
-    padding: 44px;
-  }
   .topSectionFP {
     overflow: hidden;
     margin: 0 -22px;
@@ -193,15 +253,26 @@
   .logoContainerFooter ul li:nth-child(2n+1) {
     clear: none;
   }
-}
-ul.slides {
-  overflow: hidden;
-}
-li.a-project.flex-active-slide,
-li.a-project {
-  width: 300px !important;
-  margin-left: 10px;
-}
-.flexslider {
-  max-width: auto !important;
+  .a-project:hover .opacity-box {
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  .a-project:hover h3.title-grid {
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  .a-project:hover div.hover-box {
+    width: 178px;
+    right: 0px;
+    transition: 0.6s linear;
+  }
+  .a-project:hover div.hover-box p {
+    display: block;
+  }
 }

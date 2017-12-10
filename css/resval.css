@@ -56,7 +56,9 @@ h2.page-title {
 @media only screen and (min-width: 768px) {
   main {
     margin-top: 0;
-    margin-bottom: 44px;
-    height: calc(100vh - 277px);
+    margin-bottom: 44px !important;
+  }
+  main.front {
+    height: 100%;
   }
 }

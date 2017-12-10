@@ -104,15 +104,17 @@ div#responsive-menu-wrapper{
 
 //------Bidra du med button styled differently
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1){
-        background-color: @color-lightgreen;
+        //background-color: @color-lightgreen;
         border-radius: 10px;
-        border: 1px solid rgba(0,0,0,0);
+        //border: 1px solid rgba(0,0,0,0);
         margin-left: @ws_1;
+        border: 1px solid @color-lightgreen !important;
     }
 
     nav>div.menu-menu-container>ul.menu>li:nth-last-child(1):hover{
         border: 1px solid @color-lightgreen !important;
         background: none;
+        background-color: @color-lightgreen;
         padding-bottom: @ws_1;
     }
 

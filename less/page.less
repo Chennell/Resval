@@ -20,6 +20,7 @@ div.column-left, div.column-right{
   width: 100%;
   box-sizing: border-box;
   padding: @ws_4 @ws_2;
+
 }
 
 ::-webkit-scrollbar {
@@ -129,6 +130,9 @@ main{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 800px !important;
+    margin: auto auto;
+    max-height: calc(~"100vh - 150px");
   }
 
   // -- COLUMN LEFT IMAGE ------------------------------------------------------
@@ -144,7 +148,7 @@ div.column-left{}
 
   // -- COLUMN RIGHT TEXT ------------------------------------------------------
   div.column-right{
-    max-height: calc(~"100vh - 150px");
+
     // -webkit-animation: 1s ease-out 2s 1 slideInFromRight;
     // -moz-animation: 1s ease-out 2s 1 slideInFromRight;
     // -o-animation: 1s ease-out 2s 1 slideInFromRight;
@@ -233,8 +237,8 @@ div.column-left{}
 }
 
 
-@media only screen and (min-width : 1920px) {
-  div.column-right{
-    max-height: 1080px;
+@media only screen and (min-width : 1366px) {
+  div.column-right, div.column-left{
+
   }
 }

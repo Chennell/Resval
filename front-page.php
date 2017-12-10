@@ -1,6 +1,6 @@
 <!--      Header        -->
 <?php get_header();?>
-<main>
+<main class="front">
   <div class="frontPageContainer">
 
     <?php //do_shortcode('[wcp-carousel id="88"]')

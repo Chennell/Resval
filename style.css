@@ -345,8 +345,10 @@ h2.page-title {
 @media only screen and (min-width: 768px) {
   main {
     margin-top: 0;
-    margin-bottom: 44px;
-    height: calc(100vh - 277px);
+    margin-bottom: 44px !important;
+  }
+  main.front {
+    height: 100%;
   }
 }
 /*-- HEADER ------------------------------------------------------------------*/
@@ -405,14 +407,14 @@ div#responsive-menu-wrapper {
     padding-bottom: 5px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1) {
-    background-color: #7ea989;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0);
     margin-left: 11px;
+    border: 1px solid #7ea989 !important;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1):hover {
     border: 1px solid #7ea989 !important;
     background: none;
+    background-color: #7ea989;
     padding-bottom: 11px;
   }
   nav > div.menu-menu-container > ul.menu > li:nth-last-child(1).current-menu-item {
@@ -430,6 +432,7 @@ main {
 }
 h2.section-title {
   text-align: center;
+  margin-bottom: 22px;
 }
 .topSectionFP {
   background: #95d3c3;
@@ -1569,6 +1572,9 @@ div.column-right > div.scroll-y > p:last-child {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 800px !important;
+    margin: auto auto;
+    max-height: calc(100vh - 150px);
   }
   div.column-left > img {
     left: 88px;
@@ -1576,7 +1582,6 @@ div.column-right > div.scroll-y > p:last-child {
     height: auto;
   }
   div.column-right {
-    max-height: calc(100vh - 150px);
     position: relative;
   }
   div.column-right div.scroll-y {
@@ -1604,11 +1609,6 @@ div.column-right > div.scroll-y > p:last-child {
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  div.column-right {
-    max-height: 1080px;
   }
 }
 input.contact-label,

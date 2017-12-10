@@ -65,6 +65,9 @@ div.column-right > div.scroll-y > p:last-child {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 800px !important;
+    margin: auto auto;
+    max-height: calc(100vh - 150px);
   }
   div.column-left > img {
     left: 88px;
@@ -72,7 +75,6 @@ div.column-right > div.scroll-y > p:last-child {
     height: auto;
   }
   div.column-right {
-    max-height: calc(100vh - 150px);
     position: relative;
   }
   div.column-right div.scroll-y {
@@ -100,10 +102,5 @@ div.column-right > div.scroll-y > p:last-child {
   }
   div.column-right > div.scroll-y > p:last-child {
     padding-bottom: 44px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  div.column-right {
-    max-height: 1080px;
   }
 }

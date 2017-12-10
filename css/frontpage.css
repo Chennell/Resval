@@ -192,7 +192,7 @@ div.hover-box p {
     padding: 0 11px;
     margin: 0 22px;
   }
-  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a {
+  .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button {
     font-size: 14px;
   }
   .topSectionFP .topRightFP .div_topp_text_hem .buttonContainerFP > a button:hover {
@@ -229,11 +229,9 @@ div.hover-box p {
   .contactbackground {
     padding: 22px 0;
   }
-  .contactbackground .contactInfoFP .contactButtonContainerFP a {
-    font-size: 14px;
-  }
   .contactbackground .contactInfoFP .contactButtonContainerFP a button {
     width: 25%;
+    font-size: 14px;
   }
   .contactbackground .contactInfoFP .contactButtonContainerFP a button:hover {
     background-color: rgba(255, 255, 255, 0.6);

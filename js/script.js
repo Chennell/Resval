@@ -56,7 +56,7 @@ for (var i = 0; i<categoryTrigger.length; i++){
         }
         event.currentTarget.nextElementSibling.classList.toggle('show');
         event.currentTarget.classList.toggle('item-color');
-        console.log('false');
+//        console.log('false');
       }else{
         for (var i = 0; i<categoryTrigger.length; i++){
           if (categoryTrigger[i].classList.contains('item-color')){
@@ -77,6 +77,7 @@ for (var i = 0; i<categoryTrigger.length; i++){
 });}
 
 
+//This adds a unique class to each li so we can add the icons.
 var cat_item = document.getElementsByClassName('cat-item');
 function addClass(){
   for (var i=0; i < cat_item.length; i++){

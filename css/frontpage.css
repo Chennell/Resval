@@ -123,7 +123,7 @@ ul.slides {
 li.a-project.flex-active-slide,
 li.a-project {
   width: 300px !important;
-  margin: 0 22px !important;
+  margin: 0 22px 22px 0 !important;
 }
 .flexslider {
   max-width: auto !important;

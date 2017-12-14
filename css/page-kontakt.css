@@ -36,6 +36,7 @@ input.submit-button {
   border-radius: 44px;
   width: 88px;
   color: white;
+  margin-top: 22px;
 }
 input.submit-button:hover {
   background: white;

@@ -65,7 +65,7 @@
                     <div class="hover-box">
                         <p>
                            <?php
-                                the_field(hover_description);
+                                the_field('hover_description');
                             ?>
                         </p>
                     </div>

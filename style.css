@@ -551,7 +551,7 @@ ul.slides {
 li.a-project.flex-active-slide,
 li.a-project {
   width: 300px !important;
-  margin: 0 22px !important;
+  margin: 0 22px 22px 0 !important;
 }
 .flexslider {
   max-width: auto !important;
@@ -1853,37 +1853,6 @@ div.expander-container {
 }
 .expanding-area p.framgangsfaktor_description {
   padding: 11px;
-}
-.inputfile {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background: none;
-}
-.form-container.bidra {
-  overflow-y: scroll;
-  width: 100%;
-}
-.form-container.bidra .dropdownTitle {
-  text-align: left;
-}
-.form-container.bidra .dropdown {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: none;
-  background: none;
-  border: solid 1px white;
-  border-radius: 0;
-  height: 22px;
-  margin-bottom: 22px;
-  width: 100%;
-  max-width: 400px;
-  margin-top: 11px;
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {

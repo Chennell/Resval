@@ -49,6 +49,7 @@ wp_enqueue_script(
 
   // For carousel slider
 
+
   add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
 function carousel_slider_load_scripts( $load_scripts ) {
     // To use only for front page
@@ -64,4 +65,14 @@ add_action('admin_menu','remove_default_post_type');
 function remove_default_post_type() {
 	remove_menu_page('edit.php');
 }
+
+//  add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
+//function carousel_slider_load_scripts( $load_scripts ) {
+//    // To use only for front page
+//    if ( is_front_page() ) {
+//        return true;
+//    }
+//    return $load_scripts;
+//}
+
 ?>

@@ -863,20 +863,11 @@ input.search-submit:focus,
   display: block !important;
   padding-right: 10px;
 }
-.searchandfilter ul > li > ul:not(.children) {
+.searchandfilter ul > li > ul {
   overflow: hidden;
-  height: 94px;
+  height: 100% !important;
   width: 300px;
-  padding: 5px;
-  box-sizing: border-box;
-  left: 0;
-  background-color: #ffffff;
-}
-.searchandfilter ul > li > ul:not(.children):first-child {
-  overflow: hidden;
-  height: 94px !important;
-  width: 300px;
-  padding: 5px;
+  padding: 13px 0 50px 0px;
   box-sizing: border-box;
   left: 0;
   background-color: #ffffff;
@@ -1041,107 +1032,107 @@ input[type=checkbox] {
 .filter-icon1 input[type=checkbox]::after {
   content: url(img/kostnad_gray_hog.png);
   top: -244px;
-  left: -158px;
+  left: -181px;
 }
 .filter-icon2 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -263px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon3 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -282px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon4 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -198px;
-  left: -158px;
+  left: -181px;
 }
 .filter-icon5 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -216px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon6 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -235px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon7 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
-  top: -244px;
-  left: -378px;
+  top: -150px;
+  left: -180px;
 }
 .filter-icon8 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
-  top: -244px;
-  left: -380px;
+  top: -169px;
+  left: -95px;
 }
 .filter-icon9 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
-  top: -263px;
-  left: 433px;
+  top: -188px;
+  left: -9px;
 }
 .filter-icon10 input[type=checkbox]:after {
   content: url(img/kostnad_gray_hog.png);
   top: -244px;
-  left: -158px;
+  left: -183px;
 }
 .filter-icon11 input[type=checkbox]:after {
   content: url(img/kostnad_gray_lag.png);
   top: -263px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon12 input[type=checkbox]:after {
   content: url(img/kostnad_gray_mellan.png);
   top: -282px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon13 input[type=checkbox]:after {
   content: url(img/tid_grey_hog.png);
   top: -244px;
-  left: -158px;
+  left: -181px;
 }
 .filter-icon14 input[type=checkbox]:after {
   content: url(img/tid_grey_lag.png);
   top: -263px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon15 input[type=checkbox]:after {
   content: url(img/tid_grey_mellan.png);
   top: -282px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon16 input[type=checkbox]:after {
   content: url(img/Level_grey_hog.png);
   top: -244px;
-  left: -158px;
+  left: -173px;
 }
 .filter-icon17 input[type=checkbox]:after {
   content: url(img/Level_grey_lag.png);
   top: -263px;
-  left: -74px;
+  left: -78px;
 }
 .filter-icon18 input[type=checkbox]:after {
   content: url(img/Level_grey_mellan.png);
   top: -282px;
-  left: 12px;
+  left: 15px;
 }
 .filter-icon19 input[type=checkbox]:after {
   content: url(img/plats_grey_both.png);
   top: -277px;
-  left: -169px;
+  left: -170px;
 }
 .filter-icon20 input[type=checkbox]:after {
   content: url(img/plats_grey_landsbygd.png);
   top: -262px;
-  left: -74px;
+  left: -70px;
 }
 .filter-icon21 input[type=checkbox]:after {
   content: url(img/plats_grey_stad.png);
   top: -281px;
-  left: 25px;
+  left: 33px;
 }
 .filter-icon22 input[type=checkbox]:after {
   content: url(img/org_grey_both.png);
@@ -1166,88 +1157,88 @@ input[type=checkbox] {
 }
 .filter-icon2 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -245px;
+  top: -263px;
+  left: -99px;
 }
 .filter-icon3 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -234px;
+  top: -282px;
+  left: -13px;
 }
 .filter-icon4 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -221px;
+  top: -198px;
+  left: -184px;
 }
 .filter-icon5 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -343px;
+  top: -216px;
+  left: -99px;
 }
 .filter-icon6 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -387px;
+  top: -235px;
+  left: -13px;
 }
 .filter-icon7 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -378px;
+  top: -150px;
+  left: -184px;
 }
 .filter-icon8 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -244px;
-  left: -380px;
+  top: -169px;
+  left: -99px;
 }
 .filter-icon9 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
-  top: -263px;
-  left: 433px;
+  top: -188px;
+  left: -13px;
 }
 .filter-icon10 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_hog.png);
   top: -244px;
-  left: -158px;
+  left: -184px;
 }
 .filter-icon11 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_lag.png);
   top: -263px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon12 input[type=checkbox]:checked:after {
   content: url(img/kostnad_color_mellan.png);
   top: -282px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon13 input[type=checkbox]:checked:after {
   content: url(img/tid_color_hog.png);
   top: -244px;
-  left: -158px;
+  left: -177px;
 }
 .filter-icon14 input[type=checkbox]:checked:after {
   content: url(img/tid_color_lag.png);
   top: -263px;
-  left: -74px;
+  left: -95px;
 }
 .filter-icon15 input[type=checkbox]:checked:after {
   content: url(img/tid_color_mellan.png);
   top: -282px;
-  left: 12px;
+  left: -9px;
 }
 .filter-icon16 input[type=checkbox]:checked:after {
   content: url(img/Level_color_hog.png);
   top: -244px;
-  left: -158px;
+  left: -173px;
 }
 .filter-icon17 input[type=checkbox]:checked:after {
   content: url(img/Level_color_lag.png);
   top: -263px;
-  left: -74px;
+  left: -78px;
 }
 .filter-icon18 input[type=checkbox]:checked:after {
   content: url(img/Level_color_mellan.png);
   top: -282px;
-  left: 12px;
+  left: 15px;
 }
 .filter-icon19 input[type=checkbox]:checked:after {
   content: url(img/plats_color_both.png);
@@ -1256,13 +1247,13 @@ input[type=checkbox] {
 }
 .filter-icon20 input[type=checkbox]:checked:after {
   content: url(img/plats_color_landsbygd.png);
-  top: -262px;
-  left: -74px;
+  top: -263px;
+  left: -70px;
 }
 .filter-icon21 input[type=checkbox]:checked:after {
   content: url(img/plats_color_stad.png);
-  top: -281px;
-  left: 25px;
+  top: -282px;
+  left: 32px;
 }
 .filter-icon22 input[type=checkbox]:checked:after {
   content: url(img/org_color_both.png);

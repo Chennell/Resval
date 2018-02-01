@@ -326,6 +326,7 @@ h4 {
 }
 p {
   font-size: 14px;
+  text-align: left;
 }
 * {
   padding: 0;
@@ -696,7 +697,6 @@ div.hover-box p {
   li.a-project.flex-active-slide,
   li.a-project {
     width: 300px !important;
-    margin: 0 22px !important;
   }
   .flexslider {
     max-width: auto !important;
@@ -1844,6 +1844,9 @@ div.expander-container {
 }
 .expanding-area p.framgangsfaktor_description {
   padding: 11px;
+}
+.wpcf7-form-control-wrap file-631 {
+  text-align: left !important;
 }
 /*-- FOOTER ------------------------------------------------------------------*/
 footer {

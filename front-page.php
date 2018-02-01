@@ -14,7 +14,7 @@
 
         <!--    The image      -->
         <div class="div_topp_img_hem">
-          <img src="<?php the_field('topp_bild'); ?>" alt="" class="topp_img_hem">
+          <img src="<?php //the_field('topp_bild'); ?>" alt="" class="topp_img_hem">
         </div>
       </div>
 
@@ -46,6 +46,7 @@
     <!--  Most popular views   -->
     <div class="mostPopularProjectsFP">
       <h2 class="section-title">Our latest Projects</h2>
+
       <div class="flexslider">
         <ul class="slides">
             <?php
@@ -80,7 +81,9 @@
 
 
           </ul>
+
      </div>
+     <?php //echo do_shortcode('[wcp-carousel id="217"]') ?>
     </div>
 
 

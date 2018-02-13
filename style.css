@@ -578,7 +578,7 @@ div.hover-box {
   text-align: center;
   width: 300px;
   background-color: #95d3c3;
-  bottom: 0;
+  bottom: 22px;
   opacity: 0;
 }
 div.hover-box p {
@@ -595,7 +595,7 @@ div.hover-box p {
   position: absolute;
   text-align: center;
   background-color: #95d3c3;
-  bottom: 0;
+  bottom: 22px;
   opacity: 1;
 }
 .a-project:hover div.hover-box p {
@@ -722,7 +722,7 @@ div.hover-box p {
     text-align: center;
     width: 300px;
     background-color: #95d3c3;
-    bottom: 0;
+    bottom: 22px;
     opacity: 0;
   }
   div.hover-box p {
@@ -739,7 +739,7 @@ div.hover-box p {
     position: absolute;
     text-align: center;
     background-color: #95d3c3;
-    bottom: 0;
+    bottom: 22px;
     opacity: 1;
   }
   .a-project:hover div.hover-box p {

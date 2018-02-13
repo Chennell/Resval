@@ -24,7 +24,7 @@
         $terms = get_terms(array('taxonomy' => 'project-topic', 'hide_empty' => true ));
         $terms = get_terms(array('taxonomy' => 'project-cost', 'hide_empty' => true ));
         $terms = get_terms(array('taxonomy' => 'project-difficulty', 'hide_empty' => true ));
-        $terms = get_terms(array('taxonomy' => 'project-time', 'hide_empty' => true )); 
+        $terms = get_terms(array('taxonomy' => 'project-time', 'hide_empty' => true ));
         $terms = get_terms(array('taxonomy' => 'project-location', 'hide_empty' => true ));
         $terms = get_terms(array('taxonomy' => 'project-organisation', 'hide_empty' => true ));?>
 

@@ -28,7 +28,7 @@ for (var i = 0; i<framgangsfaktorTrigger.length; i++){
 jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
-    animationLoop: false,
+    animationLoop: true,
     // itemMargin: 5
 
   });
@@ -36,7 +36,7 @@ jQuery(window).load(function() {
 
 
 
-// -- CATEGORY ICONS
+// -- CATEGORY ICONS -----------------------------------------------------------
 var filters = document.getElementsByClassName('filters-form');
 var iconArea = document.getElementsByClassName('icon-area');
 
